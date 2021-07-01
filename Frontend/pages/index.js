@@ -1,16 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
+import { hboi } from '../data/hboi'
+
 import SelectOutOf from '../components/SelectOutOf'
 
-export default function Home() {
-  const [selectedHBOI, setSelectedHBOI] = useState("HBOI");
-  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState("");
-  const [selectedActiviteit, setSelectedActiviteit] = useState("");
+export default function Home({ hboiData }) {
+  const [selectedHBOI, setSelectedHBOI] = useState(false);
+  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState();
+  const [selectedActiviteit, setSelectedActiviteit] = useState();
 
   useEffect(() => {
+    if (!selectedArchitectuurlaag) return;
+    if (!selectedActiviteit) return;
     setSelectedHBOI(`${selectedArchitectuurlaag} ${selectedActiviteit}`)
   }, [selectedArchitectuurlaag, selectedActiviteit])
 
@@ -40,12 +43,17 @@ export default function Home() {
             setSelectedFunction={setSelectedActiviteit} 
           />
         </div>
-        <div className={styles.items}>
-          <div>this is a card</div>
-          <div>this is a card</div>
-          <div>this is a card</div>
-          <div>this is a card</div>
-        </div>
+        {hboiData[selectedHBOI]
+        ? 
+          <div className={styles.items}>
+            <div>{hboiData[selectedHBOI][0]}</div>
+            <div>{hboiData[selectedHBOI][1]}</div>
+            <div>{hboiData[selectedHBOI][2]}</div>
+            <div>{hboiData[selectedHBOI][3]}</div>
+          </div> 
+        : 
+          null
+        }
       </main>
 
       <footer className={styles.footer}>
@@ -53,4 +61,12 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  return {
+    props: {
+      hboiData: hboi,
+    }
+  }
 }
