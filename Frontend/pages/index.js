@@ -25,7 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favico.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
+        <div className={styles.select}>
           <SelectOutOf 
             title="Architectuurlagen" 
             options={architectuurlagen} 
@@ -38,6 +39,13 @@ export default function Home() {
             id="activiteiten" 
             setSelectedFunction={setSelectedActiviteit} 
           />
+        </div>
+        <div className={styles.items}>
+          <div>this is a card</div>
+          <div>this is a card</div>
+          <div>this is a card</div>
+          <div>this is a card</div>
+        </div>
       </main>
 
       <footer className={styles.footer}>
