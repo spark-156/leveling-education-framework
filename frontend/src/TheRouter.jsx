@@ -21,7 +21,7 @@ const routes = [
 /**
  * Create a lazy-loading route with the standards of code-splitting.
  * @param {string} path The path to that view
- * @param {string} view The view filepath (e.g. ./views/setup.js = setup)
+ * @param {string} view The view filepath (e.g. ./views/Home.js = home)
  * @param {boolean} exact If the route should be exact
  * @see https://reactjs.org/docs/code-splitting.html#route-based-code-splitting
  */
