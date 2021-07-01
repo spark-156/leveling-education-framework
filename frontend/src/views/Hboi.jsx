@@ -9,7 +9,7 @@ import SelectOutOf from '../components/SelectOutOf'
 
 export default function Home() {
   const history = useHistory();
-  const { architectuurlaag, activiteit } = useParams;
+  const { architectuurlaag, activiteit } = useParams();
 
   const [selectedHBOI, setSelectedHBOI] = useState(`${architectuurlaag} ${activiteit}`);
   const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
