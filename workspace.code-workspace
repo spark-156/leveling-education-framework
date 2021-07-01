@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "{Root}"
+    },
+    {
+      "path": "Frontend/",
+      "name": "Frontend"
+    },
+  ],
+  "settings": {
+    "git.ignoreLimitWarning": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    // "[javascript]": {
+    //   "editor.defaultFormatter": "vscode.typescript-language-features"
+    // }
+  }
+}
