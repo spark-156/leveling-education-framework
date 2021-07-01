@@ -11,11 +11,11 @@ export default function SelectOutOf({ title, options, setSelectedFunction, id })
       <div className={styles.title}>{title}</div>
       <div onChange={setState}>
         {options.map(option => (
-          <>
+          <div key={option}>
             <input id={option} type="radio" value={option} name={id}/>
             <label htmlFor={option}>{option}</label>
             <br />
-          </>
+          </div>
         ))}
       </div>
   </div>
