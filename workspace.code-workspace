@@ -5,8 +5,8 @@
       "name": "{Root}"
     },
     {
-      "path": "Frontend/",
-      "name": "Frontend"
+      "path": "FrontendNext/",
+      "name": "{Legacy} Frontend Next"
     },
   ],
   "settings": {
