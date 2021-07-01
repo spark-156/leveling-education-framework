@@ -1,0 +1,28 @@
+version: "3.3"
+
+services: 
+  Traefik:
+    image: traefik:v2.4
+    command:
+      - --api.insecure=true
+      - --providers.docker
+      - --providers.docker.exposedbydefault=false 
+      - --entrypoints.web.address=:80
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  
+  Frontend:
+    image: node:current
+    working_dir: /usr/src/app
+    command: yarn dev
+    volumes: 
+      - ./Frontend:/usr/src/app
+    labels: 
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`hboi.localhost`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
+      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+      
