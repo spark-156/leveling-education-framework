@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
@@ -7,6 +8,9 @@ import { hboi } from '../data/hboi'
 import SelectOutOf from '../components/SelectOutOf'
 
 export default function Home({ hboiData }) {
+  const router = useRouter();
+  const { query } = useRouter();
+
   const [selectedHBOI, setSelectedHBOI] = useState(false);
   const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState();
   const [selectedActiviteit, setSelectedActiviteit] = useState();
@@ -14,6 +18,7 @@ export default function Home({ hboiData }) {
   useEffect(() => {
     if (!selectedArchitectuurlaag) return;
     if (!selectedActiviteit) return;
+    router.push({pathname: '/', query: { architectuurlaag: selectedArchitectuurlaag, activiteit: selectedActiviteit} })
     setSelectedHBOI(`${selectedArchitectuurlaag} ${selectedActiviteit}`)
   }, [selectedArchitectuurlaag, selectedActiviteit])
 
