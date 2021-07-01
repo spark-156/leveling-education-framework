@@ -7,28 +7,35 @@ import { hboi } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 
-export default function Home({ hboiData }) {
+export default function Home() {
   const router = useRouter();
-  const { query } = useRouter();
+  const { architectuurlaag, activiteit } = router.query;
 
-  const [selectedHBOI, setSelectedHBOI] = useState(false);
-  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState();
-  const [selectedActiviteit, setSelectedActiviteit] = useState();
-
+  const [selectedHBOI, setSelectedHBOI] = useState(`${architectuurlaag} ${activiteit}`);
+  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
+  const [selectedActiviteit, setSelectedActiviteit] = useState(activiteit);
+  
+  useEffect(() => {
+    setSelectedArchitectuurlaag(architectuurlaag);
+    setSelectedActiviteit(activiteit);
+    setSelectedHBOI(`${architectuurlaag} ${activiteit}`)
+  }, [architectuurlaag, activiteit])
+  
   useEffect(() => {
     if (!selectedArchitectuurlaag) return;
     if (!selectedActiviteit) return;
-    router.push({pathname: '/', query: { architectuurlaag: selectedArchitectuurlaag, activiteit: selectedActiviteit} })
-    setSelectedHBOI(`${selectedArchitectuurlaag} ${selectedActiviteit}`)
+    
+    router.push({ pathname: '/', query: { architectuurlaag: selectedArchitectuurlaag, activiteit: selectedActiviteit } }, undefined, { shallow: true });
   }, [selectedArchitectuurlaag, selectedActiviteit])
-
+  
   const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
   const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren", "Manage & Control"]
+  
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>{selectedHBOI}</title>
+        <title>HBO-I Killer</title>
         <meta name="description" content="A better HBO-I browser" />
         <link rel="icon" href="/favico.ico" />
       </Head>
@@ -39,22 +46,24 @@ export default function Home({ hboiData }) {
             title="Architectuurlagen" 
             options={architectuurlagen} 
             id="architectuurlagen" 
-            setSelectedFunction={setSelectedArchitectuurlaag} 
+            setSelectedFunction={setSelectedArchitectuurlaag}
+            defaultSelectIndex={architectuurlagen.indexOf(selectedArchitectuurlaag)}
           />
           <SelectOutOf 
             title="Activiteiten" 
             options={activiteiten} 
             id="activiteiten" 
-            setSelectedFunction={setSelectedActiviteit} 
+            setSelectedFunction={setSelectedActiviteit}
+            defaultSelectIndex={activiteiten.indexOf(selectedActiviteit)}
           />
         </div>
-        {hboiData[selectedHBOI]
+        {hboi[selectedHBOI]
         ? 
           <div className={styles.items}>
-            <div>{hboiData[selectedHBOI][0]}</div>
-            <div>{hboiData[selectedHBOI][1]}</div>
-            <div>{hboiData[selectedHBOI][2]}</div>
-            <div>{hboiData[selectedHBOI][3]}</div>
+            <div>{hboi[selectedHBOI][0]}</div>
+            <div>{hboi[selectedHBOI][1]}</div>
+            <div>{hboi[selectedHBOI][2]}</div>
+            <div>{hboi[selectedHBOI][3]}</div>
           </div> 
         : 
           null
@@ -68,10 +77,10 @@ export default function Home({ hboiData }) {
   )
 }
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      hboiData: hboi,
-    }
-  }
-}
+// export const getStaticProps = async () => {
+//   return {
+//     props: {
+//       hboiData: hboi,
+//     }
+//   }
+// }
