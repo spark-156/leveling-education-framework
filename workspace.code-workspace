@@ -5,6 +5,10 @@
       "name": "{Root}"
     },
     {
+      "path": "frontend/",
+      "name": "{MS} Frontend"
+    },
+    {
       "path": "FrontendNext/",
       "name": "{Legacy} Frontend Next"
     },

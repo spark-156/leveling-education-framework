@@ -1,0 +1,21 @@
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.select {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+}
+
+.items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.footer {
+
+}
