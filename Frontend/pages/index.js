@@ -17,10 +17,6 @@ export default function Home() {
   const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
   const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren", "Manage & Control"]
 
-  function setSelectedFunction() {
-    
-  }
-
   return (
     <div className={styles.container}>
       <Head>
@@ -30,8 +26,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <SelectOutOf title="Architectuurlagen" options={architectuurlagen} id="architectuurlagen"/>
-          <SelectOutOf title="Competenties" options={activiteiten} id="activiteiten"/>
+          <SelectOutOf 
+            title="Architectuurlagen" 
+            options={architectuurlagen} 
+            id="architectuurlagen" 
+            setSelectedFunction={setSelectedArchitectuurlaag} 
+          />
+          <SelectOutOf 
+            title="Activiteiten" 
+            options={activiteiten} 
+            id="activiteiten" 
+            setSelectedFunction={setSelectedActiviteit} 
+          />
       </main>
 
       <footer className={styles.footer}>
