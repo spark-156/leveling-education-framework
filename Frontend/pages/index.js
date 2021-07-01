@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
+import SelectOutOfFive from '../components/SelectOutOfFive'
+
 export default function Home() {
   const [selectedHBOI, setSelectedHBOI] = useState("HBOI")
 
@@ -15,7 +17,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
+          <SelectOutOfFive />
+          <SelectOutOfFive />
       </main>
 
       <footer className={styles.footer}>
