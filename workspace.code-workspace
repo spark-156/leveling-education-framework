@@ -7,11 +7,7 @@
     {
       "path": "frontend/",
       "name": "{MS} Frontend"
-    },
-    {
-      "path": "FrontendNext/",
-      "name": "{Legacy} Frontend Next"
-    },
+    }
   ],
   "settings": {
     "git.ignoreLimitWarning": true,
@@ -19,8 +15,8 @@
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "eslint.codeActionsOnSave.mode": "all",
-    // "[javascript]": {
-    //   "editor.defaultFormatter": "vscode.typescript-language-features"
-    // }
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
   }
 }
