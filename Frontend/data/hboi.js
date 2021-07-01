@@ -9,19 +9,19 @@ export const hboi = {
     "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch). Analyseren van actuele en state of the art interactieve technologieën. Analyseren per iteratie van het effect van de eigen interventie op/in de UX.",
     "Analyseren van maatschappelijke, domein- en/of branche specifieke trends & kansen en hierover op strategisch niveau communiceren aan de key stakeholders."
   ],
-  "Gebruikerinteractie Adviseren": [
+  "Gebruikersinteractie Adviseren": [
     `Adviseren over interactieontwerp passend bij opdracht, klant en gebruikersbehoeften en voorafgaande oriëntatie. Aanbevelingen doen op basis van een gegeven usability-analyse voor het ontwerp van een interactief product, systeem of dienst.`,
     `Geven van een goed gemotiveerd concreet advies over de te gebruiken interactieve technieken en/of interactieconcepten. Voorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met gebruikers- en bedrijfscontext. Adviseren over de doelstellingen van de huidige en volgende iteraties.`,
     `Vertalen van analyse naar strategische aanbevelingen (op korte, middellange en langere termijn) voor het ontwerpen of verbeteren of onderzoeken van een UX met inzet van interactieve middelen. Hierbij wordt ook een onderbouwd advies gedaan voor het meest geschikte ontwerpproces (bijvoorbeeld UCD).`,
     `Extrapoleren van technologische en maatschappelijke trends en deze vertalen naar een advies voor het ontwerp en de strategische inzet van zinvolle en innovatieve interactieve diensten en producten. Dit advies beschrijft een visie op de gebruikerservaring en de relatie tussen gebruiker en product/dienst.`
   ],
-  "Gebruikerinteractie Ontwerpen": [
+  "Gebruikersinteractie Ontwerpen": [
     `Vertalen van adviezen in een eenvoudige gebruikersinteractie met een standaard prototyping-techniek. Ontwerpen van een (usability)test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden. Toepassen en uitvoeren van een gebruikelijk interactieontwerpproces, zoals user centered design.`,
     `Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototyping-technieken. Ontwerpen van een usabilitytest waarmee de doelstellingen van de iteratie geëvalueerd worden.`,
     `Vertalen van het advies naar een concreet en gedetailleerd UX-ontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat gemotiveerd ontwerpproces. Ontwerpen van een test waarmee de doelstellingen vanuit gebruikersperspectief geëvalueerd wordt.`,
     `Ontwerpen van user experience rekening houdend met langetermijnstrategie en organisatiedoelstellingen van de opdrachtgever. Hierbij wordt geanticipeerd op relevante maatschappelijke trends en technologische ontwikkelingen.`
   ],
-  "Gebruikerinteractie Realiseren": [
+  "Gebruikersinteractie Realiseren": [
     `Realiseren en kwalitatief testen van eenvoudige interactieve producten of diensten op basis van een interactieontwerp waarbij gebruik wordt gemaakt van gangbare tools, design guidelines en/of huisstijl.`,
     `Realiseren van het interactieontwerp met verschillende tools en technieken. Uitvoeren van de usabilitytest in het veld of in een lab. Bewaken van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst.`,
     `Realiseren en testen van de UX van een interactief product, prototype, systeem of dienst op basis van het ontwerp met gebruikmaking van bij de projectfasering passende tools en technieken. Bewaken van aansluiting UX-ontwerp en gerealiseerde product in een onvoorspelbare context.`,
@@ -36,31 +36,31 @@ export const hboi = {
     `Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces. Communiceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces. Verhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.`,
     `Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.`
   ],
-  "Organisatie Processen Analyseren": [
+  "Organisatieprocessen Analyseren": [
     `Analyseren van een enkel organisatieproces, organisatie, gegevensstromen, databehoeften en procesbesturing op operationeel niveau. Analyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening.`,
     `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening. Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties. Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders. Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
     `Analyseren van de consequenties van een (strategische) koerswijziging voor organisatie processen en hun informatievoorziening. Analyseren (kwantitatief en/of kwalitatief) van de huidige en toekomstige situatie op het gebied van bijvoorbeeld beleid, strategie, alignment en architectuur, met gebruikmaking van gangbare methoden. Analyseren van de huidige acceptatie van nieuwe technologie en eventuele weerstanden. Analyseren van gestructureerde en ongestructureerde interne en externe data.`,
     `Uitvoeren van grondig theoretisch onderbouwd onderzoek naar technologische (interorganisationele) procesinnovaties (AI, machine & deep learning, digital twins, blockchain, etc.).`,
   ],
-  "Organisatie Processen Adviseren": [
+  "Organisatieprocessen Adviseren": [
     `Adviseren van verbeteringen voor een enkel organisatieproces op het terrein van organisatie(structuur), processen en informatievoorziening, met inachtneming van de mogelijkheden van ICT.`,
     `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening. Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
     `Adviseren over de interne en externe afstemming tussen business en ICT (alignment en governance) rekening houdend met de doelstellingen van de organisatie (o.a. missie, visies, strategie en KPI’s). Adviseren over een veranderkundige aanpak bij de invoering van nieuwe ICT-mogelijkheden. Adviseren in oplossingen voor gestructureerde en ongestructureerde data.`,
     `Adviseren van technologische (interorganisationele) proces innovaties, waarbij ook rekening wordt gehouden wordt met de sociale context (mens en organisatie). Creëren van breed draagvlak onder alle relevante stakeholders.`,
   ],
-  "Organisatie Processen Ontwerpen": [
+  "Organisatieprocessen Ontwerpen": [
     `Ontwerpen van een enkel organisatieproces, enkele gegevensstromen, een organisatieonderdeel en/of een deel van de informatievoorziening.`,
     `Ontwerpen van samenhangende organisatieprocessen: een gegevensstructuur (model), het procesmanagement van organisatieprocessen, de functionele organisatiestructuur en/of de informatievoorziening, rekening houdend met security en privacy wetgeving. Ontwerpen van de inrichting van een standaardapplicatie. Ontwerpen van de interfaces voor een applicatie in het applicatielandschap (mappings).`,
     `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces. Ontwerpen van een veranderkundige aanpak met bijbehorende interventies. Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
     `Ontwerpen van technologische (interorganisationele) procesinnovaties. Evalueren en valideren van mogelijke procesinnovaties.`,
   ],
-  "Organisatie Processen Realiseren": [
+  "Organisatieprocessen Realiseren": [
     `Beschrijven en opstellen van werkinstructies, functie- en rolbeschrijvingen, en procedures voor een (aangepast) proces. Testen van de aansluiting van de organisatieprocessen met de opgeleverde informatievoorziening. Opstellen van een eenvoudig implementatieplan.`,
     `Realiseren van de invoering en acceptatie van procedures in samenhang met nieuwe of gewijzigde informatievoorziening en besturing Opleiden en trainen van eindgebruikers in de vernieuwde processen en gebruik van een nieuwe ICT. Bouwen en valideren van een proof of concept. Inrichten van een standaardapplicatie (bv. CRM, ERP, BI).`,
     `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan. Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
     `Bouwen en valideren van prototypen van nieuwe technologische oplossingen voor (interorganisationele) procesinnovaties.`,
   ],
-  "Organisatie Processen Manage & Control": [
+  "Organisatieprocessen Manage & Control": [
     `Verrichten van onderhoudswerkzaamheden aan procesdocumentatie (bv. business rules, principes en procesmodellen). Beschrijven van de veranderbehoefte voor een enkel deelproces.`,
     `Inrichten, onderhouden en actualiseren van functionele beheerprocessen. Signaleren en inventariseren van de veranderbehoefte van meerdere operationele en tactische organisatieprocessen.`,
     `Richten en actualiseren van principes, business rules en modellen van procesarchitectuur. Proactief signaleren van behoefte aan verandering in alle organisatie processen en bijbehorende veranderprocessen in gang zetten.`,
@@ -126,31 +126,31 @@ export const hboi = {
     `Uitvoeren van configuratie-, change- en releasemanagement in afstemming met infrastructuur-management. Inrichten van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
     `Ontwerpen en realiseren van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
   ],
-  "Hardware Interfacing Analyseren": [
+  "Hardwareinterfacing Analyseren": [
     `Beschrijven van de architectuur van een computersysteem. Beschrijven van de werking van actuatoren en sensoren en metingen hieraan verrichten. Opstellen van (niet-)functionele eisen en acceptatiecriteria voor een computersysteem, bijv. een embedded of AI-systeem.`,
     `In kaart brengen van signalerings- en regelingsaspecten van de omgeving van een computersysteem bijvoorbeeld in een sensornetwerk. Methodisch specificeren van een computersysteem. Uitvoeren van een protocolanalyse. Opstellen van een acceptatietest voor een computersysteem.`,
     `Specificeren van een gedistribueerd computersysteem inclusief timing, resourcegebruik en performance. Beschrijven van security-aspecten van computersystemen die aan of via (openbare) netwerken gekoppeld zijn. Opstellen van een acceptatietestplan en een integratietestplan.`,
     `Onderzoek doen naar emerging technologies voor toepassing in gedistribueerde systemen. Onderzoek doen naar security aspecten binnen emerging technologies.`
   ],
-  "Hardware Interfacing Adviseren": [
+  "Hardwareinterfacing Adviseren": [
     `Verifiëren en onderbouwen van een gegeven technisch advies. Verifiëren en beschrijven van de initiële architectuur en de functionaliteit van een gegeven systeemconfiguratie (microprocessor, geheugen of andere bouwstenen).`,
     `Uitbrengen van een technisch advies voor de architectuur van een computersysteem en de hardware- en software-componenten. Adviseren over het koppelen van systemen`,
     `Uitbrengen van een technisch advies over een te realiseren (gedistribueerd) computersysteem, inclusief hardware- en software-componenten en koppelingen.`,
     `Uitbrengen van een technisch advies over de toepassing van emerging technologies om een gedistribueerde computersysteem te realiseren. Adviseren over toekomstgerichte inrichting van gedistribueerde computersystemen. Definiëren van visie op technologieroadmap en deze afstemmen met key stakeholders`
   ],
-  "Hardware Interfacing Ontwerpen": [
+  "Hardwareinterfacing Ontwerpen": [
     `Ontwerpen van een eenvoudig computersysteem, bijv. een embedded of industriële automatiseringssysteem, op basis van gegeven hardware.`,
     `Ontwerpen van een computersysteem methodisch o.b.v. requirements met zelfgekozen hardware- en softwarecomponenten. - opstellen van een applicatie-driverontwerp opstellen. - ontwerpen van een protocol.`,
     `Ontwerpen van een gedistribueerd computersysteem inclusief bepaling van actuatoren, sensoren, timing, resourcegebruik en performance`,
     `Ontwerpen van gedistribueerde computersystemen met gebruik van hardware synthese en/of artificial intelligence.`
   ],
-  "Hardware Interfacing Realiseren": [
+  "Hardwareinterfacing Realiseren": [
     `Software schrijven voor een eenvoudig, gegeven computersysteem, voorzien van actuatoren en sensoren.`,
     `Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren. Schrijven en testen van applicatiedriver-software. Implementeren en testen van een protocol.`,
     `Realiseren van een compleet computersysteem inclusief netwerk, hardware en systeemsoftware. Opstellen en uitvoeren van een acceptatieprocedure bijv. in een virtuele omgeving, inclusief aspecten als timing, resourcegebruik en performance.`,
     `Realiseren van een compleet computersysteem waarbij gebruik gemaakt wordt van hardware synthese (vhdl) of artificial intelligence.`
   ],
-  "Hardware Interfacing Manage & Control": [
+  "Hardwareinterfacing Manage & Control": [
     `Inrichten van een ontwikkel- en testplatform middels co-design ten behoeve van hardware/software, inclusief tools`,
     `Beoordelen van een gegeven ontwikkelomgeving op kwaliteit en prestaties. Inrichten van een beheer- en testomgeving voor een computersysteem.`,
     `Opzetten en gebruikmaken van: - versiebeheer, - releasemanagement, - teamworkondersteuning, - automated testing voor hard- en softwaresystemen.`,
