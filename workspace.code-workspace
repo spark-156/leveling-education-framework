@@ -5,9 +5,9 @@
       "name": "{Root}"
     },
     {
-      "path": "Frontend/",
-      "name": "Frontend"
-    },
+      "path": "frontend/",
+      "name": "{MS} Frontend"
+    }
   ],
   "settings": {
     "git.ignoreLimitWarning": true,
@@ -15,8 +15,8 @@
     "editor.formatOnSave": true,
     "eslint.format.enable": true,
     "eslint.codeActionsOnSave.mode": "all",
-    // "[javascript]": {
-    //   "editor.defaultFormatter": "vscode.typescript-language-features"
-    // }
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
   }
 }

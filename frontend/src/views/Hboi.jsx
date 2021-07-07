@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-import styles from '../styles/Home.module.css'
+import React, { useEffect, useState } from 'react'
+import { useParams, useHistory } from 'react-router-dom'
+
+import styles from '../styles/App.module.css'
 
 import { hboi } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 
 export default function Home() {
-  const router = useRouter();
-  const { architectuurlaag, activiteit } = router.query;
+  const history = useHistory();
+  const { architectuurlaag, activiteit } = useParams();
 
   const [selectedHBOI, setSelectedHBOI] = useState(`${architectuurlaag} ${activiteit}`);
   const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
@@ -25,7 +25,7 @@ export default function Home() {
     if (!selectedArchitectuurlaag) return;
     if (!selectedActiviteit) return;
     
-    router.push({ pathname: '/hboi', query: { architectuurlaag: selectedArchitectuurlaag, activiteit: selectedActiviteit } }, undefined, { shallow: true });
+    history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
   
   const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
@@ -33,14 +33,7 @@ export default function Home() {
   
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>HBO-I Killer</title>
-        <meta name="description" content="A better HBO-I browser" />
-        <link rel="icon" href="/favico.ico" />
-      </Head>
-
-      <main>
+      <>
         <div className={styles.select}>
           <SelectOutOf 
             title="Architectuurlagen" 
@@ -67,11 +60,6 @@ export default function Home() {
         : 
           null
         }
-      </main>
-
-      <footer className={styles.footer}>
-        
-      </footer>
-    </div>
+    </>
   )
 }

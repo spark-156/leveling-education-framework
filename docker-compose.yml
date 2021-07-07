@@ -17,9 +17,9 @@ services:
   Frontend:
     image: node:current
     working_dir: /usr/src/app
-    command: yarn dev
+    command: yarn start
     volumes: 
-      - ./Frontend:/usr/src/app
+      - ./frontend:/usr/src/app
     labels: 
       - "traefik.enable=true"
       - "traefik.http.routers.frontend.rule=Host(`hboi.localhost`)"
