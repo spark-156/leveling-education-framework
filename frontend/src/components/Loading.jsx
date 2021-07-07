@@ -1,16 +1,9 @@
 import React from "react";
 
-export default function Loading() {
-  const style = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-  }
+import { Loader } from 'rsuite';
 
+export default function Loading() {
   return (
-    <div style={style}>
-      Loading...
-    </div>
+    <Loader size="lg" center content="loading" />
   );
 }
