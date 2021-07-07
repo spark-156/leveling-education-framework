@@ -1,6 +1,9 @@
 /*
 This is a one to one copy of https://www.hbo-i.nl/publicaties-domeinbeschrijving/ pdf edition 2018 release
 */
+export const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
+
+export const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren", "Manage & Control"]
 
 export const hboi = {
   "Gebruikersinteractie Analyseren": [
@@ -156,4 +159,4 @@ export const hboi = {
     `Opzetten en gebruikmaken van: - versiebeheer, - releasemanagement, - teamworkondersteuning, - automated testing voor hard- en softwaresystemen.`,
     `Aansturen van co-design teams voor het beheren van het realisatieproces van de hardware, software en synthese, inclusief de ontwikkelomgeving.`
   ],
-} 
+}

@@ -4,7 +4,7 @@ import { Grid, Col } from 'rsuite'
 
 import { Card } from '../components/Card'
 
-import { hboi } from '../data/hboi'
+import { hboi, architectuurlagen, activiteiten } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 
@@ -26,8 +26,6 @@ export default function Home() {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
   
-  const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
-  const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren", "Manage & Control"]
   
   return (
       <>
