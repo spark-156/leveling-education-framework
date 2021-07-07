@@ -13,6 +13,10 @@ const routes = [
     view: 'Hboi'
   },
   {
+    path: '/hboi',
+    view: 'Hboi'
+  },
+  {
     path: '*',
     view: 'PageNotFound'
   }
