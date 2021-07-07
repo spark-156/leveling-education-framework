@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { Grid, Col } from 'rsuite'
 
-import styles from '../styles/App.module.css'
-
 import { hboi } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
