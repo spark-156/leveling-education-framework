@@ -22,17 +22,13 @@ export default function Home() {
     setSelectedHBOI(`${architectuurlaag} ${activiteit}`)
   }, [architectuurlaag, activiteit])
   
-  useEffect(() => {
-    if (!selectedArchitectuurlaag) return;
-    if (!selectedActiviteit) return;
-    
+  useEffect(() => {    
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
   
   const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
   const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren", "Manage & Control"]
   
-
   return (
       <>
       <Grid>
