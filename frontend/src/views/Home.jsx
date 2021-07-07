@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Home() {
+import { NavbarHBOI } from "../components/Navbar";
 
-  return <div>Home</div>
+export default function Home() {
+  return <NavbarHBOI active={"home"} />
 }

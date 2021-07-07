@@ -3,6 +3,7 @@ import { useParams, useHistory } from 'react-router-dom'
 import { Grid, Col } from 'rsuite'
 
 import { Card } from '../components/Card'
+import { NavbarHBOI } from '../components/Navbar'
 
 import { hboi, architectuurlagen, activiteiten } from '../data/hboi'
 
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <>
+      <NavbarHBOI active={"hboi"} />
       <Grid>
         <Col xs={24} sm={24} md={12} lg={12}>
           <SelectOutOf
