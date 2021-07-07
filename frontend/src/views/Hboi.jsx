@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
+import { Grid, Col } from 'rsuite'
 
 import styles from '../styles/App.module.css'
 
@@ -34,14 +35,17 @@ export default function Home() {
 
   return (
       <>
-        <div className={styles.select}>
-          <SelectOutOf 
+      <Grid>
+        <Col xs={24} sm={24} md={12} lg={12}>
+          <SelectOutOf
             title="Architectuurlagen" 
             options={architectuurlagen} 
             id="architectuurlagen" 
             setSelectedFunction={setSelectedArchitectuurlaag}
             selected={architectuurlaag}
           />
+        </Col>
+        <Col xs={24} sm={24} md={12} lg={12}>
           <SelectOutOf 
             title="Activiteiten" 
             options={activiteiten} 
@@ -49,14 +53,15 @@ export default function Home() {
             setSelectedFunction={setSelectedActiviteit}
             selected={activiteit}
           />
-        </div>
-        {hboi[selectedHBOI] ? 
-          <div className={styles.items}>
-            <div>{hboi[selectedHBOI][0]}</div>
-            <div>{hboi[selectedHBOI][1]}</div>
-            <div>{hboi[selectedHBOI][2]}</div>
-            <div>{hboi[selectedHBOI][3]}</div>
-          </div> 
+        </Col>
+      </Grid>
+        {hboi[selectedHBOI] ?
+          <Grid>
+            <Col xs={24} sm={24} md={6} lg={6}>{hboi[selectedHBOI][0]}</Col>
+            <Col xs={24} sm={24} md={6} lg={6}>{hboi[selectedHBOI][1]}</Col>
+            <Col xs={24} sm={24} md={6} lg={6}>{hboi[selectedHBOI][2]}</Col>
+            <Col xs={24} sm={24} md={6} lg={6}>{hboi[selectedHBOI][3]}</Col>
+          </Grid>
         : 
           null
         }
