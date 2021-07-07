@@ -1,7 +1,9 @@
 
+import { Button } from 'rsuite';
+
 import styles from '../styles/SelectOutOf.module.css'
 
-export default function SelectOutOf({ title, options, setSelectedFunction, id }) {
+export default function SelectOutOf({ title, options, setSelectedFunction, id, selected }) {
 
   function setState(element) {
     setSelectedFunction(element.target.value)
@@ -9,14 +11,14 @@ export default function SelectOutOf({ title, options, setSelectedFunction, id })
 
   return <div className={styles.container} id={id}>
       <div className={styles.title}>{title}</div>
-      <div onChange={setState}>
-        {options.map(option => (
-          <div key={option}>
-            <input id={option} type="radio" value={option} name={id}/>
-            <label htmlFor={option}>{option}</label>
-            <br />
-          </div>
-        ))}
-      </div>
+      {options.map(option => {
+        let appearance = "ghost"
+        if (option === selected) {
+          appearance = "default"
+        }
+        return (<Button key={option} value={option} onClick={setState} color="blue" appearance={appearance} block >
+          {option}
+        </Button>)
+      })}
   </div>
 }

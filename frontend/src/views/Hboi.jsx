@@ -40,14 +40,14 @@ export default function Home() {
             options={architectuurlagen} 
             id="architectuurlagen" 
             setSelectedFunction={setSelectedArchitectuurlaag}
-            defaultSelectIndex={architectuurlagen.indexOf(selectedArchitectuurlaag)}
+            selected={architectuurlaag}
           />
           <SelectOutOf 
             title="Activiteiten" 
             options={activiteiten} 
             id="activiteiten" 
             setSelectedFunction={setSelectedActiviteit}
-            defaultSelectIndex={activiteiten.indexOf(selectedActiviteit)}
+            selected={activiteit}
           />
         </div>
         {hboi[selectedHBOI] ? 
