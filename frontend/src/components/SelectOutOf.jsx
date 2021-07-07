@@ -1,6 +1,7 @@
 
 import { Button } from 'rsuite';
 
+import { Card } from './Card';
 
 export default function SelectOutOf({ title, options, setSelectedFunction, id, selected }) {
 
@@ -8,16 +9,15 @@ export default function SelectOutOf({ title, options, setSelectedFunction, id, s
     setSelectedFunction(element.target.value)
   }
 
-  return <div id={id}>
-      <div>{title}</div>
-      {options.map(option => {
-        let appearance = "ghost"
-        if (option === selected) {
-          appearance = "default"
-        }
-        return (<Button key={option} value={option} onClick={setState} color="blue" appearance={appearance} block >
-          {option}
-        </Button>)
-      })}
-  </div>
+  return <Card title={title} content={
+    options.map(option => {
+      let appearance = "ghost"
+      if (option === selected) {
+        appearance = "default"
+      }
+      return (<Button key={option} value={option} onClick={setState} color="blue" appearance={appearance} block >
+        {option}
+      </Button>)
+    })
+  }/>
 }
