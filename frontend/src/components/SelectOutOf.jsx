@@ -3,7 +3,7 @@ import { Button } from 'rsuite';
 
 import { Card } from './Card';
 
-export default function SelectOutOf({ title, options, setSelectedFunction, id, selected }) {
+export default function SelectOutOf({ title, options, setSelectedFunction, selected }) {
 
   function setState(element) {
     setSelectedFunction(element.target.value)
@@ -19,5 +19,5 @@ export default function SelectOutOf({ title, options, setSelectedFunction, id, s
         {option}
       </Button>)
     })
-  }/>
+  } />
 }
