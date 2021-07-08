@@ -168,7 +168,7 @@ export const beheersingsniveaus = {
   },
   "Probleemgericht": {
     "Zelfstandigheid": "Lost zelfstandig interactieve kwesties op die voortvloeien uit projectactiviteniten.",
-    "Complexiteit": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever."
+    "Complexiteit": "Gestructureerd - onvoorspelbare context, probleem gegeven, keuze aanpak en oplossingsruimte beperkt."
   },
   "Situatiegericht": {
     "Zelfstandigheid": "Werkt onafhankelijk om interactieve problemen op te lossen. Heeft een positief eff ect op de teamprestaties.",
