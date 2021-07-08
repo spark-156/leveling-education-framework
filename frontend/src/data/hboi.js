@@ -162,20 +162,17 @@ export const hboi = {
 }
 
 export const beheersingsniveaus = {
-  "Taakgericht": {
-    "Zelfstandigheid": "Werkt onder algemene richtlijnen in een omgeving waar onvoorspelbare veranderingen plaatsvinden.",
-    "Complexiteit": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever."
+  "Zelfstandigheid": {
+    "Taakgericht": "Werkt onder algemene richtlijnen in een omgeving waar onvoorspelbare veranderingen plaatsvinden.",
+    "Probleemgericht": "Lost zelfstandig interactieve kwesties op die voortvloeien uit projectactiviteniten.",
+    "Situatiegericht": "Werkt onafhankelijk om interactieve problemen op te lossen. Heeft een positief eff ect op de teamprestaties.",
+    "Professiegericht": "Coördineert en bestuurt. Stelt kwesties aan de orde met veel interacterende factoren."
   },
-  "Probleemgericht": {
-    "Zelfstandigheid": "Lost zelfstandig interactieve kwesties op die voortvloeien uit projectactiviteniten.",
-    "Complexiteit": "Gestructureerd - onvoorspelbare context, probleem gegeven, keuze aanpak en oplossingsruimte beperkt."
-  },
-  "Situatiegericht": {
-    "Zelfstandigheid": "Werkt onafhankelijk om interactieve problemen op te lossen. Heeft een positief eff ect op de teamprestaties.",
-    "Complexiteit": "Gestructureerd – onvoorspelbare context, vage problemen, aanpak en oplossingsruimte open."
-  },
-  "Professiegericht": {
-    "Zelfstandigheid": "Coördineert en bestuurt. Stelt kwesties aan de orde met veel interacterende factoren.",
-    "Complexiteit": "Ongestructureerde multidisciplinaire en/of specialistische context."
+  "Complexitiet": {
+    "Taakgericht": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever.",
+    "Probleemgericht": "Gestructureerd - onvoorspelbare context, probleem gegeven, keuze aanpak en oplossingsruimte beperkt.",
+    "Situatiegericht": "Gestructureerd – onvoorspelbare context, vage problemen, aanpak en oplossingsruimte open.",
+    "Professiegericht": "Ongestructureerde multidisciplinaire en/of specialistische context."
   }
 }
+
