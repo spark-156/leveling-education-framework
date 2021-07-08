@@ -9,7 +9,7 @@ export default function Beheersingsniveaus() {
   const keys = Object.keys(beheersingsniveaus);
   return (
     <>
-      <NavbarHBOI />
+      <NavbarHBOI active="beheersingsniveaus" />
       {keys.map(value => { console.log(beheersingsniveaus[value]["Zelfstandigheid"], "\n\n", beheersingsniveaus[value]["Complexiteit"]) })}
     </>
   );
