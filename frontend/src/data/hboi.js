@@ -160,3 +160,22 @@ export const hboi = {
     `Aansturen van co-design teams voor het beheren van het realisatieproces van de hardware, software en synthese, inclusief de ontwikkelomgeving.`
   ],
 }
+
+export const beheersingsniveaus = {
+  "Taakgericht": {
+    "Zelfstandigheid": "Werkt onder algemene richtlijnen in een omgeving waar onvoorspelbare veranderingen plaatsvinden.",
+    "Complexiteit": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever."
+  },
+  "Probleemgericht": {
+    "Zelfstandigheid": "Lost zelfstandig interactieve kwesties op die voortvloeien uit projectactiviteniten.",
+    "Complexiteit": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever."
+  },
+  "Situatiegericht": {
+    "Zelfstandigheid": "Werkt onafhankelijk om interactieve problemen op te lossen. Heeft een positief eff ect op de teamprestaties.",
+    "Complexiteit": "Gestructureerd – onvoorspelbare context, vage problemen, aanpak en oplossingsruimte open."
+  },
+  "Professiegericht": {
+    "Zelfstandigheid": "Coördineert en bestuurt. Stelt kwesties aan de orde met veel interacterende factoren.",
+    "Complexiteit": "Ongestructureerde multidisciplinaire en/of specialistische context."
+  }
+}
