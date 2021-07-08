@@ -3,12 +3,14 @@ import { Grid, Row, Col } from "rsuite";
 import { NavbarHBOI } from "../components/Navbar";
 import { Card } from '../components/Card';
 
-export default function Beheersingsniveaus() {
+import { beheersingsniveaus } from "../data/hboi";
 
+export default function Beheersingsniveaus() {
+  const keys = Object.keys(beheersingsniveaus);
   return (
     <>
       <NavbarHBOI />
-
+      {keys.map(value => { console.log(beheersingsniveaus[value]["Zelfstandigheid"], "\n\n", beheersingsniveaus[value]["Complexiteit"]) })}
     </>
   );
 }
