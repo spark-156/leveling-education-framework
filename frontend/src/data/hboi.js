@@ -168,11 +168,23 @@ export const beheersingsniveaus = {
     "Situatiegericht": "Werkt onafhankelijk om interactieve problemen op te lossen. Heeft een positief eff ect op de teamprestaties.",
     "Professiegericht": "Coördineert en bestuurt. Stelt kwesties aan de orde met veel interacterende factoren."
   },
-  "Complexitiet": {
-    "Taakgericht": "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever.",
-    "Probleemgericht": "Gestructureerd - onvoorspelbare context, probleem gegeven, keuze aanpak en oplossingsruimte beperkt.",
-    "Situatiegericht": "Gestructureerd – onvoorspelbare context, vage problemen, aanpak en oplossingsruimte open.",
-    "Professiegericht": "Ongestructureerde multidisciplinaire en/of specialistische context."
+  "Complexiteit": {
+    "Taakgericht": {
+      context: "Gestructureerd voorspelbare context, probleem afgebakend, aanpak en oplossing bekend bij opdrachtgever.",
+      inhoud: "Enkele basisconcepten dievoortbouwen op de vooropleiding."
+    },
+    "Probleemgericht": {
+      context: "Gestructureerd - onvoorspelbare context, probleem gegeven, keuze aanpak en oplossingsruimte beperkt.",
+      inhoud: "Combinatie van meerderebasisconcepten en enkeleverdiepende concepten dievoortbouwen op basisconcepten."
+    },
+    "Situatiegericht": {
+      context: "Gestructureerd – onvoorspelbare context, vage problemen, aanpak en oplossingsruimte open.",
+      inhoud: "Combinatie van meerdere conceptenvoor verdieping en innovatie in delokale situatie."
+    },
+    "Professiegericht": {
+      context: "Ongestructureerde multidisciplinaire en/of specialistische context.",
+      inhoud: "Nieuwe concepten voor verdiepingen innovatie die transfereerbaar zijnnaar andere situaties."
+    },
   }
 }
 
