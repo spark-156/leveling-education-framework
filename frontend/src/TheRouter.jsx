@@ -17,6 +17,10 @@ const routes = [
     view: 'Hboi'
   },
   {
+    path: '/beheersingsniveaus',
+    view: 'Beheersingsniveaus'
+  },
+  {
     path: '*',
     view: 'PageNotFound'
   }
@@ -29,7 +33,7 @@ const routes = [
  * @param {boolean} exact If the route should be exact
  * @see https://reactjs.org/docs/code-splitting.html#route-based-code-splitting
  */
- function route(path, view) {
+function route(path, view) {
   const lazyLoader = lazy(() =>
     import(`./views/${view ? view : path.slice(1)}`)
   );
