@@ -9,7 +9,7 @@ import { hboi, architectuurlagen, activiteiten } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 
-export default function Home() {
+export default function Hboi() {
   const history = useHistory();
   const { architectuurlaag, activiteit } = useParams();
 
