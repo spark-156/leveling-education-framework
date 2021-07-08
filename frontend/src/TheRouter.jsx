@@ -21,6 +21,10 @@ const routes = [
     view: 'Beheersingsniveaus'
   },
   {
+    path: '/professionalskills',
+    view: 'Professionalskills'
+  },
+  {
     path: '*',
     view: 'PageNotFound'
   }
