@@ -53,10 +53,10 @@ export default function Home() {
       </Grid>
       {hboi[selectedHBOI] ?
         <Grid>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 1" content={hboi[selectedHBOI][0]} /></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 2" content={hboi[selectedHBOI][1]} /></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 3" content={hboi[selectedHBOI][2]} /></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 4" content={hboi[selectedHBOI][3]} /></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 1">{hboi[selectedHBOI][0]}</Card></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 2">{hboi[selectedHBOI][1]}</Card></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 3">{hboi[selectedHBOI][2]}</Card></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><Card copy title="Niveau 4">{hboi[selectedHBOI][3]}</Card></Col>
         </Grid>
         :
         null

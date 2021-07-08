@@ -9,7 +9,7 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
     setSelectedFunction(element.target.value)
   }
 
-  return <Card title={title} content={
+  return <Card title={title}>{
     options.map(option => {
       let appearance = "ghost"
       if (option === selected) {
@@ -19,5 +19,5 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
         {option}
       </Button>)
     })
-  } />
+  }</Card>
 }

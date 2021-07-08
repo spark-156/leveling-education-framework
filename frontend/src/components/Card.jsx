@@ -2,7 +2,7 @@ import { Panel, Grid, Col, Row } from 'rsuite';
 
 import { CopyToClipboardButton } from './CopyToClipboardButton';
 
-export function Card({ title, content, copy = false }) {
+export function Card({ title, children, copy = false }) {
 
   let header = title;
 
@@ -10,7 +10,7 @@ export function Card({ title, content, copy = false }) {
     header = <Grid fluid>
       <Row>
         <Col xs={18}>{title}</Col>
-        <Col xs={6} style={{ textAlign: "right" }}><CopyToClipboardButton content={content} /></Col>
+        <Col xs={6} style={{ textAlign: "right" }}><CopyToClipboardButton content={children} /></Col>
       </Row>
     </Grid>
   }
@@ -19,11 +19,9 @@ export function Card({ title, content, copy = false }) {
     <Panel
       style={{ margin: "5px 0px" }}
       bordered
-      header={
-        header
-      }
+      header={header}
     >
-      {content}
+      {children}
     </Panel>
   );
 }
