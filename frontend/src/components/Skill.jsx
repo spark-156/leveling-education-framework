@@ -2,7 +2,7 @@
 import { Grid, Row, Col } from "rsuite"
 import { Divider } from 'antd';
 
-import { Card } from "./Card";
+import { CopyCard } from "./Card";
 
 
 export function Skill({ title, description, afzonderlijketaken }) {
@@ -12,14 +12,14 @@ export function Skill({ title, description, afzonderlijketaken }) {
     <Row gutter={12}>
       <Divider orientation="left">{title}</Divider>
       <Col xs={24} sm={24} md={6} lg={6}>
-        <Card
+        <CopyCard
           title="Description"
           children={description}
           copy={description}
         />
       </Col>
       {keys.map(key => (<Col xs={24} sm={24} md={6} lg={6} key={key}>
-        <Card
+        <CopyCard
           key={key}
           title={key}
           children={afzonderlijketaken[key]}

@@ -1,27 +1,20 @@
-import { Panel, Grid, Col, Row } from 'rsuite';
+// import { Panel, Grid, Col, Row } from 'rsuite';
+
+import { Card, Col, Row } from 'antd';
 
 import { CopyToClipboardButton } from './CopyToClipboardButton';
 
-export function Card({ title, children, copy }) {
+export function CopyCard({ title, children, copy }) {
 
-  let header = title;
-
-  if (copy) {
-    header = <Grid fluid>
-      <Row>
-        <Col xs={18}>{title}</Col>
-        <Col xs={6} style={{ textAlign: "right" }}><CopyToClipboardButton content={copy} /></Col>
-      </Row>
-    </Grid>
-  }
+  let extra = null;
+  if (copy) extra = < CopyToClipboardButton content={copy} />
 
   return (
-    <Panel
-      style={{ margin: "5px 0px" }}
-      bordered
-      header={header}
-    >
-      {children}
-    </Panel>
+    <Card
+      title={title}
+      size="small"
+      extra={extra}
+      children={children}
+    />
   );
 }

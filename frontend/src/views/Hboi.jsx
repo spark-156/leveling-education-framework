@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { Grid, Col } from 'rsuite'
 
-import { Card } from '../components/Card'
+import { CopyCard } from '../components/Card'
 import { NavbarHBOI } from '../components/Navbar'
 
 import { hboi, architectuurlagen, activiteiten } from '../data/hboi'
@@ -53,10 +53,10 @@ export default function Hboi() {
       </Grid>
       {hboi[selectedHBOI] ?
         <Grid>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy={hboi[selectedHBOI][0]} title="Niveau 1">{hboi[selectedHBOI][0]}</Card></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy={hboi[selectedHBOI][1]} title="Niveau 2">{hboi[selectedHBOI][1]}</Card></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy={hboi[selectedHBOI][2]} title="Niveau 3">{hboi[selectedHBOI][2]}</Card></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><Card copy={hboi[selectedHBOI][3]} title="Niveau 4">{hboi[selectedHBOI][3]}</Card></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][0]} title="Niveau 1">{hboi[selectedHBOI][0]}</CopyCard></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][1]} title="Niveau 2">{hboi[selectedHBOI][1]}</CopyCard></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][2]} title="Niveau 3">{hboi[selectedHBOI][2]}</CopyCard></Col>
+          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][3]} title="Niveau 4">{hboi[selectedHBOI][3]}</CopyCard></Col>
         </Grid>
         :
         null

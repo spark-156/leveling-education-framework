@@ -1,7 +1,7 @@
 import { Divider, Row, Col } from 'antd';
 
 import { NavbarHBOI } from "../components/Navbar";
-import { Card } from '../components/Card';
+import { CopyCard } from '../components/Card';
 
 import { beheersingsniveaus } from "../data/hboi";
 
@@ -16,7 +16,7 @@ export default function Beheersingsniveaus() {
       <Row><Divider orientation="left">Zelfstandigheid</Divider></Row>
       <Row gutter={{ xs: 8, sm: 16, md: 16, lg: 16 }}>
         {keys.map(key => (<Col span={6} xs={24} sm={24} md={12} lg={6} xl={6} key={`${key}`}>
-          <Card
+          <CopyCard
             title={key}
             copy={beheersingsniveaus.Zelfstandigheid[key]}
             children={beheersingsniveaus.Zelfstandigheid[key]}
@@ -26,12 +26,12 @@ export default function Beheersingsniveaus() {
       <Row><Divider orientation="left">Complexiteit</Divider></Row>
       <Row gutter={{ xs: 8, sm: 16, md: 16, lg: 16 }}>
         {keys.map(key => (<Col span={6} xs={24} sm={24} md={12} lg={6} xl={6} key={`${key}`}>
-          <Card title={key} copy={"Context: " + beheersingsniveaus.Complexiteit[key][complexiteitKeys[0]] + " Inhoud: " + beheersingsniveaus.Complexiteit[key][complexiteitKeys[1]]}>
+          <CopyCard title={key} copy={"Context: " + beheersingsniveaus.Complexiteit[key][complexiteitKeys[0]] + " Inhoud: " + beheersingsniveaus.Complexiteit[key][complexiteitKeys[1]]}>
             {complexiteitKeys.map(complexiteitkey => (<>
               <p style={{ fontSize: 17 }}>{complexiteitkey[0].toUpperCase() + complexiteitkey.substring(1)}</p>
               {beheersingsniveaus.Complexiteit[key][complexiteitkey]}
             </>))}
-          </Card>
+          </CopyCard>
         </Col>))}
       </Row>
     </>
