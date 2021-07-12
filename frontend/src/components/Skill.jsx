@@ -13,7 +13,7 @@ export function Skill({ title, description, afzonderlijketaken }) {
     <Row style={rowStyle} gutter={[12, 12]}>
       <Col xs={24} sm={24} md={6} lg={6} xl={6}>
         <CopyCard
-          title="Description"
+          title="Descriptie"
           children={description}
           copy={description}
         />
