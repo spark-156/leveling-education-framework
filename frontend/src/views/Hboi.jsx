@@ -17,8 +17,6 @@ export default function Hboi() {
   const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
   const [selectedActiviteit, setSelectedActiviteit] = useState(activiteit);
 
-  let htmlHBOI = null;
-
   useEffect(() => {
     setSelectedArchitectuurlaag(architectuurlaag);
     setSelectedActiviteit(activiteit);
@@ -29,7 +27,23 @@ export default function Hboi() {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
 
+  let htmlHBOI = null;
 
+  if (selectedArchitectuurlaag === "undefined" && selectedActiviteit === "undefined") { // none selected
+    const hboiKeys = Object.keys(hboi);
+    htmlHBOI = <>
+      {hboiKeys.map((key) => <>
+        <Divider orientation="left">{key}</Divider>
+        <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
+          {hboi[key].map((niveau, index) => (
+            <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
+              <CopyCard copy={niveau} title={`Niveau ${index + 1}`}>{niveau}</CopyCard>
+            </Col>
+          ))}
+        </Row>
+      </>)}
+    </>
+  }
   if (!(selectedArchitectuurlaag === "undefined" || selectedActiviteit === "undefined")) { // both selected
     htmlHBOI = <>
       <Divider orientation="left">{selectedArchitectuurlaag} {selectedActiviteit}</Divider>
