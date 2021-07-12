@@ -1,5 +1,6 @@
 
 import { Divider, Row, Col } from 'antd';
+import { rowStyle } from '../lib';
 
 import { CopyCard } from "./Card";
 
@@ -9,7 +10,7 @@ export function Skill({ title, description, afzonderlijketaken }) {
 
   return (<>
     <Divider orientation="left">{title}</Divider>
-    <Row gutter={[12, 12]}>
+    <Row style={rowStyle} gutter={[12, 12]}>
       <Col xs={24} sm={24} md={6} lg={6} xl={6}>
         <CopyCard
           title="Description"
