@@ -19,3 +19,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.ant-divider-inner-text {
+  color: #1890ff;
+}
