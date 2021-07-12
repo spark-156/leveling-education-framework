@@ -7,9 +7,9 @@ import { CopyCard } from "./Card";
 export function Skill({ title, description, afzonderlijketaken }) {
   const keys = Object.keys(afzonderlijketaken)
 
-  return (
+  return (<>
+    <Divider orientation="left">{title}</Divider>
     <Row gutter={12}>
-      <Divider orientation="left">{title}</Divider>
       <Col xs={24} sm={24} md={6} lg={6} xl={6}>
         <CopyCard
           title="Description"
@@ -25,5 +25,6 @@ export function Skill({ title, description, afzonderlijketaken }) {
           copy={afzonderlijketaken[key]}
         />
       </Col>))}
-    </Row>)
+    </Row>
+  </>)
 }
