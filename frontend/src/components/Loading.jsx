@@ -12,7 +12,7 @@ export default function Loading() {
         height: "100vh",
         width: "100vw"
       }}>
-        <LoadingOutlined />
+        <LoadingOutlined style={{ fontSize: "2rem" }} />
       </div>
     </>
   );
