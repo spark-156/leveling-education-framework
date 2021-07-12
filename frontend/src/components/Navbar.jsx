@@ -1,16 +1,28 @@
-import { Nav, Navbar, Icon, Affix } from 'rsuite';
+import { Menu } from 'antd';
+import { HomeOutlined } from '@ant-design/icons';
 
 export function NavbarHBOI({ active }) {
-  return <Affix>
-    <Navbar appearance={'inverse'}>
-      <Navbar.Body>
-        <Nav activeKey={active} >
-          <Nav.Item href="/" icon={<Icon icon="home" />} eventKey="home">Home</Nav.Item>
-          <Nav.Item href="/hboi/undefined/undefined" eventKey="hboi">HBO-I</Nav.Item>
-          <Nav.Item href="/beheersingsniveaus" eventKey="beheersingsniveaus">Beheersingsniveaus</Nav.Item>
-          <Nav.Item href="/professionalskills" eventKey="professionalskills">Professionalskills</Nav.Item>
-        </Nav>
-      </Navbar.Body>
-    </Navbar>
-  </Affix>
+
+  return <Menu theme="light" selectedKeys={[active]} mode="horizontal">
+    <Menu.Item key="home" icon={<HomeOutlined />}>
+      <a href="/" target="_self" rel="noopener noreferrer">
+        Home
+      </a>
+    </Menu.Item>
+    <Menu.Item key="hboi">
+      <a href="/hboi/undefined/undefined" target="_self" rel="noopener noreferrer">
+        HBO-I
+      </a>
+    </Menu.Item>
+    <Menu.Item key="beheersingsniveaus">
+      <a href="/beheersingsniveaus" target="_self" rel="noopener noreferrer">
+        Beheersingsniveaus
+      </a>
+    </Menu.Item>
+    <Menu.Item key="professionalskills">
+      <a href="/professionalskills" target="_self" rel="noopener noreferrer">
+        Professionalskills
+      </a>
+    </Menu.Item>
+  </Menu>
 }
