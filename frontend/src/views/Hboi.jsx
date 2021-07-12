@@ -28,9 +28,6 @@ export default function Hboi() {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
 
-  console.log({ architectuurlagen, selectActiviteiten })
-  console.log({ activiteiten, selectArchitectuurlagen })
-
   return (
     <>
       <NavbarHBOI active={"hboi"} />
@@ -57,10 +54,7 @@ export default function Hboi() {
       <br />
       {hboi[selectedHBOI] ?
         <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
-          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][0]} title="Niveau 1">{hboi[selectedHBOI][0]}</CopyCard></Col>
-          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][1]} title="Niveau 2">{hboi[selectedHBOI][1]}</CopyCard></Col>
-          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][2]} title="Niveau 3">{hboi[selectedHBOI][2]}</CopyCard></Col>
-          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][3]} title="Niveau 4">{hboi[selectedHBOI][3]}</CopyCard></Col>
+          {hboi[selectedHBOI].map((hboiNiveau, index) => <Col key={hboiNiveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboiNiveau} title={`Niveau ${index + 1}`}>{hboiNiveau}</CopyCard></Col>)}
         </Row>
         :
         null
