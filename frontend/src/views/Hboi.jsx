@@ -14,19 +14,33 @@ export default function Hboi() {
   const history = useHistory();
   const { architectuurlaag, activiteit } = useParams();
 
-  const [selectedHBOI, setSelectedHBOI] = useState(`${architectuurlaag} ${activiteit}`);
   const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
   const [selectedActiviteit, setSelectedActiviteit] = useState(activiteit);
+
+  let htmlHBOI = null;
 
   useEffect(() => {
     setSelectedArchitectuurlaag(architectuurlaag);
     setSelectedActiviteit(activiteit);
-    setSelectedHBOI(`${architectuurlaag} ${activiteit}`)
+
   }, [architectuurlaag, activiteit])
 
   useEffect(() => {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
+
+
+  if (!(selectedArchitectuurlaag == "undefined" || selectedActiviteit == "undefined")) { // both selected
+    htmlHBOI = <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
+      {hboi[`${selectedArchitectuurlaag} ${selectedActiviteit}`].map((hboiNiveau, index) => <Col key={hboiNiveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboiNiveau} title={`Niveau ${index + 1}`}>{hboiNiveau}</CopyCard></Col>)}
+    </Row>
+  }
+  if (!(selectedArchitectuurlaag === "undefined") && selectedActiviteit === "undefined") {
+    console.log('architectuurlaag only selected')
+  }
+  if (selectedArchitectuurlaag === "undefined" && !(selectedActiviteit === "undefined")) {
+    console.log('activiteit only selected')
+  }
 
   return (
     <>
@@ -52,13 +66,7 @@ export default function Hboi() {
         </Col>
       </Row>
       <br />
-      {hboi[selectedHBOI] ?
-        <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
-          {hboi[selectedHBOI].map((hboiNiveau, index) => <Col key={hboiNiveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboiNiveau} title={`Niveau ${index + 1}`}>{hboiNiveau}</CopyCard></Col>)}
-        </Row>
-        :
-        null
-      }
+      {htmlHBOI}
     </>
   )
 }
