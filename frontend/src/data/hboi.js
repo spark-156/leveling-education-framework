@@ -161,6 +161,21 @@ export const hboi = {
   ],
 }
 
+export const selectActiviteiten = {
+  [activiteiten[0]]: [hboi["Gebruikersinteractie Analyseren"], hboi["Organisatieprocessen Analyseren"], hboi["Infrastructuur Analyseren"], hboi["Software Analyseren"], hboi["Hardwareinterfacing Analyseren"]],
+  [activiteiten[1]]: [hboi["Gebruikersinteractie Adviseren"], hboi["Organisatieprocessen Adviseren"], hboi["Infrastructuur Adviseren"], hboi["Software Adviseren"], hboi["Hardwareinterfacing Adviseren"]],
+  [activiteiten[2]]: [hboi["Gebruikersinteractie Ontwerpen"], hboi["Organisatieprocessen Ontwerpen"], hboi["Infrastructuur Ontwerpen"], hboi["Software Ontwerpen"], hboi["Hardwareinterfacing Ontwerpen"]],
+  [activiteiten[3]]: [hboi["Gebruikersinteractie Realiseren"], hboi["Organisatieprocessen Realiseren"], hboi["Infrastructuur Realiseren"], hboi["Software Realiseren"], hboi["Hardwareinterfacing Realiseren"]],
+  [activiteiten[4]]: [hboi["Gebruikersinteractie Manage & Control"], hboi["Organisatieprocessen Manage & Control"], hboi["Infrastructuur Manage & Control"], hboi["Software Manage & Control"], hboi["Hardwareinterfacing Manage & Control"]]
+}
+export const selectArchitectuurlagen = {
+  [architectuurlagen[0]]: [hboi["Gebruikersinteractie Analyseren"], hboi["Gebruikersinteractie Adviseren"], hboi["Gebruikersinteractie Ontwerpen"], hboi["Gebruikersinteractie Realiseren"], hboi["Gebruikersinteractie Manage & Control"]],
+  [architectuurlagen[1]]: [hboi["Organisatieprocessen Analyseren"], hboi["Organisatieprocessen Adviseren"], hboi["Organisatieprocessen Ontwerpen"], hboi["Organisatieprocessen Realiseren"], hboi["Organisatieprocessen Manage & Control"]],
+  [architectuurlagen[2]]: [hboi["Infrastructuur Analyseren"], hboi["Infrastructuur Adviseren"], hboi["Infrastructuur Ontwerpen"], hboi["Infrastructuur Realiseren"], hboi["Infrastructuur Manage & Control"]],
+  [architectuurlagen[3]]: [hboi["Software Analyseren"], hboi["Software Adviseren"], hboi["Software Ontwerpen"], hboi["Software Realiseren"], hboi["Software Manage & Control"]],
+  [architectuurlagen[4]]: [hboi["Hardwareinterfacing Analyseren"], hboi["Hardwareinterfacing Adviseren"], hboi["Hardwareinterfacing Ontwerpen"], hboi["Hardwareinterfacing Realiseren"], hboi["Hardwareinterfacing Manage & Control"]]
+}
+
 export const beheersingsniveaus = {
   "Zelfstandigheid": {
     "Taakgericht": "Werkt onder algemene richtlijnen in een omgeving waar onvoorspelbare veranderingen plaatsvinden.",

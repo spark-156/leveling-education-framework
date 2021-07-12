@@ -5,7 +5,7 @@ import { Row, Col } from 'antd'
 import { CopyCard } from '../components/Card'
 import { NavbarHBOI } from '../components/Navbar'
 
-import { hboi, architectuurlagen, activiteiten } from '../data/hboi'
+import { hboi, architectuurlagen, activiteiten, selectActiviteiten, selectArchitectuurlagen } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 import { rowStyle } from '../lib'
@@ -27,6 +27,9 @@ export default function Hboi() {
   useEffect(() => {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
   }, [selectedArchitectuurlaag, selectedActiviteit])
+
+  console.log({ architectuurlagen, selectActiviteiten })
+  console.log({ activiteiten, selectArchitectuurlagen })
 
   return (
     <>
