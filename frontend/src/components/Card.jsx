@@ -1,6 +1,4 @@
-// import { Panel, Grid, Col, Row } from 'rsuite';
-
-import { Card, Col, Row } from 'antd';
+import { Card } from 'antd';
 
 import { CopyToClipboardButton } from './CopyToClipboardButton';
 
