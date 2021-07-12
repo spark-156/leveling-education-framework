@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
-import { Grid, Col } from 'rsuite'
+import { Row, Col } from 'antd'
 
 import { CopyCard } from '../components/Card'
 import { NavbarHBOI } from '../components/Navbar'
@@ -31,8 +31,8 @@ export default function Hboi() {
   return (
     <>
       <NavbarHBOI active={"hboi"} />
-      <Grid>
-        <Col xs={24} sm={24} md={12} lg={12}>
+      <Row gutter={{ xs: 8, sm: 16, md: 16, lg: 16 }}>
+        <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
           <SelectOutOf
             title="Architectuurlagen"
             options={architectuurlagen}
@@ -41,7 +41,7 @@ export default function Hboi() {
             selected={architectuurlaag}
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={12}>
+        <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
           <SelectOutOf
             title="Activiteiten"
             options={activiteiten}
@@ -50,14 +50,14 @@ export default function Hboi() {
             selected={activiteit}
           />
         </Col>
-      </Grid>
+      </Row>
       {hboi[selectedHBOI] ?
-        <Grid>
-          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][0]} title="Niveau 1">{hboi[selectedHBOI][0]}</CopyCard></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][1]} title="Niveau 2">{hboi[selectedHBOI][1]}</CopyCard></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][2]} title="Niveau 3">{hboi[selectedHBOI][2]}</CopyCard></Col>
-          <Col xs={24} sm={24} md={6} lg={6}><CopyCard copy={hboi[selectedHBOI][3]} title="Niveau 4">{hboi[selectedHBOI][3]}</CopyCard></Col>
-        </Grid>
+        <Row gutter={{ xs: 8, sm: 16, md: 16, lg: 16 }}>
+          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][0]} title="Niveau 1">{hboi[selectedHBOI][0]}</CopyCard></Col>
+          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][1]} title="Niveau 2">{hboi[selectedHBOI][1]}</CopyCard></Col>
+          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][2]} title="Niveau 3">{hboi[selectedHBOI][2]}</CopyCard></Col>
+          <Col span={6} xs={24} sm={12} md={12} lg={6} xl={6}><CopyCard copy={hboi[selectedHBOI][3]} title="Niveau 4">{hboi[selectedHBOI][3]}</CopyCard></Col>
+        </Row>
         :
         null
       }
