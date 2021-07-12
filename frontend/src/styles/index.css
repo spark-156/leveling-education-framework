@@ -23,3 +23,7 @@ a {
 .ant-divider-inner-text {
   color: #1890ff;
 }
+
+.ant-image {
+  margin: 0 auto;
+}
