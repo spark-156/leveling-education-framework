@@ -109,7 +109,7 @@ export const hboi = {
     `Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen. Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen.`,
     `Adviseren over aanschaf en selectie van software-componenten bij het ontwikkelen van een softwaresysteem waarbij het kostenaspect een rol kan spelen. Adviseren over een onderdeel van een architectuur of een beperkt softwaresysteem. Adviseren over het gebruik van prototypes bij het valideren van de eisen.`,
     `Adviseren met betrekking tot de keuze voor softwarearchitectuur of bestaande software frameworks, waarbij kostenaspecten en kwaliteitskenmerken zoals beschikbaarheid, performance, security en schaalbaarheid een rol spelen. Adviseren over de aanpak bij het verwerken en raadplegen van grote hoeveelheden data met aandacht voor privacy. Adviseren over de inrichting van een softwareontwikkelproces, waaronder het testproces.`,
-    `Definiëren van een visie ten aanzien van toekomstige technologie en software-architectuur in afstemming met stakeholders`,
+    `Definiëren van een visie ten aanzien van toekomstige technologie en software-architectuur in afstemming met stakeholders.`,
   ],
   "Software Ontwerpen": [
     `Maken van een ontwerp voor een softwaresysteem, inclusief database, met modelleertechnieken volgens een standaardmethode.`,
