@@ -7,7 +7,7 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
 
   const setState = (value) => {
     if (value === selected) {
-      return setSelectedFunction(undefined);
+      return setSelectedFunction("undefined");
     } else {
       return setSelectedFunction(value);
     }
