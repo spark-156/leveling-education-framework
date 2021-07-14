@@ -1,5 +1,5 @@
 
-import { Button } from 'antd';
+import { Button, Space } from 'antd';
 
 import { CopyCard } from './Card';
 
@@ -17,15 +17,16 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
     headStyle={{ backgroundColor: "#1890ff", color: "#fff" }}
     title={title}
   >
-    {
-      options.map(option => {
+    <Space direction="vertical" style={{ width: "100%" }}>
+      {options.map(option => {
         let appearance = ""
         if (option === selected) {
           appearance = "primary"
         }
-        return (<Button key={option} onClick={(e) => { setState(e.target.innerText) }} color="blue" type={appearance} block >
+        return (<Button key={option} onClick={(e) => { setState(e.target.innerText) }} color="blue" type={appearance} block>
           {option}
         </Button>)
-      })
-    }</CopyCard >
+      })}
+    </Space>
+  </CopyCard >
 }
