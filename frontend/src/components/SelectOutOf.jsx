@@ -13,15 +13,19 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
     }
   }
 
-  return <CopyCard title={title}>{
-    options.map(option => {
-      let appearance = ""
-      if (option === selected) {
-        appearance = "primary"
-      }
-      return (<Button key={option} onClick={(e) => { setState(e.target.innerText) }} color="blue" type={appearance} block >
-        {option}
-      </Button>)
-    })
-  }</CopyCard>
+  return <CopyCard
+    headStyle={{ backgroundColor: "#1890ff", color: "#fff" }}
+    title={title}
+  >
+    {
+      options.map(option => {
+        let appearance = ""
+        if (option === selected) {
+          appearance = "primary"
+        }
+        return (<Button key={option} onClick={(e) => { setState(e.target.innerText) }} color="blue" type={appearance} block >
+          {option}
+        </Button>)
+      })
+    }</CopyCard >
 }
