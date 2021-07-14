@@ -22,7 +22,7 @@ services:
       - ./frontend:/usr/src/app
     labels: 
       - "traefik.enable=true"
-      - "traefik.http.routers.frontend.rule=Host(`hboi.localhost`)"
+      - "traefik.http.routers.frontend.rule=Host(`localhost`)"
       - "traefik.http.routers.frontend.entrypoints=web"
       - "traefik.http.services.frontend.loadbalancer.server.port=3000"
       
