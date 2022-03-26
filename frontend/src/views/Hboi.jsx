@@ -25,7 +25,7 @@ export default function Hboi() {
 
   useEffect(() => {
     history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
-  }, [selectedArchitectuurlaag, selectedActiviteit])
+  }, [selectedArchitectuurlaag, selectedActiviteit, history])
 
   let htmlHBOI = null;
 
