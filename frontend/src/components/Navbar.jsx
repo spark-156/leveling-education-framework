@@ -1,29 +1,32 @@
 import { Menu } from 'antd';
+import { Link } from 'react-router-dom';
 import { HomeOutlined } from '@ant-design/icons';
+import { useLocation } from 'react-router-dom';
 
-export function NavbarHBOI({ active }) {
+export function Navbar() {
+  const location = useLocation();
 
   return <div style={{ padding: "0 0 10px 0" }}>
-    <Menu theme="light" selectedKeys={[active]} mode="horizontal">
-      <Menu.Item key="home" icon={<HomeOutlined />}>
-        <a href="/" target="_self" rel="noopener noreferrer">
-          Home
-        </a>
-      </Menu.Item>
-      <Menu.Item key="hboi">
-        <a href="/hboi/undefined/undefined" target="_self" rel="noopener noreferrer">
+    <Menu theme="light" defaultSelectedKeys={['/']} selectedKeys={[location.pathname]} mode="horizontal">
+      <Menu.Item key="/" icon={<HomeOutlined />}>
+        <Link to='/'>
           HBO-I
-        </a>
+        </Link>
       </Menu.Item>
-      <Menu.Item key="beheersingsniveaus">
-        <a href="/beheersingsniveaus" target="_self" rel="noopener noreferrer">
+      <Menu.Item key="/vaardigheden">
+        <Link to='/vaardigheden'>
+          Vaardigheden
+        </Link>
+      </Menu.Item>
+      <Menu.Item key="/beheersingsniveaus">
+        <Link to='/beheersingsniveaus'>
           Beheersingsniveaus
-        </a>
+        </Link>
       </Menu.Item>
-      <Menu.Item key="professionalskills">
-        <a href="/professionalskills" target="_self" rel="noopener noreferrer">
+      <Menu.Item key="/professionalskills">
+        <Link to='/professionalskills'>
           Professionalskills
-        </a>
+        </Link>
       </Menu.Item>
     </Menu>
   </div>
