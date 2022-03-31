@@ -3,12 +3,10 @@ import React from 'react'
 import { Row, Col } from "antd";
 
 import { Skill } from "../components/Skill"
-import { NavbarHBOI } from "../components/Navbar"
 import { rowStyle } from '../lib';
 
 export default function Professionalskills() {
   return <>
-    <NavbarHBOI active="professionalskills" />
     <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16 }]}>
       <Col span={24}>
         <h2>Professional skills</h2>

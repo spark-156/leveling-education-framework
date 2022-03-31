@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
+import ProfessionalSkills from "./views/Professionalskills";
 
 function App() {
   return <Router>
@@ -27,7 +28,7 @@ function App() {
               <div>beheersingsniveaus here</div>
             </Route>
             <Route path='/professionalskills'>
-              <div>professionalskills here</div>
+              <ProfessionalSkills />
             </Route>
             <Route path='*'>
               <PageNotFound />
