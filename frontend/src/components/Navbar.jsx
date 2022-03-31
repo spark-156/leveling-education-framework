@@ -1,6 +1,6 @@
 import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import { HomeOutlined } from '@ant-design/icons';
+import { BookOutlined } from '@ant-design/icons';
 import { useLocation } from 'react-router-dom';
 
 export function Navbar() {
@@ -8,7 +8,7 @@ export function Navbar() {
 
   return <div style={{ padding: "0 0 10px 0" }}>
     <Menu theme="light" defaultSelectedKeys={['/']} selectedKeys={[location.pathname]} mode="horizontal">
-      <Menu.Item key="/" icon={<HomeOutlined />}>
+      <Menu.Item key="/" icon={<BookOutlined />}>
         <Link to='/'>
           HBO-I
         </Link>

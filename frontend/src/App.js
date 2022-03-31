@@ -9,6 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import { Footer } from "./components/Footer";
+import PageNotFound from "./views/PageNotFound";
 
 function App() {
   return <Router>
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/professionalskills'>
               <div>professionalskills here</div>
+            </Route>
+            <Route path='*'>
+              <PageNotFound />
             </Route>
           </Switch>
         </PageContainer>
