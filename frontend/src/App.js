@@ -11,6 +11,7 @@ import {
 import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
 import ProfessionalSkills from "./views/Professionalskills";
+import Beheersingsniveaus from "./views/Beheersingsniveaus"
 
 function App() {
   return <Router>
@@ -25,7 +26,7 @@ function App() {
               <div>vaardigheden here</div>
             </Route>
             <Route path='/beheersingsniveaus'>
-              <div>beheersingsniveaus here</div>
+              <Beheersingsniveaus />
             </Route>
             <Route path='/professionalskills'>
               <ProfessionalSkills />
