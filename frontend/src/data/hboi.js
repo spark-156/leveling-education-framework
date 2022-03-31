@@ -7,9 +7,9 @@ export const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren
 
 export const hboi = {
   "Gebruikersinteractie Analyseren": [
-    "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen. Inventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. Oriënteren op bestaande interactieve concepten, diensten en producten.",
-    "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf. Analyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst. Evalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
-    "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch). Analyseren van actuele en state of the art interactieve technologieën. Analyseren per iteratie van het effect van de eigen interventie op/in de UX.",
+    "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen.\n\nInventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. Oriënteren op bestaande interactieve concepten, diensten en producten.",
+    "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf.\n\n Analyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst. Evalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
+    "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch). \n\nAnalyseren van actuele en state of the art interactieve technologieën. Analyseren per iteratie van het effect van de eigen interventie op/in de UX.",
     "Analyseren van maatschappelijke, domein- en/of branche specifieke trends & kansen en hierover op strategisch niveau communiceren aan de key stakeholders."
   ],
   "Gebruikersinteractie Adviseren": [
