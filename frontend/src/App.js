@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./components/Navbar";
-import { Container } from "./components/Container";
+import { PageContainer } from "./components/PageContainer";
 import styles from "./styles/App.module.css";
 
 import {
@@ -14,7 +14,7 @@ function App() {
   return <Router>
       <div className={styles.pageContainer}>
         <Navbar />
-        <Container className={styles.contentWrap}>
+        <PageContainer className={styles.contentWrap}>
           <Switch>
             <Route exact path="/">
                 <div>hboi here</div>
@@ -29,7 +29,7 @@ function App() {
               <div>professionalskills here</div>
             </Route>
           </Switch>
-        </Container>
+        </PageContainer>
         <Footer />
       </div>
   </Router>
