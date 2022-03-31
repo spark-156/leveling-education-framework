@@ -1,38 +1,46 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { Row, Col, Divider } from 'antd'
 
 import { CopyCard } from '../components/Card'
-import { NavbarHBOI } from '../components/Navbar'
 
-import { hboi, architectuurlagen, activiteiten, selectActiviteiten, selectArchitectuurlagen } from '../data/hboi'
+import { hboi, architectuurlagen, activiteiten, activiteitenPointer, architectuurlagenPointer } from '../data/hboi'
 
 import SelectOutOf from '../components/SelectOutOf'
 import { rowStyle } from '../lib'
 
+import { useQuery } from '../lib/useQuery';
+
 export default function Hboi() {
-  const history = useHistory();
-  const { architectuurlaag, activiteit } = useParams();
+  // const history = useHistory();
+  const query = useQuery();
 
-  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(architectuurlaag);
-  const [selectedActiviteit, setSelectedActiviteit] = useState(activiteit);
+  const [selectedArchitectuurlaag, setSelectedArchitectuurlaag] = useState(query.get("architectuurlaag"));
+  const [selectedActiviteit, setSelectedActiviteit] = useState(query.get("activiteit"));
 
-  useEffect(() => {
-    setSelectedArchitectuurlaag(architectuurlaag);
-    setSelectedActiviteit(activiteit);
+  // useEffect(() => {
+  //   setSelectedArchitectuurlaag(architectuurlaag);
+  //   setSelectedActiviteit(activiteit);
+  // }, [architectuurlaag, activiteit])
 
-  }, [architectuurlaag, activiteit])
+  // useEffect(() => {
+  //   history.push({
+  //     search: '?architectuurlaag=${}
+  //   })
+  // }, [selectedArchitectuurlaag, history])
 
-  useEffect(() => {
-    history.replace(`/hboi/${selectedArchitectuurlaag}/${selectedActiviteit}`);
-  }, [selectedArchitectuurlaag, selectedActiviteit, history])
+  // useEffect(() => {
+  //   history.push({
+  //     search: '?activiteit=blue'
+  //   })
+  // }, [selectedActiviteit, history])
+
 
   let htmlHBOI = null;
 
-  if (selectedArchitectuurlaag === "undefined" && selectedActiviteit === "undefined") { // none selected
-    const hboiKeys = Object.keys(hboi);
+  if (!selectedArchitectuurlaag && !selectedActiviteit) { // none selected
     htmlHBOI = <>
-      {hboiKeys.map((key) => <>
+      {Object.keys(hboi).map(key => <>
         <Divider orientation="left">{key}</Divider>
         <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
           {hboi[key].map((niveau, index) => (
@@ -44,7 +52,7 @@ export default function Hboi() {
       </>)}
     </>
   }
-  if (!(selectedArchitectuurlaag === "undefined" || selectedActiviteit === "undefined")) { // both selected
+  if (selectedArchitectuurlaag && selectedActiviteit) { // both selected
     htmlHBOI = <>
       <Divider orientation="left">{selectedArchitectuurlaag} {selectedActiviteit}</Divider>
       <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
@@ -54,8 +62,8 @@ export default function Hboi() {
       </Row>
     </>
   }
-  if (!(selectedArchitectuurlaag === "undefined") && selectedActiviteit === "undefined") { // architectuurlaag only selected
-    htmlHBOI = selectArchitectuurlagen[selectedArchitectuurlaag].map((architectuurlaagValue, index) => <>
+  if (!selectedArchitectuurlaag && selectedActiviteit) { // architectuurlaag only selected
+    htmlHBOI = architectuurlagenPointer[selectedArchitectuurlaag].map((architectuurlaagValue, index) => <>
       <Divider orientation="left">{selectedArchitectuurlaag} {activiteiten[index]}</Divider>
       <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
         {architectuurlaagValue.map((niveau, index) => (
@@ -66,8 +74,8 @@ export default function Hboi() {
       </Row>
     </>)
   }
-  if (selectedArchitectuurlaag === "undefined" && !(selectedActiviteit === "undefined")) { // activiteit only selected
-    htmlHBOI = selectActiviteiten[selectedActiviteit].map((activiteitValue, index) => <>
+  if (selectedArchitectuurlaag && !selectedActiviteit) { // activiteit only selected
+    htmlHBOI = activiteitenPointer[selectedActiviteit].map((activiteitValue, index) => <>
       <Divider orientation="left">{architectuurlagen[index]} {selectedActiviteit}</Divider>
       <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}>
         {activiteitValue.map((niveau, index) => (
@@ -80,7 +88,6 @@ export default function Hboi() {
   }
 
   return (<>
-    <NavbarHBOI active={"hboi"} />
     <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16 }]}>
       <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
         <SelectOutOf
@@ -88,7 +95,7 @@ export default function Hboi() {
           options={architectuurlagen}
           id="architectuurlagen"
           setSelectedFunction={setSelectedArchitectuurlaag}
-          selected={architectuurlaag}
+          selected={selectedArchitectuurlaag}
         />
       </Col>
       <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -97,7 +104,7 @@ export default function Hboi() {
           options={activiteiten}
           id="activiteiten"
           setSelectedFunction={setSelectedActiviteit}
-          selected={activiteit}
+          selected={selectedActiviteit}
         />
       </Col>
     </Row>

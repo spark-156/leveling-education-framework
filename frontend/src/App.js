@@ -12,6 +12,7 @@ import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
 import ProfessionalSkills from "./views/Professionalskills";
 import Beheersingsniveaus from "./views/Beheersingsniveaus"
+import Hboi from "./views/Hboi";
 
 function App() {
   return <Router>
@@ -20,8 +21,8 @@ function App() {
         <PageContainer className={styles.contentWrap}>
           <Switch>
             <Route exact path="/">
-                <div>hboi here</div>
-              </Route>
+              <Hboi />
+            </Route>
             <Route path='/vaardigheden'>
               <div>vaardigheden here</div>
             </Route>
