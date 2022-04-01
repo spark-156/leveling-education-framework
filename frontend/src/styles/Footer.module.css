@@ -4,5 +4,9 @@
   width: 100%;
   border-top: solid 1px rgba(50, 50, 50, 0.2);
   height: 4rem; /* Footer height */
-  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
