@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
 import { Row, Col, Divider } from "antd";
 
 import { CopyCard } from "../components/Card";
@@ -26,14 +25,6 @@ export default function Hboi() {
     "activiteit",
     null
   );
-
-  useEffect(() => {
-    console.log({ architectuurlaag, activiteit });
-    if (!architectuurlaag && !activiteit) console.log(true, "none");
-    if (architectuurlaag && activiteit) console.log(true, "both");
-    if (architectuurlaag && !activiteit) console.log(true, "arch");
-    if (!architectuurlaag && activiteit) console.log(true, "act");
-  }, [architectuurlaag, activiteit]);
 
   let htmlHBOI = null;
 
