@@ -17,8 +17,24 @@ export const setQueryStringValue = (
   queryString = window.location.search
 ) => {
   const values = qs.parse(queryString);
-  const newQsValue = qs.stringify({ ...values, [key]: value });
-  setQueryStringWithoutPageReload(`?${newQsValue}`);
+
+  Object.keys(values).forEach((key) => {
+    if (values[key] == null) {
+      delete values[key];
+    }
+  });
+
+  let newQsValue;
+
+  if (!value) {
+    delete values[key];
+    newQsValue = qs.stringify({ ...values });
+  } else {
+    newQsValue = qs.stringify({ ...values, [key]: value });
+  }
+
+  if (newQsValue) setQueryStringWithoutPageReload(`?${newQsValue}`);
+  else setQueryStringWithoutPageReload("");
 };
 
 export const getQueryStringValue = (
