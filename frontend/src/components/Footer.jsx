@@ -14,7 +14,7 @@ export function Footer() {
         <Link href="https://github.com/spark-156/hboi-domeinbeschrijving">
           Source Code
         </Link>{" "}
-        &amp; my <Link href="https://github.com/spark-156/">Github</Link>
+        on my <Link href="https://github.com/spark-156/">Github</Link>
       </div>
     </footer>
   );
