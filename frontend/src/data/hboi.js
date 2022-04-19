@@ -219,7 +219,7 @@ export const hboi = {
     `Analyse uitvoeren voor complexe software-in-software systemen (system in systems), inclusief alle niet-functionele requirements, waaronder safety, security en privacy.`,
   ],
   "Software Adviseren": [
-    `Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen. Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen.`,
+    `Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen.`,
     `Adviseren over aanschaf en selectie van software-componenten bij het ontwikkelen van een softwaresysteem waarbij het kostenaspect een rol kan spelen.
 
     Adviseren over een onderdeel van een architectuur of een beperkt softwaresysteem.
@@ -275,33 +275,71 @@ export const hboi = {
     `Ontwerpen en realiseren van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
   ],
   "Hardwareinterfacing Analyseren": [
-    `Beschrijven van de architectuur van een computersysteem. Beschrijven van de werking van actuatoren en sensoren en metingen hieraan verrichten. Opstellen van (niet-)functionele eisen en acceptatiecriteria voor een computersysteem, bijv. een embedded of AI-systeem.`,
-    `In kaart brengen van signalerings- en regelingsaspecten van de omgeving van een computersysteem bijvoorbeeld in een sensornetwerk. Methodisch specificeren van een computersysteem. Uitvoeren van een protocolanalyse. Opstellen van een acceptatietest voor een computersysteem.`,
-    `Specificeren van een gedistribueerd computersysteem inclusief timing, resourcegebruik en performance. Beschrijven van security-aspecten van computersystemen die aan of via (openbare) netwerken gekoppeld zijn. Opstellen van een acceptatietestplan en een integratietestplan.`,
-    `Onderzoek doen naar emerging technologies voor toepassing in gedistribueerde systemen. Onderzoek doen naar security aspecten binnen emerging technologies.`
+    `Beschrijven van de architectuur van een computersysteem.
+
+    Beschrijven van de werking van actuatoren en sensoren en metingen hieraan verrichten.
+    
+    Opstellen van (niet-)functionele eisen en acceptatiecriteria voor een computersysteem, bijv. een embedded of IA-systeem.`,
+    `In kaart brengen van signalerings- en regelingsaspecten van de omgeving van een computersysteem bijvoorbeeld in een sensornetwerk.
+
+    Methodisch specificeren van een computersysteem.
+    
+    Uitvoeren van een protocolanalyse.
+    
+    Opstellen van een acceptatietest voor een computersysteem.`,
+    `Specificeren van een gedistribueerd computersysteem inclusief timing, resourcegebruik en performance.
+
+    Beschrijven van security-aspecten van computersystemen die aan of via (openbare) netwerken gekoppeld zijn.
+    
+    Opstellen van een acceptatietestplan en een integratietestplan.`,
+    `Onderzoek doen naar emerging technologies voor toepassing in gedistribueerde systemen.
+
+    Onderzoek doen naar security aspecten binnen emerging technologies.`
   ],
   "Hardwareinterfacing Adviseren": [
     `Verifiëren en onderbouwen van een gegeven technisch advies. Verifiëren en beschrijven van de initiële architectuur en de functionaliteit van een gegeven systeemconfiguratie (microprocessor, geheugen of andere bouwstenen).`,
-    `Uitbrengen van een technisch advies voor de architectuur van een computersysteem en de hardware- en software-componenten. Adviseren over het koppelen van systemen`,
+    `Uitbrengen van een technisch advies voor de architectuur van een computersysteem en de hardware- en software-componenten.
+
+    Adviseren over het koppelen van systemen.`,
     `Uitbrengen van een technisch advies over een te realiseren (gedistribueerd) computersysteem, inclusief hardware- en software-componenten en koppelingen.`,
-    `Uitbrengen van een technisch advies over de toepassing van emerging technologies om een gedistribueerde computersysteem te realiseren. Adviseren over toekomstgerichte inrichting van gedistribueerde computersystemen. Definiëren van visie op technologieroadmap en deze afstemmen met key stakeholders`
+    `Uitbrengen van een technisch advies over de toepassing van emerging technologies om een gedistribueerde computersysteem te realiseren.
+
+    Adviseren over toekomstgerichte inrichting van gedistribueerde computersystemen.
+    
+    Definiëren van visie op technologieroadmap en deze afstemmen met key stakeholders`
   ],
   "Hardwareinterfacing Ontwerpen": [
     `Ontwerpen van een eenvoudig computersysteem, bijv. een embedded of industriële automatiseringssysteem, op basis van gegeven hardware.`,
-    `Ontwerpen van een computersysteem methodisch o.b.v. requirements met zelfgekozen hardware- en softwarecomponenten. - opstellen van een applicatie-driverontwerp opstellen. - ontwerpen van een protocol.`,
+    `Ontwerpen van een computersysteem methodisch o.b.v. requirements met zelfgekozen hardware- en softwarecomponenten.
+    - opstellen van een applicatie-driverontwerp opstellen.
+    - ontwerpen van een protocol.`,
     `Ontwerpen van een gedistribueerd computersysteem inclusief bepaling van actuatoren, sensoren, timing, resourcegebruik en performance`,
     `Ontwerpen van gedistribueerde computersystemen met gebruik van hardware synthese en/of artificial intelligence.`
   ],
   "Hardwareinterfacing Realiseren": [
     `Software schrijven voor een eenvoudig, gegeven computersysteem, voorzien van actuatoren en sensoren.`,
-    `Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren. Schrijven en testen van applicatiedriver-software. Implementeren en testen van een protocol.`,
-    `Realiseren van een compleet computersysteem inclusief netwerk, hardware en systeemsoftware. Opstellen en uitvoeren van een acceptatieprocedure bijv. in een virtuele omgeving, inclusief aspecten als timing, resourcegebruik en performance.`,
+    `Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren.
+
+    Schrijven en testen van applicatiedriver-software.
+    
+    Implementeren en testen van een protocol.`,
+    `Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren.
+
+    Schrijven en testen van applicatiedriver-software.
+    
+    Implementeren en testen van een protocol.`,
     `Realiseren van een compleet computersysteem waarbij gebruik gemaakt wordt van hardware synthese (vhdl) of artificial intelligence.`
   ],
   "Hardwareinterfacing Manage & Control": [
     `Inrichten van een ontwikkel- en testplatform middels co-design ten behoeve van hardware/software, inclusief tools`,
-    `Beoordelen van een gegeven ontwikkelomgeving op kwaliteit en prestaties. Inrichten van een beheer- en testomgeving voor een computersysteem.`,
-    `Opzetten en gebruikmaken van: - versiebeheer, - releasemanagement, - teamworkondersteuning, - automated testing voor hard- en softwaresystemen.`,
+    `Beoordelen van een gegeven ontwikkelomgeving op kwaliteit en prestaties.
+
+    Inrichten van een beheer- en testomgeving voor een computersysteem.`,
+    `Opzetten en gebruikmaken van:
+    - versiebeheer,
+    - releasemanagement,
+    - teamworkondersteuning,
+    - automated testing voor hard- en softwaresystemen.`,
     `Aansturen van co-design teams voor het beheren van het realisatieproces van de hardware, software en synthese, inclusief de ontwikkelomgeving.`
   ],
 }
