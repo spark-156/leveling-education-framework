@@ -148,32 +148,60 @@ export const hboi = {
   ],
   "Infrastructuur Analyseren": [
     `Analyseren van een lokale/kleine infrastructuur volgens een standaardmethode en op basis van gegeven (niet-) functionele eisen.`,
-    `Analyseren van de kwaliteit van een middelgrote infrastructuur en de daarop aanwezige services aan de hand van gangbare methoden en standaarden. Analyseren van aan infrastructuur gerelateerde incidenten, problemen en security-bedreigingen.`,
-    `Analyseren van de trends op het gebied van infrastructuren en deze vertalen naar gewenste of benodigde ontwikkelingen in bedrijfsinfrastructuur. Uitvoeren van een requirements- impact- of gap- analyse voor een enterprise infrastructuur om (niet-) functionele eisen, behoeftes en/of tekortkomingen, in kaart te brengen.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Analyseren van de trends op het gebied van infrastructuren en deze vertalen naar gewenste of benodigde ontwikkelingen in bedrijfsinfrastructuur.
+
+    Uitvoeren van een requirements- impact- of gap- analyse voor een enterprise infrastructuur om (niet-) functionele eisen, behoeftes en/of tekortkomingen, in kaart te brengen.`,
     `Uitvoeren van een requirements-, impact- of gap- analyse voor een enterprise infrastructuur-architectuur om eisen, behoeftes en/of tekortkomingen, in kaart te brengen.`,
   ],
   "Infrastructuur Adviseren": [
     `Aanbevelingen doen over een opzet van, of aanpassingen aan, een lokale/kleine infrastructuur.`,
-    `Adviseren over inrichting en beheer van een infrastructuur met onderbouwde keuzes vanuit (niet-) functionele eisen, en vanuit beschikbare technologie, beheermodellen en beheermethodes. Maatregelen voorstellen die de informatiebeveiliging van een infrastructuur van een MKB verbeterd.`,
-    `Adviseren over componenten van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen. Adviseren over de migratie naar, of keuze voor een public, private of hybride cloud.`,
+    `Adviseren over inrichting en beheer van een infrastructuur met onderbouwde keuzes vanuit (niet-) functionele eisen, en vanuit beschikbare technologie, beheermodellen en beheermethodes.
+
+    Maatregelen voorstellen die de informatiebeveiliging van een infrastructuur van een MKB verbeterd.`,
+    `Adviseren over componenten van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.
+
+    Adviseren over de migratie naar, of keuze voor een public, private of hybride cloud.`,
     `Adviseren over de architectuur van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.`,
   ],
   "Infrastructuur Ontwerpen": [
     `Opstellen van specificaties voor een lokale/kleine infrastructuur volgens een standaardmethode.`,
-    `Adviseren over de architectuur van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.Beschrijven van beheerprocessen en maken van afspraken omtrent te leveren diensten. Automatiseren van het beheer en de uitrol van een infrastructuur in een middelgrote omgeving. Opstellen van een technisch ontwerp voor een middelgrote infrastructuur met bijbehorende beveiliging op basis van (niet-) functionele eisen.`,
-    `Ontwerpen van componenten van een enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving. Ontwerpen van een incident response organisatie (CSIRT) en systemen om adequaat te kunnen reageren op incidenten van iedere aard en omvang`,
+    `Adviseren over componenten van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.
+
+    Adviseren over de migratie naar, of keuze voor een public, private of hybride cloud.`,
+    `Ontwerpen van componenten van een enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving.
+
+    Ontwerpen van een incident response organisatie (CSIRT) en systemen om adequaat te kunnen reageren op incidenten van iedere aard en omvang.`,
     `Ontwerpen van de enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving.`,
   ],
   "Infrastructuur Realiseren": [
     `Inrichten, testen en beschikbaar stellen van een lokale/kleine infrastructuur.`,
-    `Inrichten van een middelgrote infrastructuur die voldoet aan gestelde eisen op gebied van performance, scalability, security en compliance. Opzetten van basismonitoring van de infrastructuur. Opstellen en uitvoeren van een testplan voor een middelgrote infrastructuur om de kwaliteit te toetsen op basis van het opgestelde (niet-) functionele ontwerp.`,
-    `Realiseren van componenten van een enterprise infrastructuur met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving. Opzetten van componenten van een omgeving waarin de kwaliteit van een veilige dienstverlening centraal kan worden bewaakt. Opzetten en uitvoeren van een pilot-/migratietraject inclusief overdracht naar beheer.`,
-    `Realiseren van een enterprise infrastructuur, of complexe aspecten of onderdelen hiervan, met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving. Opzetten van een omgeving waarin de kwaliteit van een veilige ICT-dienstverlening centraal kan worden bewaakt.`,
+    `Inrichten van een middelgrote infrastructuur die voldoet aan gestelde eisen op gebied van performance, scalability, security en compliance.
+
+    Opzetten van basismonitoring van de infrastructuur.
+    
+    Opstellen en uitvoeren van een testplan voor een middelgrote infrastructuur om de kwaliteit te toetsen op basis van het opgestelde (niet-) functionele ontwerp.`,
+    `Realiseren van componenten van een enterprise infrastructuur met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving.
+
+    Opzetten van componenten van een omgeving waarin de kwaliteit van een veilige dienstverlening centraal kan worden bewaakt.
+    
+    Opzetten en uitvoeren van een pilot-/migratietraject inclusief overdracht naar beheer.`,
+    `Realiseren van een enterprise infrastructuur, of complexe aspecten of onderdelen hiervan, met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving.
+
+    Opzetten van een omgeving waarin de kwaliteit van een veilige ICT-dienstverlening centraal kan worden bewaakt.`,
   ],
   "Infrastructuur Manage & Control": [
     `Opzetten en documenteren van standaardbeheerprocessen en werkprocedures inclusief systeem- en netwerkconfiguratie, ten behoeve van het beheer van een lokale/kleine infrastructuur.`,
-    `Onderbrengen van beheer van nieuwe technologische ontwikkelingen m.b.t. de infrastructuur. Implementeren van delen van beheerprocessen. Vastleggen van de specificaties van een beheeromgeving waarmee kwaliteit van de ICT-dienstverlening kan worden gemeten, waaronder het ontvangen en afhandelen van klantverzoeken, en te kunnen rapporteren over dienstenniveau.`,
-    `Opzetten van beheerprocessen en uitvoeren van een public, hybride of private cloudgebaseerde infrastructuur. Vastleggen van de specificaties van een proactieve beheeromgeving van een public, hybride of private cloud infrastructuur.`,
+    `Onderbrengen van beheer van nieuwe technologische ontwikkelingen m.b.t. de infrastructuur.
+
+    Implementeren van delen van beheerprocessen.
+    
+    Vastleggen van de specificaties van een beheeromgeving waarmee kwaliteit van de ICT-dienstverlening kan worden gemeten, waaronder het ontvangen en afhandelen van klantverzoeken, en te kunnen rapporteren over dienstenniveau.`,
+    `Opzetten van beheerprocessen en uitvoeren van een public, hybride of private cloudgebaseerde infrastructuur.
+
+    Vastleggen van de specificaties van een proactieve beheeromgeving van een public, hybride of private cloud infrastructuur.`,
     `Vormgeven van Business - IT alignment en IT governance in relatie tot een enterprise infrastructuur.`,
   ],
   "Software Analyseren": [
