@@ -6,7 +6,8 @@ import styles from "./styles/App.module.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
@@ -32,6 +33,7 @@ function App() {
             <Route path='/professionalskills'>
               <ProfessionalSkills />
             </Route>
+            <Redirect from="/hboi" to="/" />
             <Route path='*'>
               <PageNotFound />
             </Route>
