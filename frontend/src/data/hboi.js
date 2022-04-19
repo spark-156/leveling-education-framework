@@ -205,33 +205,73 @@ export const hboi = {
     `Vormgeven van Business - IT alignment en IT governance in relatie tot een enterprise infrastructuur.`,
   ],
   "Software Analyseren": [
-    `Verzamelen en valideren van functionele eisen voor een softwaresysteem met één belanghebbende volgens een standaardmethode. Definiëren van acceptatiecriteria voor bovengenoemde functionele eisen.`,
-    `Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden, rekening houdend met de kwaliteitseigenschappen waaronder security. Uitvoeren van een analyse om functionaliteit, veiligheid, ontwerp, interfaces e.d. van een bestaand systeem of bestaande component te formuleren en te valideren. Opstellen van een acceptatietest aan de hand van kwaliteits-eigenschappen`,
-    `Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden in een context van bestaande systemen. Definiëren van acceptatiecriteria aan de hand van kwaliteitseigenschappen en een uitgevoerde risicoanalyse met onder andere aandacht voor security aspecten.`,
+    `Verzamelen en valideren van functionele eisen voor een softwaresysteem met één belanghebbende volgens een standaardmethode.
+
+    Definiëren van acceptatiecriteria voor bovengenoemde functionele eisen.`,
+    `Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden, rekening houdend met de kwaliteitseigenschappen waaronder security.
+
+    Uitvoeren van een analyse om functionaliteit, veiligheid, ontwerp, interfaces e.d. van een bestaand systeem of bestaande component te formuleren en te valideren.
+    
+    Opstellen van een acceptatietest aan de hand van kwaliteits-eigenschappen`,
+    `Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden in een context van bestaande systemen.
+
+    Definiëren van acceptatiecriteria aan de hand van kwaliteitseigenschappen en een uitgevoerde risicoanalyse met onder andere aandacht voor security aspecten.`,
     `Analyse uitvoeren voor complexe software-in-software systemen (system in systems), inclusief alle niet-functionele requirements, waaronder safety, security en privacy.`,
   ],
   "Software Adviseren": [
     `Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen. Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen.`,
-    `Adviseren over aanschaf en selectie van software-componenten bij het ontwikkelen van een softwaresysteem waarbij het kostenaspect een rol kan spelen. Adviseren over een onderdeel van een architectuur of een beperkt softwaresysteem. Adviseren over het gebruik van prototypes bij het valideren van de eisen.`,
-    `Adviseren met betrekking tot de keuze voor softwarearchitectuur of bestaande software frameworks, waarbij kostenaspecten en kwaliteitskenmerken zoals beschikbaarheid, performance, security en schaalbaarheid een rol spelen. Adviseren over de aanpak bij het verwerken en raadplegen van grote hoeveelheden data met aandacht voor privacy. Adviseren over de inrichting van een softwareontwikkelproces, waaronder het testproces.`,
+    `Adviseren over aanschaf en selectie van software-componenten bij het ontwikkelen van een softwaresysteem waarbij het kostenaspect een rol kan spelen.
+
+    Adviseren over een onderdeel van een architectuur of een beperkt softwaresysteem.
+    
+    Adviseren over het gebruik van prototypes bij het valideren van de eisen.`,
+    `Adviseren met betrekking tot de keuze voor softwarearchitectuur of bestaande software frameworks, waarbij kostenaspecten en kwaliteitskenmerken zoals beschikbaarheid, performance, security en schaalbaarheid een rol spelen.
+
+    Adviseren over de aanpak bij het verwerken en raadplegen van grote hoeveelheden data met aandacht voor privacy.
+    
+    Adviseren over de inrichting van een softwareontwikkelproces, waaronder het testproces.	`,
     `Definiëren van een visie ten aanzien van toekomstige technologie en software-architectuur in afstemming met stakeholders.`,
   ],
   "Software Ontwerpen": [
     `Maken van een ontwerp voor een softwaresysteem, inclusief database, met modelleertechnieken volgens een standaardmethode.`,
-    `Opstellen van een ontwerp voor een softwaresysteem, rekening houdend met het gebruik van bestaande componenten en libraries. Toepassen van ontwerp-kwaliteitscriteria, rekening houdend met securityaspecten en verschillende typen devices. Maken van een ontwerp voor een systeem dat grote hoeveelheden data kan verwerken en raadplegen. Vaststellen van de kwaliteit van het ontwerp, bijvoorbeeld door toetsing of prototyping, rekening houdend met de geformuleerde kwaliteitseigenschappen. Opstellen van testontwerpen volgens een gegeven teststrategie.`,
-    `Opstellen van een softwarearchitectuur voor een softwaresysteem, opgebouwd uit bestaande en nieuwe systemen, rekening houdend met meerdere belanghebbenden en kwaliteitskenmerken, waaronder security en schaalbaarheid. Opstellen van teststrategie voor systeemtesten.`,
-    `Ontwerpen van een systeem voor het oplossen van een generieke klasse van problemen. Ontwerpen van een framework.`,
+    `Opstellen van een ontwerp voor een softwaresysteem, rekening houdend met het gebruik van bestaande componenten en libraries.
+
+    Toepassen van ontwerp-kwaliteitscriteria, rekening houdend met securityaspecten en verschillende typen devices.
+    
+    Maken van een ontwerp voor een systeem dat grote hoeveelheden data kan verwerken en raadplegen.
+    
+    Vaststellen van de kwaliteit van het ontwerp, bijvoorbeeld door toetsing of prototyping, rekening houdend met de geformuleerde kwaliteitseigenschappen.
+    
+    Opstellen van testontwerpen volgens een gegeven teststrategie.`,
+    `Opstellen van een softwarearchitectuur voor een softwaresysteem, opgebouwd uit bestaande en nieuwe systemen, rekening houdend met meerdere belanghebbenden en kwaliteitskenmerken, waaronder security en schaalbaarheid.
+
+    Opstellen van teststrategie voor systeemtesten.`,
+    `Ontwerpen van een systeem voor het oplossen van een generieke klasse van problemen.
+
+    Ontwerpen van een framework.`,
   ],
   "Software Realiseren": [
     `Bouwen, testen en beschikbaar stellen van een eenvoudig softwaresysteem. Het opzetten, vullen en bevragen van een database maakt onderdeel uit van het softwaresysteem.`,
-    `Bouwen en beschikbaar stellen van een softwaresysteem dat bestaat uit meerdere subsystemen, hierbij gebruikmakend van bestaande componenten. Integreren van softwarecomponenten in een bestaand systeem, waarbij o.a. de integriteit, veiligheid en systeemprestaties bewaakt worden. Uitvoeren van, monitoren van en rapporteren over unit-, integratie-, regressie-, en systeemtesten, met aandacht voor security-aspecten.`,
-    `Bouwen en beschikbaar stellen van een schaalbaar softwaresysteem dat aansluit bij bestaande systemen, eventueel in de cloud, volgens de ontworpen architectuur met gebruik van bestaande frameworks. Toepassen van testautomatisering bij het uitvoeren van testen.`,
-    `Coderen van algoritmisch complexe problemen. Bouwen van AI-gerelateerde software.`,
+    `Bouwen en beschikbaar stellen van een softwaresysteem dat bestaat uit meerdere subsystemen, hierbij gebruikmakend van bestaande componenten.
+
+    Integreren van softwarecomponenten in een bestaand systeem, waarbij o.a. de integriteit, veiligheid en systeemprestaties bewaakt worden.
+    
+    Uitvoeren van, monitoren van en rapporteren over unit-, integratie-, regressie-, en systeemtesten, met aandacht voor security-aspecten.`,
+    `Bouwen en beschikbaar stellen van een schaalbaar softwaresysteem dat aansluit bij bestaande systemen, eventueel in de cloud, volgens de ontworpen architectuur met gebruik van bestaande frameworks.
+
+    Toepassen van testautomatisering bij het uitvoeren van testen.`,
+    `Coderen van algoritmisch complexe problemen.
+
+    Bouwen van AI-gerelateerde software.`,
   ],
   "Software Manage & Control": [
     `Inrichten en gebruik maken van beheersysteem ter ondersteuning van softwareontwikkeling in teamverband.`,
-    `Beheren en gebruiken van een ontwikkelstraat ter ondersteuning van softwareontwikkeling in teams, waardoor onder andere continuous integration tot de mogelijkheden behoort. Toepassen van methoden en technieken om een software-ontwikkelproces te managen en de kwaliteit ervan te borgen.`,
-    `Uitvoeren van configuratie-, change- en releasemanagement in afstemming met infrastructuur-management. Inrichten van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
+    `Beheren en gebruiken van een ontwikkelstraat ter ondersteuning van softwareontwikkeling in teams, waardoor onder andere continuous integration tot de mogelijkheden behoort.
+
+    Toepassen van methoden en technieken om een software-ontwikkelproces te managen en de kwaliteit ervan te borgen.`,
+    `Uitvoeren van configuratie-, change- en releasemanagement in afstemming met infrastructuur-management.
+
+    Inrichten van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
     `Ontwerpen en realiseren van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.`,
   ],
   "Hardwareinterfacing Analyseren": [
