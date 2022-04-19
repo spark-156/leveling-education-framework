@@ -65,34 +65,86 @@ export const hboi = {
     `Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.`
   ],
   "Organisatieprocessen Analyseren": [
-    `Analyseren van een enkel organisatieproces, organisatie, gegevensstromen, databehoeften en procesbesturing op operationeel niveau. Analyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening.`,
-    `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening. Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties. Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders. Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
-    `Analyseren van de consequenties van een (strategische) koerswijziging voor organisatie processen en hun informatievoorziening. Analyseren (kwantitatief en/of kwalitatief) van de huidige en toekomstige situatie op het gebied van bijvoorbeeld beleid, strategie, alignment en architectuur, met gebruikmaking van gangbare methoden. Analyseren van de huidige acceptatie van nieuwe technologie en eventuele weerstanden. Analyseren van gestructureerde en ongestructureerde interne en externe data.`,
+    `Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces.
+
+    Communiceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces
+    
+    Verhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.`,
+    `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening.
+
+    Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties.
+    
+    Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders.
+    
+    Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
+    `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening.
+
+    Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties.
+    
+    Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders.
+    
+    Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
     `Uitvoeren van grondig theoretisch onderbouwd onderzoek naar technologische (interorganisationele) procesinnovaties (AI, machine & deep learning, digital twins, blockchain, etc.).`,
   ],
   "Organisatieprocessen Adviseren": [
     `Adviseren van verbeteringen voor een enkel organisatieproces op het terrein van organisatie(structuur), processen en informatievoorziening, met inachtneming van de mogelijkheden van ICT.`,
-    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening. Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
-    `Adviseren over de interne en externe afstemming tussen business en ICT (alignment en governance) rekening houdend met de doelstellingen van de organisatie (o.a. missie, visies, strategie en KPI’s). Adviseren over een veranderkundige aanpak bij de invoering van nieuwe ICT-mogelijkheden. Adviseren in oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Adviseren van technologische (interorganisationele) proces innovaties, waarbij ook rekening wordt gehouden wordt met de sociale context (mens en organisatie). Creëren van breed draagvlak onder alle relevante stakeholders.`,
+    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
+
+    Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
+    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
+
+    Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
+    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
+
+    Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
   ],
   "Organisatieprocessen Ontwerpen": [
     `Ontwerpen van een enkel organisatieproces, enkele gegevensstromen, een organisatieonderdeel en/of een deel van de informatievoorziening.`,
-    `Ontwerpen van samenhangende organisatieprocessen: een gegevensstructuur (model), het procesmanagement van organisatieprocessen, de functionele organisatiestructuur en/of de informatievoorziening, rekening houdend met security en privacy wetgeving. Ontwerpen van de inrichting van een standaardapplicatie. Ontwerpen van de interfaces voor een applicatie in het applicatielandschap (mappings).`,
-    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces. Ontwerpen van een veranderkundige aanpak met bijbehorende interventies. Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Ontwerpen van technologische (interorganisationele) procesinnovaties. Evalueren en valideren van mogelijke procesinnovaties.`,
+    `Ontwerpen van samenhangende organisatieprocessen: een gegevensstructuur (model), het procesmanagement van organisatieprocessen, de functionele organisatiestructuur en/of de informatievoorziening, rekening houdend met security en privacy wetgeving.
+
+    Ontwerpen van de inrichting van een standaardapplicatie.
+    
+    Ontwerpen van de interfaces voor een applicatie in het applicatielandschap (mappings).	`,
+    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+
+    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    
+    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+
+    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    
+    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
   ],
   "Organisatieprocessen Realiseren": [
-    `Beschrijven en opstellen van werkinstructies, functie- en rolbeschrijvingen, en procedures voor een (aangepast) proces. Testen van de aansluiting van de organisatieprocessen met de opgeleverde informatievoorziening. Opstellen van een eenvoudig implementatieplan.`,
-    `Realiseren van de invoering en acceptatie van procedures in samenhang met nieuwe of gewijzigde informatievoorziening en besturing Opleiden en trainen van eindgebruikers in de vernieuwde processen en gebruik van een nieuwe ICT. Bouwen en valideren van een proof of concept. Inrichten van een standaardapplicatie (bv. CRM, ERP, BI).`,
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan. Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+
+    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    
+    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+
+    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    
+    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
     `Bouwen en valideren van prototypen van nieuwe technologische oplossingen voor (interorganisationele) procesinnovaties.`,
   ],
   "Organisatieprocessen Manage & Control": [
-    `Verrichten van onderhoudswerkzaamheden aan procesdocumentatie (bv. business rules, principes en procesmodellen). Beschrijven van de veranderbehoefte voor een enkel deelproces.`,
-    `Inrichten, onderhouden en actualiseren van functionele beheerprocessen. Signaleren en inventariseren van de veranderbehoefte van meerdere operationele en tactische organisatieprocessen.`,
-    `Richten en actualiseren van principes, business rules en modellen van procesarchitectuur. Proactief signaleren van behoefte aan verandering in alle organisatie processen en bijbehorende veranderprocessen in gang zetten.`,
-    `Bedenken van nieuwe technologische oplossingen voor het beheren van (interorganisationele) procesinnovaties.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+
+    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
   ],
   "Infrastructuur Analyseren": [
     `Analyseren van een lokale/kleine infrastructuur volgens een standaardmethode en op basis van gegeven (niet-) functionele eisen.`,
