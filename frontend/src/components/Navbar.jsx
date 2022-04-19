@@ -13,11 +13,11 @@ export function Navbar() {
           HBO-I
         </Link>
       </Menu.Item>
-      <Menu.Item key="/vaardigheden">
+      {/* <Menu.Item key="/vaardigheden">
         <Link to='/vaardigheden'>
           Vaardigheden
         </Link>
-      </Menu.Item>
+      </Menu.Item> */}
       <Menu.Item key="/beheersingsniveaus">
         <Link to='/beheersingsniveaus'>
           Beheersingsniveaus

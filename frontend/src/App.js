@@ -24,9 +24,9 @@ function App() {
             <Route exact path="/">
               <Hboi />
             </Route>
-            <Route path='/vaardigheden'>
+            {/* <Route path='/vaardigheden'>
               <div>vaardigheden here</div>
-            </Route>
+            </Route> */}
             <Route path='/beheersingsniveaus'>
               <Beheersingsniveaus />
             </Route>
