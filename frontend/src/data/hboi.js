@@ -77,13 +77,13 @@ export const hboi = {
     Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders.
     
     Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
-    `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening.
+    `Analyseren van de consequenties van een (strategische) koerswijziging voor organisatie processen en hun informatievoorziening.
 
-    Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties.
+    Analyseren (kwantitatief en/of kwalitatief) van de huidige en toekomstige situatie op het gebied van bijvoorbeeld beleid, strategie, alignment en architectuur, met gebruikmaking van gangbare methoden.
     
-    Vaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders.
+    Analyseren van de huidige acceptatie van nieuwe technologie en eventuele weerstanden.
     
-    Analyseren van beschikbare ICT-mogelijkheden in het veld.`,
+    Analyseren van gestructureerde en ongestructureerde interne en externe data.`,
     `Uitvoeren van grondig theoretisch onderbouwd onderzoek naar technologische (interorganisationele) procesinnovaties (AI, machine & deep learning, digital twins, blockchain, etc.).`,
   ],
   "Organisatieprocessen Adviseren": [
