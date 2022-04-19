@@ -7,36 +7,61 @@ export const activiteiten = ["Analyseren", "Adviseren", "Ontwerpen", "Realiseren
 
 export const hboi = {
   "Gebruikersinteractie Analyseren": [
-    "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen.\n\nInventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. Oriënteren op bestaande interactieve concepten, diensten en producten.",
-    "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf.\n\n Analyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst. Evalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
-    "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch). \n\nAnalyseren van actuele en state of the art interactieve technologieën. Analyseren per iteratie van het effect van de eigen interventie op/in de UX.",
+    "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen.\n\n Inventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. \n\nOriënteren op bestaande interactieve concepten, diensten en producten.",
+    "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf.\n\n Analyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst.\n\n Evalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
+    "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch).\n\n Analyseren van actuele en state of the art interactieve technologieën.\n\n Analyseren per iteratie van het effect van de eigen interventie op/in de UX.",
     "Analyseren van maatschappelijke, domein- en/of branche specifieke trends & kansen en hierover op strategisch niveau communiceren aan de key stakeholders."
   ],
   "Gebruikersinteractie Adviseren": [
-    `Adviseren over interactieontwerp passend bij opdracht, klant en gebruikersbehoeften en voorafgaande oriëntatie. Aanbevelingen doen op basis van een gegeven usability-analyse voor het ontwerp van een interactief product, systeem of dienst.`,
-    `Geven van een goed gemotiveerd concreet advies over de te gebruiken interactieve technieken en/of interactieconcepten. Voorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met gebruikers- en bedrijfscontext. Adviseren over de doelstellingen van de huidige en volgende iteraties.`,
-    `Vertalen van analyse naar strategische aanbevelingen (op korte, middellange en langere termijn) voor het ontwerpen of verbeteren of onderzoeken van een UX met inzet van interactieve middelen. Hierbij wordt ook een onderbouwd advies gedaan voor het meest geschikte ontwerpproces (bijvoorbeeld UCD).`,
+    `Adviseren over interactieontwerp passend bij opdracht, klant en gebruikersbehoeften en voorafgaande oriëntatie.
+    
+    Aanbevelingen doen op basis van een gegeven usability-analyse voor het ontwerp van een interactief product, systeem of dienst.`,
+    `Geven van een goed gemotiveerd concreet advies over de te gebruiken interactieve technieken en/of interactieconcepten.
+    
+    Voorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met gebruikers- en bedrijfscontext.
+    
+    Adviseren over de doelstellingen van de huidige en volgende iteraties.`,
+    `Vertalen van analyse naar strategische aanbevelingen (op korte, middellange en langere termijn) voor het ontwerpen of verbeteren of onderzoeken van een UX met inzet van interactieve middelen. Hierbij wordt ook een onderbouwd advies gedaan voor het meest geschikte ontwerpproces (bijvoorbeeld UCD).
+    
+    Analyseren per iteratie van het effect van de eigen interventie op/in de UX.`,
     `Extrapoleren van technologische en maatschappelijke trends en deze vertalen naar een advies voor het ontwerp en de strategische inzet van zinvolle en innovatieve interactieve diensten en producten. Dit advies beschrijft een visie op de gebruikerservaring en de relatie tussen gebruiker en product/dienst.`
   ],
   "Gebruikersinteractie Ontwerpen": [
-    `Vertalen van adviezen in een eenvoudige gebruikersinteractie met een standaard prototyping-techniek. Ontwerpen van een (usability)test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden. Toepassen en uitvoeren van een gebruikelijk interactieontwerpproces, zoals user centered design.`,
-    `Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototyping-technieken. Ontwerpen van een usabilitytest waarmee de doelstellingen van de iteratie geëvalueerd worden.`,
-    `Vertalen van het advies naar een concreet en gedetailleerd UX-ontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat gemotiveerd ontwerpproces. Ontwerpen van een test waarmee de doelstellingen vanuit gebruikersperspectief geëvalueerd wordt.`,
+    `Vertalen van adviezen in een eenvoudige gebruikersinteractie met een standaard prototyping-techniek.
+
+    Ontwerpen van een (usability)test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden.
+    
+    Toepassen en uitvoeren van een gebruikelijk interactieontwerpproces, zoals user centered design.`,
+    `Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototyping-technieken.
+
+    Ontwerpen van een usabilitytest waarmee de doelstellingen van de iteratie geëvalueerd worden.`,
+    `Vertalen van het advies naar een concreet en gedetailleerd UX-ontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat gemotiveerd ontwerpproces.
+
+    Ontwerpen van een test waarmee de doelstellingen vanuit gebruikersperspectief geëvalueerd wordt.`,
     `Ontwerpen van user experience rekening houdend met langetermijnstrategie en organisatiedoelstellingen van de opdrachtgever. Hierbij wordt geanticipeerd op relevante maatschappelijke trends en technologische ontwikkelingen.`
   ],
   "Gebruikersinteractie Realiseren": [
     `Realiseren en kwalitatief testen van eenvoudige interactieve producten of diensten op basis van een interactieontwerp waarbij gebruik wordt gemaakt van gangbare tools, design guidelines en/of huisstijl.`,
-    `Realiseren van het interactieontwerp met verschillende tools en technieken. Uitvoeren van de usabilitytest in het veld of in een lab. Bewaken van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst.`,
-    `Realiseren en testen van de UX van een interactief product, prototype, systeem of dienst op basis van het ontwerp met gebruikmaking van bij de projectfasering passende tools en technieken. Bewaken van aansluiting UX-ontwerp en gerealiseerde product in een onvoorspelbare context.`,
+    `Realiseren van het interactieontwerp met verschillende tools en technieken.\n\n Uitvoeren van de usabilitytest in het veld of in een lab.\n\n Bewaken van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst.`,
+    `Realiseren en testen van de UX van een interactief product, prototype, systeem of dienst op basis van het ontwerp met gebruikmaking van bij de projectfasering passende tools en technieken.
+
+    Bewaken van aansluiting UX-ontwerp en gerealiseerde product in een onvoorspelbare context.`,
     `Realiseren van toekomst-bestendige producten, diensten of prototypes op de volgende aspecten:
     - Innovatief UX design
     - Innovatieve technieken en opkomende standaarden.
+    
     Validatie met key stakeholders van visie en strategie.`
   ],
   "Gebruikersinteractie Manage & Control": [
     `Vastleggen van de belangrijkste beslissingen, resultaten en inzichten m.b.t. interactieontwerp in een iteratief proces.`,
-    `Vastleggen van de vertrekpunten en opbrengsten m.b.t. gebruikersperspectief tussen de iteraties in een ontwerp- en ontwikkelproces, en hiermee en de verbinding tussen de iteraties inzichtelijk maken. Gebruiken en correct toepassen van standaarden (design guidelines m.b.t. interactie ontwerp, protocollen en methoden) passend binnen bedrijfscontext.`,
-    `Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces. Communiceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces. Verhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.`,
+    `Vastleggen van de vertrekpunten en opbrengsten m.b.t. gebruikersperspectief tussen de iteraties in een ontwerp- en ontwikkelproces, en hiermee en de verbinding tussen de iteraties inzichtelijk maken.
+
+    Gebruiken en correct toepassen van standaarden (design guidelines m.b.t. interactie ontwerp, protocollen en methoden) passend binnen bedrijfscontext.`,
+    `Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces.
+
+    Communiceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces
+    
+    Verhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.`,
     `Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.`
   ],
   "Organisatieprocessen Analyseren": [
