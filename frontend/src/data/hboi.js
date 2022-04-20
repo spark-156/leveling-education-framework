@@ -65,11 +65,9 @@ export const hboi = {
     `Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.`
   ],
   "Organisatieprocessen Analyseren": [
-    `Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces.
+    `Analyseren van een enkel organisatieproces, organisatie, gegevensstromen, databehoeften en procesbesturing op operationeel niveau.
 
-    Communiceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces
-    
-    Verhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.`,
+    Analyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening.`,
     `Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening.
 
     Analyseren van samenhang van knelpunten en oorzaak-gevolgrelaties.
@@ -91,12 +89,14 @@ export const hboi = {
     `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
 
     Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
-    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
+    `Adviseren over de interne en externe afstemming tussen business en ICT (alignment en governance) rekening houdend met de doelstellingen van de organisatie (o.a. missie, visies, strategie en KPI’s).
 
-    Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
-    `Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.
+    Adviseren over een veranderkundige aanpak bij de invoering van nieuwe ICT-mogelijkheden.
+    
+    Adviseren in oplossingen voor gestructureerde en ongestructureerde data.`,
+    `Adviseren van technologische (interorganisationele) proces innovaties, waarbij ook rekening wordt gehouden wordt met de sociale context (mens en organisatie).
 
-    Adviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.`,
+    Creëren van breed draagvlak onder alle relevante stakeholders.`,
   ],
   "Organisatieprocessen Ontwerpen": [
     `Ontwerpen van een enkel organisatieproces, enkele gegevensstromen, een organisatieonderdeel en/of een deel van de informatievoorziening.`,
@@ -115,40 +115,40 @@ export const hboi = {
     Evalueren en valideren van mogelijke procesinnovaties.`,
   ],
   "Organisatieprocessen Realiseren": [
-    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+    `Beschrijven en opstellen van werkinstructies, functie- en rolbeschrijvingen, en procedures voor een (aangepast) proces.
 
-    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    Testen van de aansluiting van de organisatieprocessen met de opgeleverde informatievoorziening.
     
-    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+    Opstellen van een eenvoudig implementatieplan.`,
+    `Realiseren van de invoering en acceptatie van procedures in samenhang met nieuwe of gewijzigde informatievoorziening en besturing
 
-    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
+    Opleiden en trainen van eindgebruikers in de vernieuwde processen en gebruik van een nieuwe ICT.
     
-    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
+    Bouwen en valideren van een proof of concept.
+    
+    Inrichten van een standaardapplicatie (bv. CRM, ERP, BI).`,
     `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
 
     Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
     `Bouwen en valideren van prototypen van nieuwe technologische oplossingen voor (interorganisationele) procesinnovaties.`,
   ],
   "Organisatieprocessen Manage & Control": [
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+    `Verrichten van onderhoudswerkzaamheden aan procesdocumentatie (bv. business rules, principes en procesmodellen).
 
-    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+    Beschrijven van de veranderbehoefte voor een enkel deelproces.`,
+    `Inrichten, onderhouden en actualiseren van functionele beheerprocessen.
 
-    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+    Signaleren en inventariseren van de veranderbehoefte van meerdere operationele en tactische organisatieprocessen.`,
+    `Richten en actualiseren van principes, business rules en modellen van procesarchitectuur.
 
-    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
-
-    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    Proactief signaleren van behoefte aan verandering in alle organisatie processen en bijbehorende veranderprocessen in gang zetten.`,
+    `Bedenken van nieuwe technologische oplossingen voor het beheren van (interorganisationele) procesinnovaties.`,
   ],
   "Infrastructuur Analyseren": [
     `Analyseren van een lokale/kleine infrastructuur volgens een standaardmethode en op basis van gegeven (niet-) functionele eisen.`,
-    `Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.
+    `Analyseren van de kwaliteit van een middelgrote infrastructuur en de daarop aanwezige services aan de hand van gangbare methoden en standaarden.
 
-    Inrichten van oplossingen voor gestructureerde en ongestructureerde data.`,
+    Analyseren van aan infrastructuur gerelateerde incidenten, problemen en security-bedreigingen.`,
     `Analyseren van de trends op het gebied van infrastructuren en deze vertalen naar gewenste of benodigde ontwikkelingen in bedrijfsinfrastructuur.
 
     Uitvoeren van een requirements- impact- of gap- analyse voor een enterprise infrastructuur om (niet-) functionele eisen, behoeftes en/of tekortkomingen, in kaart te brengen.`,
@@ -166,9 +166,11 @@ export const hboi = {
   ],
   "Infrastructuur Ontwerpen": [
     `Opstellen van specificaties voor een lokale/kleine infrastructuur volgens een standaardmethode.`,
-    `Adviseren over componenten van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.
+    `Adviseren over de architectuur van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.Beschrijven van beheerprocessen en maken van afspraken omtrent te leveren diensten.
 
-    Adviseren over de migratie naar, of keuze voor een public, private of hybride cloud.`,
+    Automatiseren van het beheer en de uitrol van een infrastructuur in een middelgrote omgeving.
+    
+    Opstellen van een technisch ontwerp voor een middelgrote infrastructuur met bijbehorende beveiliging op basis van (niet-) functionele eisen.`,
     `Ontwerpen van componenten van een enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving.
 
     Ontwerpen van een incident response organisatie (CSIRT) en systemen om adequaat te kunnen reageren op incidenten van iedere aard en omvang.`,
@@ -321,11 +323,9 @@ export const hboi = {
     Schrijven en testen van applicatiedriver-software.
     
     Implementeren en testen van een protocol.`,
-    `Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren.
+    `Realiseren van een compleet computersysteem inclusief netwerk, hardware en systeemsoftware.
 
-    Schrijven en testen van applicatiedriver-software.
-    
-    Implementeren en testen van een protocol.`,
+    Opstellen en uitvoeren van een acceptatieprocedure bijv. in een virtuele omgeving, inclusief aspecten als timing, resourcegebruik en performance.`,
     `Realiseren van een compleet computersysteem waarbij gebruik gemaakt wordt van hardware synthese (vhdl) of artificial intelligence.`
   ],
   "Hardwareinterfacing Manage & Control": [
