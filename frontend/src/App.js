@@ -14,6 +14,7 @@ import PageNotFound from "./views/PageNotFound";
 import ProfessionalSkills from "./views/Professionalskills";
 import Beheersingsniveaus from "./views/Beheersingsniveaus"
 import Hboi from "./views/Hboi";
+import RedirectHboi from "./views/RedirectHboi";
 
 function App() {
   return <Router>
@@ -33,7 +34,9 @@ function App() {
             <Route path='/professionalskills'>
               <ProfessionalSkills />
             </Route>
-            <Redirect from="/hboi" to="/" />
+            <Route path='/hboi/:architectuurlaag/:activiteit'>
+              <RedirectHboi />
+            </Route>
             <Route path='*'>
               <PageNotFound />
             </Route>
