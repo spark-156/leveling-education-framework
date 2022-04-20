@@ -1,7 +1,7 @@
-version: "3.3"
+version: "3.8"
 
 services: 
-  Traefik:
+  traefik:
     image: traefik:v2.4
     command:
       - --api.insecure=true
@@ -14,15 +14,16 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   
-  Frontend:
-    image: node:current-alpine
-    working_dir: /usr/src/app
-    command: yarn start
+  frontend:
+    build: 
+      context: frontend
+      target: development
     volumes: 
       - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
     labels: 
-      - "traefik.enable=true"
-      - "traefik.http.routers.frontend.rule=Host(`localhost`)"
-      - "traefik.http.routers.frontend.entrypoints=web"
-      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+      traefik.enable: true
+      traefik.http.routers.frontend.rule: Host(`localhost`)
+      traefik.http.routers.frontend.entrypoints: web
+      traefik.http.services.frontend.loadbalancer.server.port: 3000
       

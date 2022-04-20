@@ -1,6 +1,5 @@
 import { Divider, Row, Col } from 'antd';
 
-import { NavbarHBOI } from "../components/Navbar";
 import { CopyCard } from '../components/Card';
 
 import { beheersingsniveaus } from "../data/hboi";
@@ -11,7 +10,6 @@ export default function Beheersingsniveaus() {
   const complexiteitKeys = Object.keys(beheersingsniveaus.Complexiteit.Taakgericht)
   return (
     <>
-      <NavbarHBOI active="beheersingsniveaus" />
       <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16 }]}>
         <Col span={24}>
           <h2>Beheersingsniveaus</h2>

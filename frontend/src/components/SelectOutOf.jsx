@@ -4,10 +4,9 @@ import { Button, Space } from 'antd';
 import { CopyCard } from './Card';
 
 export default function SelectOutOf({ title, options, setSelectedFunction, selected }) {
-
   const setState = (value) => {
     if (value === selected) {
-      return setSelectedFunction("undefined");
+      return setSelectedFunction(null);
     } else {
       return setSelectedFunction(value);
     }
