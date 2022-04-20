@@ -110,11 +110,9 @@ export const hboi = {
     Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
     
     Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
-    `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
+    `Ontwerpen van technologische (interorganisationele) procesinnovaties.
 
-    Ontwerpen van een veranderkundige aanpak met bijbehorende interventies.
-    
-    Ontwerpen van oplossingen voor gestructureerde en ongestructureerde data.`,
+    Evalueren en valideren van mogelijke procesinnovaties.`,
   ],
   "Organisatieprocessen Realiseren": [
     `Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.
