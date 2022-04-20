@@ -1,6 +1,7 @@
 import { Card } from 'antd';
 
 import { CopyToClipboardButton } from './CopyToClipboardButton';
+import styles from "../styles/Card.module.css";
 
 export function CopyCard({ title, children, copy, headStyle }) {
 
@@ -9,6 +10,7 @@ export function CopyCard({ title, children, copy, headStyle }) {
 
   return (
     <Card
+      className={styles.displayLinebreak}
       headStyle={headStyle}
       title={title}
       size="small"
