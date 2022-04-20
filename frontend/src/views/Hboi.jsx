@@ -17,14 +17,8 @@ import { rowStyle } from "../lib";
 import useQueryString from "../lib/useQueryString";
 
 export default function Hboi() {
-  const [architectuurlaag, setSelectedArchitectuurlaag] = useQueryString(
-    "architectuurlaag",
-    null
-  );
-  const [activiteit, setSelectedActiviteit] = useQueryString(
-    "activiteit",
-    null
-  );
+  const [architectuurlaag, setSelectedArchitectuurlaag] = useQueryString("architectuurlaag");
+  const [activiteit, setSelectedActiviteit] = useQueryString("activiteit");
 
   let htmlHBOI = null;
 
