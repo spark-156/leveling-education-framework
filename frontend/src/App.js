@@ -6,8 +6,7 @@ import styles from "./styles/App.module.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
 } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
