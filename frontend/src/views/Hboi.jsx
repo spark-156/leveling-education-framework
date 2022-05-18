@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
 
-import { CopyCard } from "../components/CopyCard";
+import { CopyInfoCard } from "../components/CopyInfoCard";
 
 import {
   hboi,
@@ -38,9 +38,9 @@ export default function Hboi() {
               lg={6}
               xl={6}
             >
-              <CopyCard copy={hboi[key][niveau]['title']} title={`Niveau ${niveau}`}>
+              <CopyInfoCard info={hboi[key][niveau]['info']} infoTitle={`${key} ${niveau}`} copy={hboi[key][niveau]['title']} title={`Niveau ${niveau}`}>
                 {hboi[key][niveau]['title']}
-              </CopyCard>
+              </CopyInfoCard>
             </Col>
           ))}
         </Row>
@@ -68,9 +68,9 @@ export default function Hboi() {
                 lg={6}
                 xl={6}
               >
-                <CopyCard copy={hboi[`${architectuurlaag} ${activiteit}`][niveau]['title']} title={`Niveau ${niveau}`}>
+                <CopyInfoCard info={hboi[`${architectuurlaag} ${activiteit}`][niveau]['info']} infoTitle={`${architectuurlaag} ${activiteit} ${niveau}`} copy={hboi[`${architectuurlaag} ${activiteit}`][niveau]['title']} title={`Niveau ${niveau}`}>
                   {hboi[`${architectuurlaag} ${activiteit}`][niveau]['title']}
-                </CopyCard>
+                </CopyInfoCard>
               </Col>
             )
           )}
@@ -92,9 +92,9 @@ export default function Hboi() {
           >
             {Object.keys(architectuurlaagValue).map(niveau => (
               <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
-                <CopyCard copy={architectuurlaagValue[niveau]['title']} title={`Niveau ${niveau}`}>
+                <CopyInfoCard info={architectuurlaagValue[niveau]['info']} infoTitle={`${architectuurlaag} ${activiteiten[index]} ${niveau}`} copy={architectuurlaagValue[niveau]['title']} title={`Niveau ${niveau}`}>
                   {architectuurlaagValue[niveau]['title']}
-                </CopyCard>
+                </CopyInfoCard>
               </Col>
             ))}
           </Row>
@@ -115,9 +115,9 @@ export default function Hboi() {
         >
           {Object.keys(activiteitValue).map(niveau => (
               <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
-                <CopyCard copy={activiteitValue[niveau]['title']} title={`Niveau ${niveau}`}>
+                <CopyInfoCard info={activiteitValue[niveau]['info']} infoTitle={`${architectuurlagen[index]} ${activiteit} ${niveau}`} copy={activiteitValue[niveau]['title']} title={`Niveau ${niveau}`}>
                   {activiteitValue[niveau]['title']}
-                </CopyCard>
+                </CopyInfoCard>
               </Col>
             ))}
         </Row>
