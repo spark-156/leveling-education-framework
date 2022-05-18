@@ -5,7 +5,7 @@ import SelectOutOf from "../components/SelectOutOf";
 import { rowStyle } from "../lib"
 import { vaardigheden } from '../data/open-ict-vaardigheden'
 import { Row, Col, Divider } from 'antd'
-import { CopyCard } from "../components/CopyCard";
+import { CopyInfoCard } from "../components/CopyInfoCard";
 
 export default function Vaardigheden() {
     const [vaardigheid, setSelectedVaardigheid] = useQueryString("vaardigheid");
@@ -27,9 +27,9 @@ export default function Vaardigheden() {
                   lg={6}
                   xl={6}
                 >
-                  <CopyCard copy={vaardigheden[key][niveau]['title']} title={`Niveau ${niveau}`}>
+                  <CopyInfoCard info={vaardigheden[key][niveau]['info']} infoTitle={`${key} ${niveau}`} copy={vaardigheden[key][niveau]['title']} title={`Niveau ${niveau}`}>
                     {vaardigheden[key][niveau]['title']}
-                  </CopyCard>
+                  </CopyInfoCard>
                 </Col>
               ))}
             </Row>
@@ -53,9 +53,9 @@ export default function Vaardigheden() {
                 lg={6}
                 xl={6}
               >
-                <CopyCard copy={vaardigheden[vaardigheid][niveau]['title']} title={`Niveau ${niveau}`}>
+                <CopyInfoCard info={vaardigheden[vaardigheid][niveau]['info']} infoTitle={`${vaardigheid} ${niveau}`} copy={vaardigheden[vaardigheid][niveau]['title']} title={`Niveau ${niveau}`}>
                   {vaardigheden[vaardigheid][niveau]['title']}
-                </CopyCard>
+                </CopyInfoCard>
               </Col>
             ))}
           </Row>
