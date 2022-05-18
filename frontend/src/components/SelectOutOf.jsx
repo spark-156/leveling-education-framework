@@ -1,7 +1,7 @@
 
 import { Button, Space } from 'antd';
 
-import { CopyCard } from './Card';
+import { CustomCard } from './CustomCard';
 
 export default function SelectOutOf({ title, options, setSelectedFunction, selected }) {
   const setState = (value) => {
@@ -12,7 +12,7 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
     }
   }
 
-  return <CopyCard
+  return <CustomCard
     headStyle={{ backgroundColor: "#1890ff", color: "#fff" }}
     title={title}
   >
@@ -27,5 +27,5 @@ export default function SelectOutOf({ title, options, setSelectedFunction, selec
         </Button>)
       })}
     </Space>
-  </CopyCard >
+  </CustomCard >
 }

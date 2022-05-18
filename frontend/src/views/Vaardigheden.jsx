@@ -5,7 +5,7 @@ import SelectOutOf from "../components/SelectOutOf";
 import { rowStyle } from "../lib"
 import { vaardigheden } from '../data/open-ict-vaardigheden'
 import { Row, Col, Divider } from 'antd'
-import { CopyCard } from "../components/Card";
+import { CopyCard } from "../components/CopyCard";
 
 export default function Vaardigheden() {
     const [vaardigheid, setSelectedVaardigheid] = useQueryString("vaardigheid");

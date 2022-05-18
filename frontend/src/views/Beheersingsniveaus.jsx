@@ -1,6 +1,6 @@
 import { Divider, Row, Col } from 'antd';
 
-import { CopyCard } from '../components/Card';
+import { CopyCard } from '../components/CopyCard';
 
 import { beheersingsniveaus } from "../data/hboi";
 import { rowStyle } from '../lib';

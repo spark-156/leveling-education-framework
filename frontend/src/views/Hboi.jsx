@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
 
-import { CopyCard } from "../components/Card";
+import { CopyCard } from "../components/CopyCard";
 
 import {
   hboi,
@@ -28,7 +28,7 @@ export default function Hboi() {
           style={rowStyle}
           gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
         >
-          {Object.keys(hboi[key]).map((niveau, index) => (
+          {Object.keys(hboi[key]).map(niveau => (
             <Col
               key={niveau}
               span={6}
