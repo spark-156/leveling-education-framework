@@ -33,7 +33,7 @@ export default function Hboi() {
               style={rowStyle}
               gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
             >
-              {hboi[key].map((niveau, index) => (
+              {Object.keys(hboi[key]).map((niveau, index) => (
                 <Col
                   key={niveau}
                   span={6}
@@ -43,8 +43,8 @@ export default function Hboi() {
                   lg={6}
                   xl={6}
                 >
-                  <CopyCard copy={niveau} title={`Niveau ${index + 1}`}>
-                    {niveau}
+                  <CopyCard copy={hboi[key][niveau]['title']} title={`Niveau ${niveau}`}>
+                    {hboi[key][niveau]['title']}
                   </CopyCard>
                 </Col>
               ))}
@@ -65,10 +65,9 @@ export default function Hboi() {
           style={rowStyle}
           gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
         >
-          {hboi[`${architectuurlaag} ${activiteit}`].map(
-            (hboiNiveau, index) => (
+          {Object.keys(hboi[`${architectuurlaag} ${activiteit}`]).map(niveau => (
               <Col
-                key={hboiNiveau}
+                key={niveau}
                 span={6}
                 xs={24}
                 sm={12}
@@ -76,8 +75,8 @@ export default function Hboi() {
                 lg={6}
                 xl={6}
               >
-                <CopyCard copy={hboiNiveau} title={`Niveau ${index + 1}`}>
-                  {hboiNiveau}
+                <CopyCard copy={hboi[`${architectuurlaag} ${activiteit}`][niveau]['title']} title={`Niveau ${niveau}`}>
+                  {hboi[`${architectuurlaag} ${activiteit}`][niveau]['title']}
                 </CopyCard>
               </Col>
             )
@@ -98,10 +97,10 @@ export default function Hboi() {
             style={rowStyle}
             gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
           >
-            {architectuurlaagValue.map((niveau, index) => (
+            {Object.keys(architectuurlaagValue).map(niveau => (
               <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
-                <CopyCard copy={niveau} title={`Niveau ${index + 1}`}>
-                  {niveau}
+                <CopyCard copy={architectuurlaagValue[niveau]['title']} title={`Niveau ${niveau}`}>
+                  {architectuurlaagValue[niveau]['title']}
                 </CopyCard>
               </Col>
             ))}
@@ -121,13 +120,13 @@ export default function Hboi() {
           style={rowStyle}
           gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
         >
-          {activiteitValue.map((niveau, index) => (
-            <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
-              <CopyCard copy={niveau} title={`Niveau ${index + 1}`}>
-                {niveau}
-              </CopyCard>
-            </Col>
-          ))}
+          {Object.keys(activiteitValue).map(niveau => (
+              <Col key={niveau} span={6} xs={24} sm={12} md={12} lg={6} xl={6}>
+                <CopyCard copy={activiteitValue[niveau]['title']} title={`Niveau ${niveau}`}>
+                  {activiteitValue[niveau]['title']}
+                </CopyCard>
+              </Col>
+            ))}
         </Row>
       </>
     ));
