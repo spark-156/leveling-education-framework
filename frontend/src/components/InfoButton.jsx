@@ -1,9 +1,9 @@
 import { Button } from "antd";
-import { InfoOutlined } from "@ant-design/icons";
+import { InfoCircleOutlined } from "@ant-design/icons";
 
 export function InfoButton ({ onClick }) {
   return <Button 
-    icon={<InfoOutlined />}
+    icon={<InfoCircleOutlined />}
     onClick={onClick}
   />
 }
