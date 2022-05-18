@@ -20,40 +20,33 @@ export default function Hboi() {
   const [architectuurlaag, setSelectedArchitectuurlaag] = useQueryString("architectuurlaag");
   const [activiteit, setSelectedActiviteit] = useQueryString("activiteit");
 
-  let htmlHBOI = null;
-
-  if (!architectuurlaag && !activiteit) {
-    // none selected
-    htmlHBOI = (
+  let htmlHBOI = <>
+    {Object.keys(hboi).map((key) => (
       <>
-        {Object.keys(hboi).map((key) => (
-          <>
-            <Divider orientation="left">{key}</Divider>
-            <Row
-              style={rowStyle}
-              gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
+        <Divider orientation="left">{key}</Divider>
+        <Row
+          style={rowStyle}
+          gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
+        >
+          {Object.keys(hboi[key]).map((niveau, index) => (
+            <Col
+              key={niveau}
+              span={6}
+              xs={24}
+              sm={12}
+              md={12}
+              lg={6}
+              xl={6}
             >
-              {Object.keys(hboi[key]).map((niveau, index) => (
-                <Col
-                  key={niveau}
-                  span={6}
-                  xs={24}
-                  sm={12}
-                  md={12}
-                  lg={6}
-                  xl={6}
-                >
-                  <CopyCard copy={hboi[key][niveau]['title']} title={`Niveau ${niveau}`}>
-                    {hboi[key][niveau]['title']}
-                  </CopyCard>
-                </Col>
-              ))}
-            </Row>
-          </>
-        ))}
+              <CopyCard copy={hboi[key][niveau]['title']} title={`Niveau ${niveau}`}>
+                {hboi[key][niveau]['title']}
+              </CopyCard>
+            </Col>
+          ))}
+        </Row>
       </>
-    );
-  }
+    ))}
+  </>
   if (architectuurlaag && activiteit) {
     // both selected
     htmlHBOI = (
