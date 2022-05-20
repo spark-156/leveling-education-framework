@@ -19,14 +19,20 @@ export function CopyInfoCard ({ children, title, copy, info, infoTitle, headStyl
     <CustomCard 
       headStyle={headStyle}
       title={title}
-      extra={<Space>
-        <InfoButton info={info} onClick={() => showDrawer()} />
-        <CopyToClipboardButton content={copy} />
-      </Space>}
+      extra={info ? 
+        <Space>
+          <InfoButton info={info} onClick={() => showDrawer()} />
+          <CopyToClipboardButton content={copy} />
+        </Space> 
+        : 
+        <Space>
+          <CopyToClipboardButton content={copy} />
+        </Space>
+      }
       children={children}
     />
-    <Drawer title={infoTitle} placement="right" onClose={onClose} visible={visible}>
+    {info ? <Drawer title={infoTitle} placement="right" onClose={onClose} visible={visible}>
       <ReactMarkdown>{ info }</ReactMarkdown>
-    </Drawer>
+    </Drawer> : null}
   </>
 }
