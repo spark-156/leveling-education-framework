@@ -14,6 +14,7 @@ import ProfessionalSkills from "./views/Professionalskills";
 import Beheersingsniveaus from "./views/Beheersingsniveaus"
 import Hboi from "./views/Hboi";
 import RedirectHboi from "./views/RedirectHboi";
+import Vaardigheden from "./views/Vaardigheden";
 
 function App() {
   return <Router>
@@ -24,9 +25,9 @@ function App() {
             <Route exact path="/">
               <Hboi />
             </Route>
-            {/* <Route path='/vaardigheden'>
-              <div>vaardigheden here</div>
-            </Route> */}
+            <Route path='/vaardigheden'>
+              <Vaardigheden />
+            </Route>
             <Route path='/beheersingsniveaus'>
               <Beheersingsniveaus />
             </Route>
