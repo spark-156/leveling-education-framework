@@ -1,7 +1,7 @@
 import React from "react"
 
 import useQueryString from "../lib/useQueryString";
-import SelectOutOf from "../components/SelectOutOf";
+import SelectOutOfTen from "../components/SelectOutOfTen";
 import { rowStyle } from "../lib"
 import { vaardigheden } from '../data/open-ict-vaardigheden'
 import { Row, Col, Divider } from 'antd'
@@ -69,14 +69,9 @@ export default function Vaardigheden() {
                 style={{
                     margin: "0 auto"
                 }} 
-                span={12}
-                xs={24}
-                sm={24} 
-                md={12} 
-                lg={12} 
-                xl={12}
+                span={24}
             >
-                <SelectOutOf
+                <SelectOutOfTen
                     title="Vaardigheden"
                     options={Object.keys(vaardigheden)}
                     id="vaardigheden"

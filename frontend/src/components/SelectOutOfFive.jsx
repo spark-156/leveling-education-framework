@@ -3,7 +3,7 @@ import { Button, Space } from 'antd';
 
 import { CustomCard } from './CustomCard';
 
-export default function SelectOutOf({ title, options, setSelectedFunction, selected }) {
+export default function SelectOutOfFive({ title, options, setSelectedFunction, selected }) {
   const setState = (value) => {
     if (value === selected) {
       return setSelectedFunction(null);

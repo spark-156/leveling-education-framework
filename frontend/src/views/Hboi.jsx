@@ -11,7 +11,7 @@ import {
   architectuurlagenPointer,
 } from "../data/hboi";
 
-import SelectOutOf from "../components/SelectOutOf";
+import SelectOutOfFive from "../components/SelectOutOfFive";
 import { rowStyle } from "../lib";
 
 import useQueryString from "../lib/useQueryString";
@@ -129,7 +129,7 @@ export default function Hboi() {
     <>
       <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16 }]}>
         <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
-          <SelectOutOf
+          <SelectOutOfFive
             title="Architectuurlagen"
             options={architectuurlagen}
             id="architectuurlagen"
@@ -138,7 +138,7 @@ export default function Hboi() {
           />
         </Col>
         <Col span={12} xs={24} sm={24} md={12} lg={12} xl={12}>
-          <SelectOutOf
+          <SelectOutOfFive
             title="Activiteiten"
             options={activiteiten}
             id="activiteiten"
