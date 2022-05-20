@@ -1,4 +1,5 @@
-import * as vaardigheden from '../json/vaardigheden.json'
+import * as importedVaardigheden from '../json/vaardigheden.json'
+const vaardigheden = importedVaardigheden['default']
 
 export {
     vaardigheden

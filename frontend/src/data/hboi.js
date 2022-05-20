@@ -1,8 +1,8 @@
 /*
 This is a one to one copy of https://www.hbo-i.nl/publicaties-domeinbeschrijving/ pdf edition 2018 release
 */
-import * as hboi from '../json/hboi.json'
-
+import * as importedHboi from '../json/hboi.json';
+const hboi = importedHboi['default']
 
 const architectuurlagen = ["Gebruikersinteractie", "Organisatieprocessen", "Infrastructuur", "Software", "Hardwareinterfacing"]
 
