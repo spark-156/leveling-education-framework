@@ -1,4 +1,4 @@
-const vaardigheden = {
+{
     "Juiste kennis ontwikkelen": {
         "1": {
             "title": "Student bepaalt welke kennis ontbreekt en stelt daarvoor learning stories/tasks met learning doelen op. Student toont aan welke bronnen zijn gebruikt en welke kennis is ontwikkeld. Student past deze kennis toe in producten/deliverables en draagt deze kennis over aan peers. ",
@@ -179,8 +179,4 @@ const vaardigheden = {
             "info": ""
         }
     }
-}
-
-export {
-    vaardigheden
 }

@@ -3,7 +3,7 @@ import React from "react"
 import useQueryString from "../lib/useQueryString";
 import SelectOutOfTen from "../components/SelectOutOfTen";
 import { rowStyle } from "../lib"
-import { vaardigheden } from '../data/open-ict-vaardigheden'
+import { vaardigheden } from '../data/vaardigheden'
 import { Row, Col, Divider } from 'antd'
 import { CopyInfoCard } from "../components/CopyInfoCard";
 
