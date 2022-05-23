@@ -10,22 +10,22 @@ export function Navbar() {
     <Menu theme="light" defaultSelectedKeys={['/']} selectedKeys={[location.pathname]} mode="horizontal">
       <Menu.Item key="/" icon={<BookOutlined />}>
         <Link to='/'>
-          HBO-I
+          Beroepstaken (HBO-i)
         </Link>
       </Menu.Item>
       <Menu.Item key="/vaardigheden">
         <Link to='/vaardigheden'>
-          Vaardigheden
+          Vaardigheden Open-ICT
         </Link>
       </Menu.Item>
       <Menu.Item key="/beheersingsniveaus">
         <Link to='/beheersingsniveaus'>
-          Beheersingsniveaus
+          Beheersingsniveaus (HBO-i)
         </Link>
       </Menu.Item>
       <Menu.Item key="/professionalskills">
         <Link to='/professionalskills'>
-          Professionalskills
+          Professional Skills (HBO-i)
         </Link>
       </Menu.Item>
     </Menu>
