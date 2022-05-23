@@ -1,4 +1,94 @@
 {
+    "Gebruikersinteractie Analyseren": {
+        "1": {
+            "title": "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen.\n\nInventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. \n\nOriënteren op bestaande interactieve concepten, diensten en producten.",
+            "info": ""
+        },
+        "2": {
+            "title": "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf.\n\nAnalyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst.\n\nEvalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
+            "info": ""
+        },
+        "3": {
+            "title": "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch).\n\nAnalyseren van actuele en state of the art interactieve technologieën.\n\nAnalyseren per iteratie van het effect van de eigen interventie op/in de UX.",
+            "info": ""
+        },
+        "4": {
+            "title": "Analyseren van maatschappelijke, domein- en/of branche specifieke trends & kansen en hierover op strategisch niveau communiceren aan de key stakeholders.",
+            "info": ""
+        }
+    },
+    "Gebruikersinteractie Adviseren": {
+        "1": {
+            "title": "Adviseren over interactieontwerp passend bij opdracht, klant en gebruikersbehoeften en voorafgaande oriëntatie.\n\nAanbevelingen doen op basis van een gegeven usability-analyse voor het ontwerp van een interactief product, systeem of dienst.",
+            "info": ""
+        },
+        "2": {
+            "title": "Geven van een goed gemotiveerd concreet advies over de te gebruiken interactieve technieken en/of interactieconcepten.\n\nVoorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met gebruikers- en bedrijfscontext.\n\nAdviseren over de doelstellingen van de huidige en volgende iteraties.",
+            "info": ""
+        },
+        "3": {
+            "title": "Vertalen van analyse naar strategische aanbevelingen (op korte, middellange en langere termijn) voor het ontwerpen of verbeteren of onderzoeken van een UX met inzet van interactieve middelen. Hierbij wordt ook een onderbouwd advies gedaan voor het meest geschikte ontwerpproces (bijvoorbeeld UCD).\n\nAnalyseren per iteratie van het effect van de eigen interventie op/in de UX.",
+            "info": ""
+        },
+        "4": {
+            "title": "Extrapoleren van technologische en maatschappelijke trends en deze vertalen naar een advies voor het ontwerp en de strategische inzet van zinvolle en innovatieve interactieve diensten en producten. Dit advies beschrijft een visie op de gebruikerservaring en de relatie tussen gebruiker en product/dienst.",
+            "info": ""
+        }
+    },
+    "Gebruikersinteractie Ontwerpen": {
+        "1": {
+            "title": "Vertalen van adviezen in een eenvoudige gebruikersinteractie met een standaard prototyping-techniek.\n\nOntwerpen van een (usability)test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden.\n\nToepassen en uitvoeren van een gebruikelijk interactieontwerpproces, zoals user centered design.",
+            "info": ""
+        },
+        "2": {
+            "title": "Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototyping-technieken.\n\nOntwerpen van een usabilitytest waarmee de doelstellingen van de iteratie geëvalueerd worden.",
+            "info": ""
+        },
+        "3": {
+            "title": "Vertalen van het advies naar een concreet en gedetailleerd UX-ontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat gemotiveerd ontwerpproces.\n\nOntwerpen van een test waarmee de doelstellingen vanuit gebruikersperspectief geëvalueerd wordt.",
+            "info": ""
+        },
+        "4": {
+            "title": "Ontwerpen van user experience rekening houdend met langetermijnstrategie en organisatiedoelstellingen van de opdrachtgever. Hierbij wordt geanticipeerd op relevante maatschappelijke trends en technologische ontwikkelingen.",
+            "info": ""
+        }
+    },
+    "Gebruikersinteractie Realiseren": {
+        "1": {
+            "title": "Realiseren en kwalitatief testen van eenvoudige interactieve producten of diensten op basis van een interactieontwerp waarbij gebruik wordt gemaakt van gangbare tools, design guidelines en/of huisstijl.",
+            "info": ""
+        },
+        "2": {
+            "title": "Realiseren van het interactieontwerp met verschillende tools en technieken.\n\nUitvoeren van de usabilitytest in het veld of in een lab.\n\nBewaken van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst.",
+            "info": ""
+        },
+        "3": {
+            "title": "Realiseren en testen van de UX van een interactief product, prototype, systeem of dienst op basis van het ontwerp met gebruikmaking van bij de projectfasering passende tools en technieken.\n\nBewaken van aansluiting UX-ontwerp en gerealiseerde product in een onvoorspelbare context.",
+            "info": ""
+        },
+        "4": {
+            "title": "Realiseren van toekomst-bestendige producten, diensten of prototypes op de volgende aspecten:\n- Innovatief UX design\n- Innovatieve technieken en opkomende standaarden.\n\nValidatie met key stakeholders van visie en strategie.",
+            "info": ""
+        }
+    },
+    "Gebruikersinteractie Manage & Control": {
+        "1": {
+            "title": "Vastleggen van de belangrijkste beslissingen, resultaten en inzichten m.b.t. interactieontwerp in een iteratief proces.",
+            "info": ""
+        },
+        "2": {
+            "title": "Vastleggen van de vertrekpunten en opbrengsten m.b.t. gebruikersperspectief tussen de iteraties in een ontwerp- en ontwikkelproces, en hiermee en de verbinding tussen de iteraties inzichtelijk maken.\n\nGebruiken en correct toepassen van standaarden (design guidelines m.b.t. interactie ontwerp, protocollen en methoden) passend binnen bedrijfscontext.",
+            "info": ""
+        },
+        "3": {
+            "title": "Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces.\n\nCommuniceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces\n\nVerhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.",
+            "info": ""
+        },
+        "4": {
+            "title": "Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.",
+            "info": ""
+        }
+    },
     "Organisatieprocessen Analyseren": {
         "1": {
             "title": "Analyseren van een enkel organisatieproces, organisatie, gegevensstromen, databehoeften en procesbesturing op operationeel niveau.\n\nAnalyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening.",
@@ -269,7 +359,7 @@
             "info": ""
         }
     },
-    "Hardware interfacing Analyseren": {
+    "Hardwareinterfacing Analyseren": {
         "1": {
             "title": "Beschrijven van de architectuur van een computersysteem.\n\nBeschrijven van de werking van actuatoren en sensoren en metingen hieraan verrichten.\n\nOpstellen van (niet-)functionele eisen en acceptatiecriteria voor een computersysteem, bijv. een embedded of IA-systeem.",
             "info": ""
@@ -287,7 +377,7 @@
             "info": ""
         }
     },
-    "Hardware interfacing Adviseren": {
+    "Hardwareinterfacing Adviseren": {
         "1": {
             "title": "Verifiëren en onderbouwen van een gegeven technisch advies. Verifiëren en beschrijven van de initiële architectuur en de functionaliteit van een gegeven systeemconfiguratie (microprocessor, geheugen of andere bouwstenen).",
             "info": ""
@@ -305,7 +395,7 @@
             "info": ""
         }
     },
-    "Hardware interfacing Ontwerpen": {
+    "Hardwareinterfacing Ontwerpen": {
         "1": {
             "title": "Ontwerpen van een eenvoudig computersysteem, bijv. een embedded of industriële automatiseringssysteem, op basis van gegeven hardware.",
             "info": ""
@@ -323,7 +413,7 @@
             "info": ""
         }
     },
-    "Hardware interfacing Realiseren": {
+    "Hardwareinterfacing Realiseren": {
         "1": {
             "title": "Software schrijven voor een eenvoudig, gegeven computersysteem, voorzien van actuatoren en sensoren.",
             "info": ""
@@ -341,7 +431,7 @@
             "info": ""
         }
     },
-    "Hardware interfacing Manage & Control": {
+    "Hardwareinterfacing Manage & Control": {
         "1": {
             "title": "Inrichten van een ontwikkel- en testplatform middels co-design ten behoeve van hardware/software, inclusief tools",
             "info": ""
