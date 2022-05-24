@@ -15,7 +15,6 @@ import { Layout } from "antd";
 import CustomRoute from "./components/CustomRoute";
 import styles from './styles/App.module.css'
 
-
 const { Sider, Content } = Layout
 
 function App() {

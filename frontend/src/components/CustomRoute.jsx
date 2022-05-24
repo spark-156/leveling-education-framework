@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import { Route } from "react-router-dom";
 import { PageContainer } from "./PageContainer";
 import { Navbar } from "./Navbar";
-import { TopicMenu } from "./TopicMenu";
 
 export default function CustomRoute ({ 
     pageTitle = "", 
@@ -21,7 +20,6 @@ export default function CustomRoute ({
             <Navbar 
                 showBackIcon={showBackIcon} 
                 pageTitle={pageTitle} 
-                menu={TopicMenu}
                 selectedKey={selectedKey} 
                 setSelectedKey={setSelectedKey} 
             />
