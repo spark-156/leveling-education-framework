@@ -4,6 +4,7 @@ import { MenuOutlined } from '@ant-design/icons';
 import { TopicMenu } from "./TopicMenu";
 import { useSelector } from 'react-redux';
 import { selectKey } from "../store/selectedKeySlice";
+import { LucaBergmanProfile } from "./LucaBergmanProfile";
 
 export function Navbar ({ showBackIcon = false }) {
     const [visible, setVisible] = useState(false);
@@ -14,6 +15,7 @@ export function Navbar ({ showBackIcon = false }) {
             onBack={() => setVisible(true)}
             title={title}
             backIcon={showBackIcon ? <MenuOutlined /> : null}
+            extra={<LucaBergmanProfile />}
         >
             <Drawer
                 title="Menu"
