@@ -2,7 +2,7 @@
 import { Divider, Row, Col } from 'antd';
 import { rowStyle } from '../lib';
 
-import { CopyCard } from "./Card";
+import { CopyCard } from "./CopyCard";
 
 
 export function Skill({ title, description, afzonderlijketaken }) {
