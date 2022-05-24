@@ -19,7 +19,6 @@ const { Sider, Content } = Layout
 
 function App() {
   const [collapsed, setCollapsed] = useState(false)
-  const [selectedKey, setSelectedKey] = useState("Beroepsproduct")
   const [breakpoint, setBreakpoint] = useState(true)
 
   return <Router>
@@ -34,71 +33,50 @@ function App() {
           collapsedWidth="0"
           theme="light"
         >
-          <TopicMenu 
-            selectedKey={selectedKey} 
-            setSelectedKey={setSelectedKey} 
-          />
+          <TopicMenu />
         </Sider>
         <Content>
             <Switch>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="Beroepsproduct"
                 collapsed={collapsed}
                 path="/"
                 exact
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <Hboi />
               </CustomRoute>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="Vaardigheden"
                 collapsed={collapsed}
                 path='/vaardigheden'
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <Vaardigheden />
               </CustomRoute>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="Beheersingsniveaus"
                 collapsed={collapsed}
                 path='/beheersingsniveaus'
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <Beheersingsniveaus />
               </CustomRoute>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="Professional Skills"
                 collapsed={collapsed}
                 path='/professionalskills'
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <ProfessionalSkills />
               </CustomRoute>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="Beroepsproduct"
                 collapsed={collapsed}
                 path='/hboi/:architectuurlaag/:activiteit'
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <RedirectHboi />
               </CustomRoute>
               <CustomRoute 
                 showBackIcon={breakpoint}
-                pageTitle="404"
                 collapsed={collapsed}
                 path='*'
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
               >
                 <PageNotFound />
               </CustomRoute>

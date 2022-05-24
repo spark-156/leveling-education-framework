@@ -9,8 +9,6 @@ export default function CustomRoute ({
     path, 
     exact = false, 
     children,
-    selectedKey,
-    setSelectedKey 
 }) {
     return <Route
         path={path}
@@ -20,8 +18,6 @@ export default function CustomRoute ({
             <Navbar 
                 showBackIcon={showBackIcon} 
                 pageTitle={pageTitle} 
-                selectedKey={selectedKey} 
-                setSelectedKey={setSelectedKey} 
             />
             <PageContainer > 
                 {children}
