@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TopicMenu } from "./components/TopicMenu";
-
+import { ScrollToTop } from './components/ScrollToTop';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,7 +13,6 @@ import RedirectHboi from "./views/RedirectHboi";
 import Vaardigheden from "./views/Vaardigheden";
 import { Layout } from "antd";
 import CustomRoute from "./components/CustomRoute";
-import styles from './styles/App.module.css'
 
 const { Sider, Content } = Layout
 
@@ -22,6 +21,7 @@ function App() {
   const [breakpoint, setBreakpoint] = useState(true)
 
   return <Router>
+      <ScrollToTop />
       <Layout>
         <Sider
           onBreakpoint={broken => {setBreakpoint(broken); setCollapsed(broken)}}
@@ -29,7 +29,7 @@ function App() {
           trigger={null}
           collapsed={collapsed}
           breakpoint="lg"
-          className={styles.sider}
+          style={{ position: "sticky", background: "#fff", left: 0, top: 0, height: "100vh" }}
           collapsedWidth="0"
           theme="light"
         >
