@@ -27,7 +27,7 @@
             "info": ""
         },
         "3": {
-            "title": "Student neemt de waarde van het product voor de indirecte stakeholders mee in het opstellen van de acceptatiecriteria. Student laat zien dat bij het opstellen van criteria rekening is gehouden met schaalbaarheid en onderhoudbaarheid van de oplossing en dat ethische aspecten van de oplossing. Student laat zien in staat te zijn om producten op HBO-i niveau 3 te kunnen opleveren. ",
+            "title": "Student neemt de waarde van het product voor de indirecte stakeholders mee in het opstellen van de acceptatiecriteria. Student laat zien dat bij het opstellen van criteria rekening is gehouden met schaalbaarheid en onderhoudbaarheid van de oplossing en ethische aspecten van de oplossing. Student laat zien in staat te zijn om producten op HBO-i niveau 3 te kunnen opleveren. ",
             "info": ""
         },
         "4": {
@@ -99,7 +99,7 @@
             "info": ""
         },
         "3": {
-            "title": "Student overtuigt betrokkenen om het draagvlak voor het doel te vergroten, met aandacht voor de context waarin de betrokkenen zich bevinden. Student maakt onderscheid tussen feiten en meningen. ",
+            "title": "Student overtuigt betrokkenen om het draagvlak voor het doel te vergroten, met aandacht voor de context waarin de betrokkenen zich bevinden. Student maakt onderscheid tussen feiten en meningen.",
             "info": ""
         },
         "4": {
@@ -109,65 +109,65 @@
     },
     "Plannen": {
         "1": {
-            "title": "Student maakt een korte termijn planning voor eigen taken, zet deze in logische volgorde en houdt zich aan de planning. Student past planning aan op de verwachte capaciteit. Student communiceert en verantwoordt verstoringen in de planning aan team. Student bereidt besprekingen voor. ",
+            "title": "Student maakt een kortetermijnplanning voor eigen taken, zet deze in logische volgorde en houdt zich aan de planning. Student plant op basis van de beschikbare capaciteit. Student communiceert en verantwoordt verstoringen in de planning aan team.",
             "info": ""
         },
         "2": {
-            "title": "Student maakt middenlange termijn planning voor team en zet deze om in een eigen korte termijn planning met taken. Student past de planning aan op de verwachte capaciteit van het team.",
+            "title": "Student maakt middellangetermijnplanning voor team en zet deze om in een eigen korte termijn planning met taken. Student plant op basis van de beschikbare teamcapaciteit.",
             "info": ""
         },
         "3": {
-            "title": "Student maakt een lange termijn planning rekening houdend met de capaciteit van het team en de wensen van de direct betrokkenen.",
+            "title": "Student maakt een langetermijnplanning rekening houdend met de beschikbare capaciteit van het team en de direct betrokkenen.",
             "info": ""
         },
         "4": {
-            "title": "Student vertaalt de gekozen strategie en visie naar een lange termijn (mogelijk meerjaren) planning en past deze planning aan waar nodig. Student houdt bij het maken van deze planning rekening met de capaciteit van het team en de wensen direct en indirect betrokkenen.",
+            "title": "Student vertaalt de gekozen strategie en visie naar een langetermijnplanning (mogelijk meerjaren) en past deze planning aan waar nodig. Student houdt bij het maken van deze planning rekening met de beschikbare capaciteit van het team en de wensen van direct en indirect betrokkenen.",
             "info": ""
         }
     },
-    "Aanpassen": {
+    "Flexibel opstellen": {
         "1": {
-            "title": "Student past zich aan op de gekozen werkwijze binnen team, bedrijf en school. Student past het eigen gedrag aan op feedback van anderen en reflectie van zichzelf. Student stelt zich meewerkend op bij lastige keuzes of onverwachte situaties en tegenslagen.",
+            "title": "Student houdt zich aan op de gekozen werkwijze binnen team en school. Student stelt zich meewerkend op bij lastige keuzes of onverwachte situaties en tegenslagen.",
             "info": ""
         },
         "2": {
-            "title": "Student is in staat om over eigen ideeën, aannames, vooroordelen en gemakken heen te stappen en/of ter discussie stellen om zo rekening te houden met duurzaamheid en diversiteit.  ",
+            "title": "Student houdt zich aan op de gekozen werkwijze binnen team, school en opdrachtgever. Student is in staat om over aannames, vooroordelen, eigen gemakken en ideeën heen te stappen en/of ter discussie te stellen. Student houdt daarbij zeker rekening met duurzaamheid en diversiteit.",
             "info": ""
         },
         "3": {
-            "title": "Student is in staat om zich aan te passen aan veranderende strategieën. Student kan omgaan met concurrende doelen en stelt zich meewerkend op in de gekozen strategie.",
+            "title": "Student houdt zich aan de gegeven strategie. Student kan omgaan met concurrende doelen.",
             "info": ""
         },
         "4": {
-            "title": "Student is in staat om te gaan met conflicterende belangen zowel voor zichzelf als met betrekking tot de strategie.",
+            "title": "Student houdt zich aan de gekozen strategie en is in staat om de uitvoering van de gekozen strategie bij te stellen op basis van conflicterende belangen vanuit direct en indirect betrokkenen.",
             "info": ""
         }
     },
     "Pro-actief handelen": {
         "1": {
-            "title": "Student ziet kansen op de korte termijn en neemt actie voor eigen ontwikkeling en het (project)team. Student herkent problemen op korte termijn en neemt tijdig actie om deze te voorkomen of op te lossen.",
+            "title": "Student ziet zelf kansen op de korte termijn en onderneemt actie voor ontwikkeling van zichzelf en het team. Student herkent zelf problemen op korte termijn en onderneemt tijdig actie om deze te voorkomen of op te lossen.",
             "info": ""
         },
         "2": {
-            "title": "Student ziet kansen, neemt actie voor ontwikkeling en strategie van zichzelf, het team en de direct betrokkenen en koppelt de resultaten en gevolgen terug naar alle betrokkenen. Student herkent mogelijke problemen op de korten en langere termijn en neemt tijdig actie om deze te voorkomen of op te lossen.",
+            "title": "Student ziet zelf kansen op de middellange termijn en onderneemt actie voor ontwikkeling van zichzelf, het team en de opdrachtgever. Student herkent zelf problemen op middellange termijn en onderneemt tijdig actie om deze te voorkomen of op te lossen.",
             "info": ""
         },
         "3": {
-            "title": "Student ziet kansen op de lange termijn en neemt tijdig actie om vernieuwende strategieën toe te kunnen passen in de uitvoering van de opdracht rekening houdend met alle betrokkenen. Student herkent mogelijke problemen voor zichzelf en de direct betrokkenen op de korten en langere termijn en neemt tijdig actie om deze te voorkomen of op te lossen.",
+            "title": "Student ziet zelf kansen op de lange termijn en onderneemt actie voor ontwikkeling van direct betrokkenen. Student herkent zelf problemen op lange termijn en onderneemt tijdig actie om deze te voorkomen of op te lossen.",
             "info": ""
         },
         "4": {
-            "title": "Student ziet kansen om vernieuwende strategieën te ontwikkelen ten behoeve van het beroepenveld en draagt deze uit. Student herkent mogelijke problemen en zorgt dat er tijdig actie wordt ondernomen om deze te voorkomen of op te lossen. De student gaat zodanig om met conflicterende belangen dat er geen problemen door ontstaan.",
+            "title": "Student ziet zelf kansen op de lange termijn en onderneemt actie voor ontwikkeling van direct en indirect betrokkenen. Student herkent zelf problemen op lange termijn en onderneemt tijdig actie om deze te voorkomen of op te lossen. Student activeert anderen om tijdig kansen te pakken en problemen te voorkomen of op te lossen.",
             "info": ""
         }
     },
     "Reflecteren": {
         "1": {
-            "title": "Student haalt feedback op over uitgevoerd werk en functioneren. Student kijkt terug op wat goed gaat en wat beter kan. Student stelt ontwikkeldoelen op en werkt daar naar toe door middel van actiepunten te formuleren.  Student herkent hoe eigen gedrag zich verhoudt tot gangbare normen, praktijken en meningen.",
+            "title": "Student haalt feedback op over uitgevoerd werk en functioneren. Student kijkt terug op wat goed gaat en wat beter kan. Student stelt ontwikkeldoelen op en werkt daar naar toe door actiepunten te formuleren en uit te voeren. Student herkent hoe eigen gedrag zich verhoudt tot gangbare normen, praktijken en meningen.",
             "info": ""
         },
         "2": {
-            "title": "Student reflecteert cyclisch waarbij ontwikkeldoelen en actiepunten na verloop van tijd worden geëvalueerd en bijgesteld. Student neemt hierbij het functioneren van het team mee in deze reflectie.  Student herkent hoe perspectieven en gedrag van zichzelf en anderen impact hebben op het functioneren van het team. ",
+            "title": "Student reflecteert cyclisch waarbij ontwikkeldoelen, actiepunten en het functioneren van het team na verloop van tijd worden geëvalueerd en bijgesteld. Student herkent hoe perspectieven en gedrag van zichzelf en anderen impact hebben op het functioneren van het team, en laat dit zien in een reflectie. ",
             "info": ""
         },
         "3": {
@@ -175,7 +175,7 @@
             "info": ""
         },
         "4": {
-            "title": "Student evalueert hoe de student en het team bij dragen aan het uitdragen van de strategie. Student kijkt wat in de omgeving impact heeft op het functioneren van zichzelf en het team, brengt dit in kaart en stelt daarbij het gedrag bij.",
+            "title": "Student evalueert hoe er door de student en het team wordt bijgedragen aan het bepalen en uitvoeren van de strategie. Student onderzoekt wat in de omgeving impact heeft op het functioneren van zichzelf en het team, brengt dit in kaart en stelt daarbij het eigen gedrag bij.",
             "info": ""
         }
     }

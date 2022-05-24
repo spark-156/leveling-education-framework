@@ -17,9 +17,9 @@ export default function Vaardigheden() {
                 style={rowStyle}
                 gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
             >
-              {Object.keys(vaardigheden[key]).map(niveau => (
+              {Object.keys(vaardigheden[key]).map((niveau, index) => (
                 <Col
-                  key={vaardigheden[key][niveau]}
+                  key={vaardigheden[key][niveau]['title'] + index}
                   span={6}
                   xs={24}
                   sm={12}
@@ -43,9 +43,9 @@ export default function Vaardigheden() {
               style={rowStyle}
               gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16, xl: 20 }]}
           >
-            {Object.keys(vaardigheden[vaardigheid]).map(niveau => (
+            {Object.keys(vaardigheden[vaardigheid]).map((niveau, index) => (
               <Col
-                key={vaardigheden[vaardigheid][niveau]}
+                key={vaardigheden[vaardigheid][niveau]['title'] + index}
                 span={6}
                 xs={24}
                 sm={12}
@@ -66,9 +66,7 @@ export default function Vaardigheden() {
     return <>
         <Row style={rowStyle} gutter={[16, { xs: 8, sm: 16, md: 16, lg: 16 }]}>
             <Col 
-                style={{
-                    margin: "0 auto"
-                }} 
+                style={{ margin: "0 auto" }} 
                 span={24}
             >
                 <SelectOutOfTen

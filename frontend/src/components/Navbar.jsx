@@ -1,33 +1,28 @@
-import { Menu } from 'antd';
-import { Link } from 'react-router-dom';
-import { BookOutlined } from '@ant-design/icons';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { Drawer, PageHeader } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
+import { TopicMenu } from "./TopicMenu";
+import { useSelector } from 'react-redux';
+import { selectKey } from "../store/selectedKeySlice";
 
-export function Navbar() {
-  const location = useLocation();
+export function Navbar ({ showBackIcon = false }) {
+    const [visible, setVisible] = useState(false);
+    const title = useSelector(selectKey)
 
-  return <div style={{ padding: "0 0 10px 0" }}>
-    <Menu theme="light" defaultSelectedKeys={['/']} selectedKeys={[location.pathname]} mode="horizontal">
-      <Menu.Item key="/" icon={<BookOutlined />}>
-        <Link to='/'>
-          HBO-I
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/vaardigheden">
-        <Link to='/vaardigheden'>
-          Vaardigheden
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/beheersingsniveaus">
-        <Link to='/beheersingsniveaus'>
-          Beheersingsniveaus
-        </Link>
-      </Menu.Item>
-      <Menu.Item key="/professionalskills">
-        <Link to='/professionalskills'>
-          Professionalskills
-        </Link>
-      </Menu.Item>
-    </Menu>
-  </div>
+    return <PageHeader
+            style={{ background: "#fff", position: 'sticky', top: 0, zIndex: 1, width: '100%' }}
+            onBack={() => setVisible(true)}
+            title={title}
+            backIcon={showBackIcon ? <MenuOutlined /> : null}
+        >
+            <Drawer
+                title="Menu"
+                placement="left"
+                onClick={() => setVisible(false)}
+                onClose={() => setVisible(false)}
+                visible={visible}
+            > 
+                <TopicMenu onClick={() => setVisible(false)} />
+            </Drawer>
+        </PageHeader>
 }
