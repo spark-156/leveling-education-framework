@@ -1,49 +1,88 @@
-import React from "react";
-import { Navbar } from "./components/Navbar";
-import { PageContainer } from "./components/PageContainer";
-import styles from "./styles/App.module.css";
-
+import React, { useState } from "react";
+import { TopicMenu } from "./components/TopicMenu";
+import { ScrollToTop } from './components/ScrollToTop';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
 } from "react-router-dom";
-import { Footer } from "./components/Footer";
 import PageNotFound from "./views/PageNotFound";
 import ProfessionalSkills from "./views/Professionalskills";
 import Beheersingsniveaus from "./views/Beheersingsniveaus"
 import Hboi from "./views/Hboi";
 import RedirectHboi from "./views/RedirectHboi";
 import Vaardigheden from "./views/Vaardigheden";
+import { Layout } from "antd";
+import CustomRoute from "./components/CustomRoute";
+
+const { Sider, Content } = Layout
 
 function App() {
+  const [collapsed, setCollapsed] = useState(false)
+  const [breakpoint, setBreakpoint] = useState(true)
+
   return <Router>
-      <div className={styles.pageContainer}>
-        <Navbar />
-        <PageContainer className={styles.contentWrap}>
-          <Switch>
-            <Route exact path="/">
-              <Hboi />
-            </Route>
-            <Route path='/vaardigheden'>
-              <Vaardigheden />
-            </Route>
-            <Route path='/beheersingsniveaus'>
-              <Beheersingsniveaus />
-            </Route>
-            <Route path='/professionalskills'>
-              <ProfessionalSkills />
-            </Route>
-            <Route path='/hboi/:architectuurlaag/:activiteit'>
-              <RedirectHboi />
-            </Route>
-            <Route path='*'>
-              <PageNotFound />
-            </Route>
-          </Switch>
-        </PageContainer>
-        <Footer />
-      </div>
+      <ScrollToTop />
+      <Layout>
+        <Sider
+          onBreakpoint={broken => {setBreakpoint(broken); setCollapsed(broken)}}
+          collapsible
+          trigger={null}
+          collapsed={collapsed}
+          breakpoint="lg"
+          style={{ position: "sticky", background: "#fff", left: 0, top: 0, height: "100vh" }}
+          collapsedWidth="0"
+          theme="light"
+        >
+          <TopicMenu />
+        </Sider>
+        <Content>
+            <Switch>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path="/"
+                exact
+              >
+                <Hboi />
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path='/vaardigheden'
+              >
+                <Vaardigheden />
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path='/beheersingsniveaus'
+              >
+                <Beheersingsniveaus />
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path='/professionalskills'
+              >
+                <ProfessionalSkills />
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path='/hboi/:architectuurlaag/:activiteit'
+              >
+                <RedirectHboi />
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                collapsed={collapsed}
+                path='*'
+              >
+                <PageNotFound />
+              </CustomRoute>
+            </Switch>
+        </Content>
+      </Layout>
   </Router>
 }
 
