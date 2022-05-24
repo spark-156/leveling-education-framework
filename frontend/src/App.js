@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { Navbar } from "./components/Navbar";
-import { PageContainer } from "./components/PageContainer";
-import styles from "./styles/App.module.css";
+import { TopicMenu } from "./components/TopicMenu";
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
 } from "react-router-dom";
 import PageNotFound from "./views/PageNotFound";
 import ProfessionalSkills from "./views/Professionalskills";
@@ -15,65 +12,100 @@ import Hboi from "./views/Hboi";
 import RedirectHboi from "./views/RedirectHboi";
 import Vaardigheden from "./views/Vaardigheden";
 import { Layout } from "antd";
-import PageHeader from './components/Header'
+import CustomRoute from "./components/CustomRoute";
+import styles from './styles/App.module.css'
 
 
 const { Sider, Content } = Layout
 
 function App() {
   const [collapsed, setCollapsed] = useState(false)
-
-  function toggleCollapsed () {
-    setCollapsed(value => !value)
-  }
-
+  const [selectedKey, setSelectedKey] = useState("Beroepsproduct")
+  const [breakpoint, setBreakpoint] = useState(true)
 
   return <Router>
-    <Layout 
-      className={styles.pageContainer} 
-    >
-      <PageHeader
-        collapsed={collapsed}
-        toggleCollapsed={toggleCollapsed}
-      />
       <Layout>
         <Sider
+          onBreakpoint={broken => {setBreakpoint(broken); setCollapsed(broken)}}
           collapsible
           trigger={null}
           collapsed={collapsed}
-          // style={{ overflow: 'auto', height: '', position: 'sticky', top: 0, left: 0, }}
           breakpoint="lg"
+          className={styles.sider}
           collapsedWidth="0"
           theme="light"
         >
-          <Navbar toggleCollapsed={toggleCollapsed} />
+          <TopicMenu 
+            selectedKey={selectedKey} 
+            setSelectedKey={setSelectedKey} 
+          />
         </Sider>
         <Content>
-          <PageContainer className={styles.contentWrap}>
             <Switch>
-              <Route exact path="/">
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="Beroepsproduct"
+                collapsed={collapsed}
+                path="/"
+                exact
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <Hboi />
-              </Route>
-              <Route path='/vaardigheden'>
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="Vaardigheden"
+                collapsed={collapsed}
+                path='/vaardigheden'
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <Vaardigheden />
-              </Route>
-              <Route path='/beheersingsniveaus'>
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="Beheersingsniveaus"
+                collapsed={collapsed}
+                path='/beheersingsniveaus'
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <Beheersingsniveaus />
-              </Route>
-              <Route path='/professionalskills'>
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="Professional Skills"
+                collapsed={collapsed}
+                path='/professionalskills'
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <ProfessionalSkills />
-              </Route>
-              <Route path='/hboi/:architectuurlaag/:activiteit'>
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="Beroepsproduct"
+                collapsed={collapsed}
+                path='/hboi/:architectuurlaag/:activiteit'
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <RedirectHboi />
-              </Route>
-              <Route path='*'>
+              </CustomRoute>
+              <CustomRoute 
+                showBackIcon={breakpoint}
+                pageTitle="404"
+                collapsed={collapsed}
+                path='*'
+                selectedKey={selectedKey} 
+                setSelectedKey={setSelectedKey} 
+              >
                 <PageNotFound />
-              </Route>
+              </CustomRoute>
             </Switch>
-          </PageContainer>
         </Content>
       </Layout>
-    </Layout>
   </Router>
 }
 

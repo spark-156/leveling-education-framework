@@ -1,9 +1,7 @@
-.pageContainer {
-    position: relative;
-    min-height: 100vh;
+.sider {
+    overflow: auto;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
-  
-.contentWrap {
-    padding-bottom: 5rem;    /* Footer height + 1rem */
-}
-  

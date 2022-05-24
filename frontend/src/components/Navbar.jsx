@@ -1,46 +1,24 @@
-import { Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Drawer, PageHeader } from "antd";
+import { MenuOutlined } from '@ant-design/icons';
+import { TopicMenu } from "./TopicMenu";
 
-import { useLocation } from 'react-router-dom';
-
-export function Navbar() {
-  const location = useLocation();
-
-  return <div style={{ padding: "0 0 10px 0" }}>
-    <Menu 
-      theme="light"
-      defaultSelectedKeys={['/']} 
-      selectedKeys={[location.pathname]} 
-      mode="inline"
-    >
-      <Menu.ItemGroup 
-        title="HBO-I"
-      >
-        <Menu.Item key="/">
-          <Link to='/'>
-            Beroepstaken
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="/beheersingsniveaus">
-          <Link to='/beheersingsniveaus'>
-            Beheersingsniveaus
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="/professionalskills">
-          <Link to='/professionalskills'>
-            Professional Skills
-          </Link>
-        </Menu.Item>
-      </Menu.ItemGroup>
-      <Menu.ItemGroup 
-        title="Open-ICT"
-      >
-        <Menu.Item key="/vaardigheden">
-          <Link to='/vaardigheden'>
-            Vaardigheden
-          </Link>
-        </Menu.Item>
-      </Menu.ItemGroup>
-    </Menu>
-  </div>
+export function Navbar ({ pageTitle, showBackIcon = false, selectedKey, setSelectedKey }) {
+    const [visible, setVisible] = useState(false);
+    return <PageHeader
+            style={{ background: "#fff", position: 'sticky', top: 0, zIndex: 1, width: '100%' }}
+            onBack={() => setVisible(true)}
+            title={pageTitle}
+            backIcon={showBackIcon ? <MenuOutlined /> : null}
+        >
+            <Drawer
+                title="Menu"
+                placement="left"
+                onClick={() => setVisible(false)}
+                onClose={() => setVisible(false)}
+                visible={visible}
+            > 
+                <TopicMenu onClick={() => setVisible(false)} selectedKey={selectedKey} setSelectedKey={setSelectedKey} />
+            </Drawer>
+        </PageHeader>
 }
