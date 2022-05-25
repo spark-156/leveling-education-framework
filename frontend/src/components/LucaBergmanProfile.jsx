@@ -7,6 +7,8 @@ export function LucaBergmanProfile () {
     const breakpoint = useSelector(selectBreakpoint)
     return <>
         {!breakpoint ? "This website has been made by: " : null}
-        <Link style={{ fontSize: "1.05em", fontWeight: 420, }} href="https://www.lucabergman.nl"><Avatar src="/fotovanmij.jpeg" size="large" alt='picteure of me'/>Luca Bergman</Link>
+        <Link href="https://www.lucabergman.nl">
+            <Avatar src="/fotovanmij.jpeg" size="large" alt='picteure of me'/>Luca Bergman
+        </Link>
     </>
 }
