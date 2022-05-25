@@ -4,8 +4,9 @@ import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 import keyReducer from './selectedKeySlice'
+import breakpointReducer from './breakpointSlice'
 
-const rootReducer = combineReducers({key: keyReducer})
+const rootReducer = combineReducers({ key: keyReducer, breakpoint: breakpointReducer })
 
 const persistConfig = {
   key: 'root',
