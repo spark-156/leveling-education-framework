@@ -1,7 +1,7 @@
+import React from "react";
+import { Button, Row, Space, Col } from "antd";
+import { CustomCard } from "./CustomCard";
 
-import { Button, Row, Space, Col } from 'antd';
-
-import { CustomCard } from './CustomCard';
 
 export default function SelectOutOfTen({ title, options, setSelectedFunction, selected }) {
   const setState = (value) => {
@@ -32,7 +32,7 @@ export default function SelectOutOfTen({ title, options, setSelectedFunction, se
       </Col>
       <Col span={12} xs={24} sm={12} md={12} lg={12} xl={12}>
         <Space direction="vertical" style={{ width: "100%" }}>
-        {options.slice(5, 10).map(option => {
+          {options.slice(5, 10).map(option => {
             let appearance = ""
             if (option === selected) {
               appearance = "primary"

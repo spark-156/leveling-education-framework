@@ -1,3 +1,4 @@
+import React from "react";
 import ReactMarkdown from "react-markdown";
 import { CustomCard } from "./CustomCard";
 import { CopyToClipboardButton } from "./CopyToClipboardButton";
@@ -29,8 +30,9 @@ export function CopyInfoCard ({ children, title, copy, info, infoTitle, headStyl
           <CopyToClipboardButton content={copy} />
         </Space>
       }
-      children={children}
-    />
+    >
+      {children}
+    </CustomCard>
     {info ? <Drawer title={infoTitle} placement="right" onClose={onClose} visible={visible}>
       <ReactMarkdown>{ info }</ReactMarkdown>
     </Drawer> : null}
