@@ -12,6 +12,6 @@ export function CustomCard({ title, children, headStyle, extra = null }) {
     title={title}
     size="small"
   >
-{children}
+    {children}
   </Card>
 }
