@@ -1,7 +1,6 @@
-
-import { Divider, Row, Col } from 'antd';
-import { rowStyle } from '../lib';
-
+import React from "react";
+import { Divider, Row, Col } from "antd";
+import { rowStyle } from "../lib";
 import { CopyCard } from "./CopyCard";
 
 
@@ -14,17 +13,19 @@ export function Skill({ title, description, afzonderlijketaken }) {
       <Col xs={24} sm={24} md={6} lg={6} xl={6}>
         <CopyCard
           title="Descriptie"
-          children={description}
           copy={description}
-        />
+        >
+          {description}
+        </CopyCard>
       </Col>
       {keys.map(key => (<Col xs={24} sm={24} md={6} lg={6} xl={6} key={key}>
         <CopyCard
           key={key}
           title={key}
-          children={afzonderlijketaken[key]}
           copy={afzonderlijketaken[key]}
-        />
+        >
+          {afzonderlijketaken[key]}
+        </CopyCard>
       </Col>))}
     </Row>
   </>)

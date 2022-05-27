@@ -5,7 +5,7 @@ import { Layout } from "antd";
 const { Content } = Layout
 
 export function PageContainer({ children, className }) {
-    return <Content className={`${styles.container} ${className}`}>
-        {children}
-    </Content>
+  return <Content className={`${styles.container} ${className}`}>
+    {children}
+  </Content>
 }

@@ -1,9 +1,9 @@
-import { Divider, Row, Col } from 'antd';
-
-import { CopyCard } from '../components/CopyCard';
-
+import React from "react";
+import { Divider, Row, Col } from "antd";
+import { CopyCard } from "../components/CopyCard";
 import { beheersingsniveaus } from "../data/hboi";
-import { rowStyle } from '../lib';
+import { rowStyle } from "../lib";
+
 
 export default function Beheersingsniveaus() {
   const keys = Object.keys(beheersingsniveaus.Zelfstandigheid); // Same keys for "Complexiteit" and "Zelfstandigheid"
@@ -21,8 +21,9 @@ export default function Beheersingsniveaus() {
           <CopyCard
             title={key}
             copy={beheersingsniveaus.Zelfstandigheid[key]}
-            children={beheersingsniveaus.Zelfstandigheid[key]}
-          />
+          >
+            {beheersingsniveaus.Zelfstandigheid[key]}
+          </CopyCard>
         </Col>))}
       </Row>
       <Divider orientation="left">Complexiteit</Divider>

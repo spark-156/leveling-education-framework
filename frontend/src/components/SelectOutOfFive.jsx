@@ -1,7 +1,7 @@
+import React from "react";
+import { Button, Space } from "antd";
+import { CustomCard } from "./CustomCard";
 
-import { Button, Space } from 'antd';
-
-import { CustomCard } from './CustomCard';
 
 export default function SelectOutOfFive({ title, options, setSelectedFunction, selected }) {
   const setState = (value) => {

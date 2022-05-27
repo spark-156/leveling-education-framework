@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react"
 
 import { Row, Col } from "antd";
 
 import { Skill } from "../components/Skill"
-import { rowStyle } from '../lib';
+import { rowStyle } from "../lib";
 
 export default function Professionalskills() {
   return <>
