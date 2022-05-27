@@ -4,17 +4,19 @@ import { MenuOutlined } from "@ant-design/icons";
 import { TopicMenu } from "./TopicMenu";
 import { useSelector } from "react-redux";
 import { selectKey } from "../store/selectedKeySlice";
+import { selectBreakpoint } from "../store/breakpointSlice";
 import { LucaBergmanProfile } from "./LucaBergmanProfile";
 
-export function Navbar ({ showBackIcon = false }) {
+export function Navbar () {
   const [visible, setVisible] = useState(false);
   const title = useSelector(selectKey)
+  const breakpoint = useSelector(selectBreakpoint)
 
   return <PageHeader
     style={{ background: "#fff", position: "sticky", top: 0, zIndex: 1, width: "100%" }}
     onBack={() => setVisible(true)}
     title={title}
-    backIcon={showBackIcon ? <MenuOutlined /> : null}
+    backIcon={breakpoint ? <MenuOutlined /> : null}
     extra={<LucaBergmanProfile />}
   >
     <Drawer
