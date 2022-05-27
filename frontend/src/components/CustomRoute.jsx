@@ -1,27 +1,24 @@
-import { Layout } from "antd";
+import React from "react";
 import { Route } from "react-router-dom";
 import { PageContainer } from "./PageContainer";
-import { Navbar } from "./Navbar";
+import { useDispatch } from "react-redux";
+import { setKey } from "../store/selectedKeySlice";
 
 export default function CustomRoute ({ 
-    pageTitle = "", 
-    showBackIcon = false,
-    path, 
-    exact = false, 
-    children,
+  pageTitle,
+  path, 
+  children,
+  ...props
 }) {
-    return <Route
-        path={path}
-        exact={exact}
-    >
-        <Layout>
-            <Navbar 
-                showBackIcon={showBackIcon} 
-                pageTitle={pageTitle} 
-            />
-            <PageContainer > 
-                {children}
-            </PageContainer>
-        </Layout>
-    </Route>
+  const dispatch = useDispatch()
+  dispatch((setKey(pageTitle)))
+
+  return <Route
+    path={path}
+    {...props}
+  >
+    <PageContainer > 
+      {children}
+    </PageContainer>
+  </Route>
 }
