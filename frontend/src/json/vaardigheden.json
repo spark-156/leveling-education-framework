@@ -60,7 +60,7 @@
         },
         "2": {
             "title": "Student laat zien dat op voor het product cruciale uitdaging door middel van research stories/tasks methodisch en onderbouwd een keuze wordt gemaakt op basis van vooraf opgestelde criteria. Student is in staat om gangbare normen, praktijken en meningen ter discussie te stellen.",
-            "info": "# Opmerkingen\n\nOp dit niveau begin je je onderzoekend vermogen methodisch in te steken. Er zijn vele verschillende manieren waarop dit kan gebeuren. Binnen Open-ICT wordt dit vaak gedaan door middel van Research Stories en Research Taken.\n\nHet stuk 'Certainty'/'Zekerheid' uit het DOT Framework heeft vooral met deze vaardigheid te maken.\n\n# Mogelijke bewijsstukken\n\nVoor het opvoeren van bewijs voor deze vaardigheid kan je bijvoorbeeld denken aan de onderstaande bewijsstukken. Deze lijst is niet volledig, maar geeft je een goede indicatie wat je zou kunnen gebruiken. Het kan natuurlijk ook een combinatie van deze stukken zijn.\n\n- De resultaten van gekozen onderzoeksmethode\n  - Testrapport\n\n# Links\n- [Research stories](https://openict.fyndr.wiki/playlists/cl3wkj8ei167324sn57r2ad7sm?playlist=cl3wkj8ei167324sn57r2ad7sm)\n- [Praktijkgericht onderzoek met het DOT Framework](https://openict.fyndr.wiki/playlists/cl3wkneqv176584sn5lvy28cxf)"
+            "info": "# Opmerkingen\n\nOp dit niveau begin je je onderzoekend vermogen methodisch in te steken. Er zijn vele verschillende manieren waarop dit kan gebeuren. Binnen Open-ICT wordt dit vaak gedaan door middel van Research Stories en Research Taken.\n\nHet stuk 'Certainty'/'Zekerheid' uit het DOT Framework heeft vooral met deze vaardigheid te maken.\n\n# Mogelijke bewijsstukken\n\nVoor het opvoeren van bewijs voor deze vaardigheid kan je bijvoorbeeld denken aan de onderstaande bewijsstukken. Deze lijst is niet volledig, maar geeft je een goede indicatie wat je zou kunnen gebruiken. Het kan natuurlijk ook een combinatie van deze stukken zijn.\n\n- De resultaten van gekozen onderzoeksmethode\n - Testrapport\n\n# Links\n- [Research stories](https://openict.fyndr.wiki/playlists/cl3wkj8ei167324sn57r2ad7sm?playlist=cl3wkj8ei167324sn57r2ad7sm)\n- [Praktijkgericht onderzoek met het DOT Framework](https://openict.fyndr.wiki/playlists/cl3wkneqv176584sn5lvy28cxf)"
         },
         "3": {
             "title": "Student laat zien dat bij het opstellen van de criteria waarop beslissingen zijn genomen rekening wordt gehouden met de bedrijfscontext, SDGs en ethische afwegingen. De student laat zien kritisch te zijn richting de opdracht, de opdrachtrichting en de oplossingsruimte waarbij er aandacht is voor de vraag achter vraag. Student is in staat om gangbare normen, praktijken en meningen uit te dagen.",
@@ -74,15 +74,15 @@
     "Samenwerken": {
         "1": {
             "title": "Student draagt bij aan het gezamenlijk resultaat en aan een professionele werksfeer. Student bespreekt persoonlijke plannen en stemt deze af met het team. Student is op de hoogte van wat teamleden doen en zorgt er voor dat taken gelijkwaardig verdeeld zijn. Student maakt conflicten bespreekbaar, voert peer reviews uit en helpt peers. ",
-            "info": ""
+            "info": "# Opmerkingen \n\nOnder de direct betrokkenen in deze fase vallen teamleden en de coach. "
         },
         "2": {
             "title": "Student zorgt voor professionele communicatie met de direct betrokkenen. Student stelt zich coöperatief en respectvol op. Student zorgt ervoor dat de betrokkenen op de hoogte zijn van de eigen werkzaamheden. ",
-            "info": ""
+            "info": "# Opmerkingen \n\nIn deze fase wordt met de direct betrokkenen bedoeld: opdrachtgever en het gilde. \n\n*Let op*: communicatie is tweerichtingsverkeer. "
         },
         "3": {
             "title": "Student zorgt voor professionele communicatie met indirect betrokkenen. Student zorgt ervoor dat de belangen en waarden van alle betrokkenen meegenomen worden bij de uitvoering van de opdracht. Student helpt anderen zich ook verder te ontwikkelen. ",
-            "info": ""
+            "info": "# Opmerking\n\nIn deze fase wordt met de direct betrokkenen ook de directe gebruikers van de toepassing/oplossing bedoeld.\n\nMet indirect betrokkenen worden die personen/instanties bedoeld die wel met de effecten/gevolgen van de oplossing te maken krijgen, maar niet direct betrokken zijn in het ontwikkelen en gebruiken van de oplossing.\n\n# Voorbeeld\n\nJe maakt voor de artsen in het ziekenhuis een applicatie voor het efficiënt kunnen inrichten van hun werkplek. Dit doe je in opdracht van de afdeling Ruimtelijk Beheer. De direct betrokken zijn dan onder andere:\n\n- Artsen\n- Verpleegkundigen\n- Manager van de afdeling Ruimtelijk Beheer\n\nDe indirect betrokkenen zijn in dit geval o.a.:\n\n- Patienten\n- Management van het ziekenhuis\n- Afdeling Schoonmaak"
         },
         "4": {
             "title": "Student is in staat om strategische samenwerkingen aan te gaan/op te zetten zodat relevante partijen op de passende wijze betrokken worden rekening houdend met hun specifieke belangen en waarden.",
@@ -110,15 +110,15 @@
     "Plannen": {
         "1": {
             "title": "Student maakt een kortetermijnplanning voor eigen taken, zet deze in logische volgorde en houdt zich aan de planning. Student plant op basis van de beschikbare capaciteit. Student communiceert en verantwoordt verstoringen in de planning aan team.",
-            "info": ""
+            "info": "# Opmerkingen\n\nEr staat in de beschrijving 'Team'. Dat is niet alleen je squad, maar denk daarbij ook vooral aan de tribe en coach. Rekening houden met hoeveel capaciteit er is in de tribe voor reviews en kennisdelingen is een belangrijk onderdeel van je planning.\n\nMet kortetermijnplanning wordt bedoeld de planning van ongeveer één sprint.\n\n# Mogelijke bewijsstukken\n\n- Overzicht van je checkins/checkouts (met benoeming van de taken die je gaat doen/hebt gedaan)\n- Overzicht van het sprintboard (inclusief status van de stories en taken) van het begin en het eind van de sprint."
         },
         "2": {
             "title": "Student maakt middellangetermijnplanning voor zichzelf en het team en zet deze om in een eigen korte termijn planning met taken. Student plant op basis van de beschikbare teamcapaciteit.",
-            "info": "# Opmerkingen\n\nEr staat in de beschrijving 'Team'. Dat is niet alleen je squad, maar denk daarbij ook vooral aan het gilde. Rekening houden met hoeveel capaciteit er is in het gilde voor gilde reviews en kennisdelingen is een belangrijk onderdeel van je planning.\n\n# Mogelijke bewijsstukken\n\nVoor het opvoeren van bewijs voor deze vaardigheid kan je bijvoorbeeld denken aan de onderstaande bewijsstukken. Deze lijst is niet volledig, maar geeft je een goede indicatie wat je zou kunnen gebruiken. Het kan natuurlijk ook een combinatie van deze stukken zijn.\n\n- Screenshots van planning (met verwijzingen in onderbouwing)\n  - Planboard met stories en taken\n  - Planboard van gilde\n  - Checkins waarin taken worden genoemd\n  - Afspraken met opdrachtgevers\n\n"
+            "info": "# Opmerkingen\n\nEr staat in de beschrijving 'Team'. Dat is niet alleen je squad, maar denk daarbij ook vooral aan het gilde. Rekening houden met hoeveel capaciteit er is in het gilde voor gilde reviews en kennisdelingen is een belangrijk onderdeel van je planning.\n\nMet middellangetermijnplanning wordt bedoeld de planning van ongeveer meerdere sprints/een milestone.\n\n# Mogelijke bewijsstukken\n\nVoor het opvoeren van bewijs voor deze vaardigheid kan je bijvoorbeeld denken aan de onderstaande bewijsstukken. Deze lijst is niet volledig, maar geeft je een goede indicatie wat je zou kunnen gebruiken. Het kan natuurlijk ook een combinatie van deze stukken zijn.\n\n- Screenshots van planning (met verwijzingen in onderbouwing)\n  - Planboard met stories en taken\n  - Planboard van gilde\n  - Checkins waarin taken worden genoemd\n  - Afspraken met opdrachtgevers\n\n"
         },
         "3": {
             "title": "Student maakt een langetermijnplanning rekening houdend met de beschikbare capaciteit van het team en de direct betrokkenen.",
-            "info": ""
+            "info": "# Opmerkingen\n\nMet langetermijnplanning wordt bedoeld de planning van één semester."
         },
         "4": {
             "title": "Student vertaalt de gekozen strategie en visie naar een langetermijnplanning (mogelijk meerjaren) en past deze planning aan waar nodig. Student houdt bij het maken van deze planning rekening met de beschikbare capaciteit van het team en de wensen van direct en indirect betrokkenen.",
