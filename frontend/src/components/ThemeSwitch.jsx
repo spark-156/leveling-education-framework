@@ -19,9 +19,9 @@ export function ThemeSwitch(){
   };
 
   return (
-    <div className="theme-switch" style={{display: "inline", position: "relative",verticalAlign:"middle", marginRight: 5,}}>
+    <div className="theme-switch" style={{display: "inline", position: "relative",verticalAlign:"middle", marginRight: 5, cursor:"pointer"}} >
       {
-        currentTheme === "light" ? <HalfMoon onClick={toggleDarkMode}/>  : <SunLight onClick={toggleDarkMode}/> 
+        currentTheme === "light" ? <HalfMoon />  : <SunLight onClick={toggleDarkMode}/> 
       }
     </div>
   );
