@@ -1,12 +1,12 @@
 import { useThemeSwitcher } from "react-css-theme-switcher";
-import React from "react";
+import React, { useState } from "react";
 import { HalfMoon, SunLight } from "iconoir-react";
 import Loading from "./Loading";
 import { Button, Tooltip } from "antd";
 
 export function ThemeSwitch(){
   const { switcher, themes, currentTheme, status } = useThemeSwitcher();
-  const [, setIsDarkMode] = React.useState(false);
+  const [, setIsDarkMode] = useState(false);
 
   if (status === "loading") {
     return <Loading />;
