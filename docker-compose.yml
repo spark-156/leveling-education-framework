@@ -15,15 +15,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
-    build: 
+    build:
       context: frontend
-      target: development
-    volumes: 
-      - ./frontend:/usr/src/app
-      - /usr/src/app/node_modules
-    labels: 
-      traefik.enable: true
-      traefik.http.routers.frontend.rule: Host(`localhost`)
-      traefik.http.routers.frontend.entrypoints: web
-      traefik.http.services.frontend.loadbalancer.server.port: 3000
-      
+      target: production
+      labels:
+        traefik.enable: true
+        traefik.http.routers.frontend.rule: Host(`localhost`)
+        traefik.http.routers.frontend.entrypoints: web
+        traefik.http.services.frontend.loadbalancer.server.port: 80
