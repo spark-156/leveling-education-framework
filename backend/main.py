@@ -1,6 +1,5 @@
 from typing import List
-from fastapi import FastAPI, HTTPException, Query
-from pydantic import BaseModel
+from fastapi import FastAPI, Query
 import json
 
 app = FastAPI()
