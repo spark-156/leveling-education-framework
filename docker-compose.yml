@@ -15,6 +15,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
+    image: spark156/hboi-domeinbeschrijving:latest
     build:
       context: frontend
       target: production
