@@ -32,7 +32,7 @@ function App() {
         trigger={null}
         collapsed={breakpoint}
         breakpoint="lg"
-        style={{ position: "sticky", left: 0, top: 0, height: "100vh" }}
+        style={{ position: "sticky", background: "#fff", left: 0, top: 0, height: "100vh" }}
         collapsedWidth="0"
         theme="light"
       >

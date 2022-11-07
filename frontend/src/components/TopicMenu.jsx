@@ -3,7 +3,6 @@ import { Menu } from "antd";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectKey } from "../store/selectedKeySlice";
-import { LucaBergmanProfile } from "./LucaBergmanProfile";
 
 export function TopicMenu({ onClick }) {
   const key = useSelector(selectKey)
@@ -40,16 +39,6 @@ export function TopicMenu({ onClick }) {
         <Link to='/vaardigheden'>
             Vaardigheden
         </Link>
-      </Menu.Item>
-    </Menu.ItemGroup>
-
-    <Menu.Divider />
-
-    <Menu.ItemGroup 
-      title="Website made by:"
-    >
-      <Menu.Item>
-        <LucaBergmanProfile />
       </Menu.Item>
     </Menu.ItemGroup>
   </Menu>
