@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 
-FROM nginx:stable-alpine as production
+FROM nginx:1.22.1 as production
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/src/app/build /usr/share/nginx/html
