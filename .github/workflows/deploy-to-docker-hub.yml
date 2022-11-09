@@ -30,10 +30,23 @@ jobs:
         name: Build and push Frontend
         uses: docker/build-push-action@v3
         env:
-          DOCKER_HUB_REPOSITORY: hboi-domeinbeschrijving
+          DOCKER_HUB_REPOSITORY: leveling-education-framework-frontend:latest
         with:
           context: ./frontend
           file: ./frontend/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
+          cache-to: type=inline
+      -
+        name: Build and push Backend
+        uses: docker/build-push-action@v3
+        env:
+          DOCKER_HUB_REPOSITORY: leveling-education-framework-backend:latest
+        with:
+          context: ./backend
+          file: ./backend/Dockerfile
           platforms: linux/amd64
           push: true
           tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
