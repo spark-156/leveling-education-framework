@@ -30,7 +30,7 @@ jobs:
         name: Build and push Frontend
         uses: docker/build-push-action@v3
         env:
-          DOCKER_HUB_REPOSITORY: leveling-education-framework-frontend:latest
+          DOCKER_HUB_REPOSITORY: leveling-education-framework-frontend
         with:
           context: ./frontend
           file: ./frontend/Dockerfile
@@ -43,7 +43,7 @@ jobs:
         name: Build and push Backend
         uses: docker/build-push-action@v3
         env:
-          DOCKER_HUB_REPOSITORY: leveling-education-framework-backend:latest
+          DOCKER_HUB_REPOSITORY: leveling-education-framework-backend
         with:
           context: ./backend
           file: ./backend/Dockerfile
