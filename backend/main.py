@@ -1,5 +1,4 @@
-from typing import List
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 import json
 
 app = FastAPI()
@@ -38,4 +37,7 @@ async def vaardigheden():
 @app.get("/vaardigheden/{vaardigheid}")
 async def vaardigheden(vaardigheid: str = Query(default=None, regex="Juiste kennis ontwikkelen|Kwalitatief product maken|Overzicht creëren|Kritisch oordelen|Samenwerken|Boodschap delen|Plannen|Flexibel opstellen|Pro-actief handelen|Reflecteren")):
     vaardigheden = json.load(open("json/vaardigheden.json"))
+    if vaardigheid not in vaardigheden:
+        raise HTTPException(
+            status_code=404, detail="Vaardigheid: " + vaardigheid + " not found")
     return vaardigheden[vaardigheid]
