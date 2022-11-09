@@ -11,24 +11,26 @@ import uvicorn
 limiter = Limiter(key_func=get_remote_address)
 
 
-app = FastAPI(responses={
-    200: {
-        "description": "Ok",
-        "content": {
-            "application/json": {
+app = FastAPI(
+    responses={
+        200: {
+            "description": "Ok",
+            "content": {
+                "application/json": {
 
+                }
+            }
+        },
+        429: {
+            "description": "Rate limit exceeded",
+            "content": {
+                "application/json": {
+                    "example": {"error": "Rate limit exceeded: 20 per 1 minute"}
+                }
             }
         }
     },
-    429: {
-        "description": "Rate limit exceeded",
-        "content": {
-            "application/json": {
-                "example": {"error": "Rate limit exceeded: 20 per 1 minute"}
-            }
-        }
-    }
-})
+)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(
@@ -51,6 +53,8 @@ async def hboi(
         default=None, regex="Analyseren|Adviseren|Ontwerpen|Realiseren|Manage & Control"),
     niveau: str = Query(default=None, regex="1|2|3|4")
 ):
+    """Get all HBO-I
+    """
     hboi = json.load(open("json/hboi.json"))
 
     if architectuurlaag:
@@ -70,13 +74,17 @@ async def hboi(
 @app.get("/vaardigheden", tags=["Open-ICT Vaardigheden"])
 @limiter.limit(limit_value="20/minute")
 async def vaardigheden(request: Request, response: Response):
+    """Get all vaardigheden
+    """
     vaardigheden = json.load(open("json/vaardigheden.json"))
     return vaardigheden
 
 
 @app.get("/vaardigheden/{vaardigheid}", description="'Juiste kennis ontwikkelen',\n'Kwalitatief product maken',\n'Overzicht creëren',\n'Kritisch oordelen',\n'Samenwerken',\n'Boodschap delen',\n'Plannen',\n'Flexibel opstellen',\n'Pro-actief handelen',\n'Reflecteren'", tags=["Open-ICT Vaardigheden"])
 @limiter.limit(limit_value="20/minute")
-async def vaardigheden(request: Request, response: Response, vaardigheid: str = Query(default=None)):
+async def vaardigheden(request: Request, response: Response, vaardigheid: str):
+    """Get specific vaardigheid
+    """
     vaardigheden = json.load(open("json/vaardigheden.json"))
     if vaardigheid not in vaardigheden:
         raise HTTPException(
@@ -85,6 +93,11 @@ async def vaardigheden(request: Request, response: Response, vaardigheid: str = 
 
 
 def custom_openapi():
+    """Generate custom open api documentation
+
+    Returns:
+        open api schema: custom open api documentation
+    """
     if app.openapi_schema:
         return app.openapi_schema
     openapi_schema = get_openapi(
@@ -93,6 +106,10 @@ def custom_openapi():
         openapi_version="3.0.n",
         description="Leveling Education Framework public api for getting all HBO-I and Open-ICT Vaardigheden in json format.",
         routes=app.routes,
+        servers=[
+            {"url": "/api/v1", "description": "Production"},
+            {"url": "/", "description": "Development"}
+        ]
     )
     app.openapi_schema = openapi_schema
     return app.openapi_schema
