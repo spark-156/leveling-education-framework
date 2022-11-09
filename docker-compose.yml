@@ -15,7 +15,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
-    image: spark156/hboi-domeinbeschrijving:latest
+    image: spark156/leveling-education-framework-frontend:latest
     build:
       context: frontend
       target: production
@@ -24,3 +24,15 @@ services:
         traefik.http.routers.frontend.rule: Host(`localhost`)
         traefik.http.routers.frontend.entrypoints: web
         traefik.http.services.frontend.loadbalancer.server.port: 80
+  
+  backend:
+    image: spark156/leveling-education-framework-backend:latest
+    build: 
+      context: backend
+      target: production
+      labels:
+        traefik.enable: true
+        traefik.http.routers.backend.rule: Host(`localhost`) && PathPrefix(`/api/v1`)
+        traefik.http.services.backend.loadbalancer.server.port: 80
+        traefik.http.middlewares.backendpathstrip.stripprefix.prefixes: /api/v1
+        traefik.http.routers.backend.middlewares: backendpathstrip@docker
