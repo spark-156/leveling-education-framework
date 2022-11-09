@@ -10,6 +10,8 @@ import os
 
 
 RATE_LIMIT_PER_MINUTE = os.getenv('RATE_LIMIT_PER_MINUTE', 8)
+# 1 day default
+CACHE_CONTROL_MAX_AGE = os.getenv('CACHE_CONTROL_MAX_AGE', 86400)
 
 
 limiter = Limiter(key_func=get_remote_address)
@@ -49,8 +51,7 @@ app.add_middleware(
 @app.middleware("http")
 async def add_cache_middleware(request: Request, call_next):
     response = await call_next(request)
-    # 1 day cache header
-    response.headers["Cache-Control"] = "public, max-age: 86400"
+    response.headers["Cache-Control"] = f"public, max-age: {CACHE_CONTROL_MAX_AGE}"
     return response
 
 

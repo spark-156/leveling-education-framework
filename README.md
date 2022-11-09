@@ -8,6 +8,14 @@ Backend built in [FastAPI](https://fastapi.tiangolo.com/)
 # Updating Vaardigheden and/ or HBO-I
 Make sure to update the json's in both `frontend/src/json` & `backend/app/json`
 
+
+# Environment variables
+| Name | Example value | Type | Description |
+| ----------- | ----------- | ----------- | ----------- |
+| HOSTS | localhost, lef.open-ict.hu.nl | String | comma seperated list of all hosts that caddy should auto-generate https certificates and route for | 
+| RATE_LIMIT_PER_MINUTE | 8 | Integer | Amount of requests that can be made to the api per minute |
+| CACHE_CONTROL_MAX_AGE | 86400 | Integer | Amount of time in seconds that the browser should cache the response, 86400 is 1 day = 60s * 60m * 24h |
+
 # Running in production
 To run the application in a production environment run the following commands:
 
