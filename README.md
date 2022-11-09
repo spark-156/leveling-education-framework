@@ -8,6 +8,14 @@ Backend built in [FastAPI](https://fastapi.tiangolo.com/)
 # Updating Vaardigheden and/ or HBO-I
 Make sure to update the json's in both `frontend/src/json` & `backend/app/json`
 
+# Running in production
+To run the application in a production environment run the following commands:
+
+1. Rename `.env-prod` to `.env` and edit any values you need to edit.
+2. Run the command `docker network create caddy`
+3. Launch Caddy with `docker compose -f docker-compose.caddy.yml --env-file .env up -d`
+4. Launch the application with `docker compose --env-file .env up -d`
+
 # Contributing to Leveling Education Framework
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
