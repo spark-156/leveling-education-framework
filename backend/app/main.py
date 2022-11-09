@@ -8,20 +8,9 @@ from slowapi.util import get_remote_address
 import uvicorn
 
 
-def custom_openapi():
-    if app.openapi_schema:
-        return app.openapi_schema
-    openapi_schema = get_openapi(
-        title="Leveling Education Framework",
-        version="1.0.0",
-        description="Leveling Education Framework public api for getting all HBO-I and Open-ICT Vaardigheden in json format.",
-        routes=app.routes,
-    )
-    app.openapi_schema = openapi_schema
-    return app.openapi_schema
-
-
 limiter = Limiter(key_func=get_remote_address)
+
+
 app = FastAPI(responses={
     200: {
         "description": "Ok",
@@ -42,7 +31,6 @@ app = FastAPI(responses={
 })
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
-app.openapi = custom_openapi
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -94,6 +82,23 @@ async def vaardigheden(request: Request, response: Response, vaardigheid: str = 
         raise HTTPException(
             status_code=404, detail="Vaardigheid: " + vaardigheid + " not found")
     return vaardigheden[vaardigheid]
+
+
+def custom_openapi():
+    if app.openapi_schema:
+        return app.openapi_schema
+    openapi_schema = get_openapi(
+        title="Leveling Education Framework",
+        version="1.0",
+        openapi_version="3.0.n",
+        description="Leveling Education Framework public api for getting all HBO-I and Open-ICT Vaardigheden in json format.",
+        routes=app.routes,
+    )
+    app.openapi_schema = openapi_schema
+    return app.openapi_schema
+
+
+app.openapi = custom_openapi
 
 
 if __name__ == "__main__":
