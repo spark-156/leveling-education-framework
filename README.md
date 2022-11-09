@@ -5,6 +5,9 @@ Frontend built in [React](https://reactjs.org) with [Ant Design](https://ant.des
 
 Backend built in [FastAPI](https://fastapi.tiangolo.com/)
 
+# Updating Vaardigheden and/ or HBO-I
+Make sure to update the json's in both `frontend/src/json` & `backend/app/json`
+
 # Contributing to Leveling Education Framework
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
