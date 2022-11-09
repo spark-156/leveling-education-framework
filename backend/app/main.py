@@ -46,6 +46,14 @@ app.add_middleware(
 )
 
 
+@app.middleware("http")
+async def add_cache_middleware(request: Request, call_next):
+    response = await call_next(request)
+    # 1 day cache header
+    response.headers["Cache-Control"] = "public, max-age: 86400"
+    return response
+
+
 @app.get("/hboi", tags=["HBO-I"])
 @limiter.limit(limit_value=f"{RATE_LIMIT_PER_MINUTE}/minute")
 async def hboi(
