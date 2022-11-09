@@ -20,8 +20,8 @@ export function ThemeSwitch(){
   };
 
   return (<Tooltip title={"Current theme is: " + currentTheme} >
-    <Button aria-label="switch theme">
-      { currentTheme === themes.light ? <HalfMoon onClick={toggleDarkMode}/>  : <SunLight onClick={toggleDarkMode}/> }
+    <Button aria-label="switch theme" onClick={toggleDarkMode}>
+      { currentTheme === themes.light ? <HalfMoon />  : <SunLight /> }
     </Button>
   </Tooltip>);
 }
