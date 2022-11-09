@@ -26,6 +26,8 @@ services:
     build: 
       context: backend
       target: production
+    environment:
+      - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE}
     networks:
       - caddy
     labels:

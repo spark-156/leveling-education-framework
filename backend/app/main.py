@@ -6,6 +6,10 @@ from slowapi.errors import RateLimitExceeded
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 import uvicorn
+import os
+
+
+RATE_LIMIT_PER_MINUTE = os.getenv('RATE_LIMIT_PER_MINUTE', 8)
 
 
 limiter = Limiter(key_func=get_remote_address)
@@ -25,7 +29,7 @@ app = FastAPI(
             "description": "Rate limit exceeded",
             "content": {
                 "application/json": {
-                    "example": {"error": "Rate limit exceeded: 20 per 1 minute"}
+                    "example": {"error": f"Rate limit exceeded: {RATE_LIMIT_PER_MINUTE} per 1 minute"}
                 }
             }
         }
@@ -43,7 +47,7 @@ app.add_middleware(
 
 
 @app.get("/hboi", tags=["HBO-I"])
-@limiter.limit(limit_value="20/minute")
+@limiter.limit(limit_value=f"{RATE_LIMIT_PER_MINUTE}/minute")
 async def hboi(
     request: Request,
     response: Response,
@@ -72,7 +76,7 @@ async def hboi(
 
 
 @app.get("/vaardigheden", tags=["Open-ICT Vaardigheden"])
-@limiter.limit(limit_value="20/minute")
+@limiter.limit(limit_value=f"{RATE_LIMIT_PER_MINUTE}/minute")
 async def vaardigheden(request: Request, response: Response):
     """Get all vaardigheden
     """
@@ -81,7 +85,7 @@ async def vaardigheden(request: Request, response: Response):
 
 
 @app.get("/vaardigheden/{vaardigheid}", description="'Juiste kennis ontwikkelen',\n'Kwalitatief product maken',\n'Overzicht creëren',\n'Kritisch oordelen',\n'Samenwerken',\n'Boodschap delen',\n'Plannen',\n'Flexibel opstellen',\n'Pro-actief handelen',\n'Reflecteren'", tags=["Open-ICT Vaardigheden"])
-@limiter.limit(limit_value="20/minute")
+@limiter.limit(limit_value=f"{RATE_LIMIT_PER_MINUTE}/minute")
 async def vaardigheden(request: Request, response: Response, vaardigheid: str):
     """Get specific vaardigheid
     """
