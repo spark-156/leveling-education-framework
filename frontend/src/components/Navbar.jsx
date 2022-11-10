@@ -29,13 +29,13 @@ export function Navbar () {
     backIcon={breakpoint ? <MenuOutlined /> : null}
     extra={<ThemeSwitch />}
   >
-
     <Drawer
       title="Menu"
       placement="left"
       onClick={() => setVisible(false)}
       onClose={() => setVisible(false)}
-      visible={visible}
+      open={visible}
+      destroyOnClose
     > 
       <TopicMenu onClick={() => setVisible(false)} />
     </Drawer>

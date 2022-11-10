@@ -19,14 +19,6 @@ limiter = Limiter(key_func=get_remote_address)
 
 app = FastAPI(
     responses={
-        200: {
-            "description": "Ok",
-            "content": {
-                "application/json": {
-
-                }
-            }
-        },
         429: {
             "description": "Rate limit exceeded",
             "content": {
