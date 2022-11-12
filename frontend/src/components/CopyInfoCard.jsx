@@ -33,7 +33,7 @@ export function CopyInfoCard ({ children, title, copy, info, infoTitle, headStyl
     >
       {children}
     </CustomCard>
-    {info ? <Drawer title={infoTitle} placement="right" onClose={onClose} visible={visible}>
+    {info ? <Drawer destroyOnClose title={infoTitle} placement="right" onClose={onClose} open={visible}>
       <ReactMarkdown>{ info }</ReactMarkdown>
     </Drawer> : null}
   </>

@@ -3,6 +3,7 @@ import { Menu } from "antd";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectKey } from "../store/selectedKeySlice";
+import { LinkWithPicture } from "./LinkWithPicture";
 
 export function TopicMenu({ onClick }) {
   const key = useSelector(selectKey)
@@ -39,6 +40,35 @@ export function TopicMenu({ onClick }) {
         <Link to='/vaardigheden'>
             Vaardigheden
         </Link>
+      </Menu.Item>
+    </Menu.ItemGroup>
+
+    <Menu.Divider />
+
+    <Menu.ItemGroup 
+      title="Helpful links"
+    >
+      <Menu.Item>
+        <LinkWithPicture href="https://github.com/spark-156/leveling-education-framework" imageSrc="/github.png" alt="github" >
+          GitHub
+        </LinkWithPicture>
+      </Menu.Item>
+      <Menu.Item>
+        <LinkWithPicture href="/api/v1/docs" imageSrc="/openapi.png" alt="openapi" >
+          API Documentation
+        </LinkWithPicture>
+      </Menu.Item>
+    </Menu.ItemGroup>
+
+    <Menu.Divider />
+
+    <Menu.ItemGroup 
+      title="Website made by:"
+    >
+      <Menu.Item>
+        <LinkWithPicture href="https://www.lucabergman.nl/" imageSrc="/fotovanmij.jpeg" alt="foto van mij" >
+          Luca Bergman
+        </LinkWithPicture>
       </Menu.Item>
     </Menu.ItemGroup>
   </Menu>
