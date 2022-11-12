@@ -1,0 +1,13 @@
+{
+    "Index": {
+      "title": "Start",
+      "description": "Dit is de startpagina."
+    },
+    "LocaleSwitcher": {
+      "switchLocale": "Wissel naar {locale, select, nl {Nederlands} en {Engels} other {Onbekend}} "
+    },
+    "PageLayout": {
+      "pageTitle": "Leveling Education Framework - NL"
+    }
+  }
+  

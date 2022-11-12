@@ -1,28 +1,23 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import LocaleSwitcher from '../components/locale-switcher'
+import {GetStaticPropsContext} from 'next';
+import {useTranslations} from 'next-intl';
+import LocaleSwitcher from '../components/LocaleSwitcher';
+import PageLayout from '../components/PageLayout';
 
-export default function IndexPage() {
-  const router = useRouter()
-  const { locale, locales, defaultLocale } = router
+export default function Index() {
+  const t = useTranslations('Index');
 
   return (
-    <div>
-      <h1>Index page</h1>
-      <p>Current locale: {locale}</p>
-      <p>Default locale: {defaultLocale}</p>
-      <p>Configured locales: {JSON.stringify(locales)}</p>
-
+    <PageLayout title={t('title')}>
+      <p>{t('description')}</p>
       <LocaleSwitcher />
+    </PageLayout>
+  );
+}
 
-      <Link href="/gsp">To getStaticProps page</Link>
-      <br />
-
-      <Link href="/gsp/first">To dynamic getStaticProps page</Link>
-      <br />
-
-      <Link href="/gssp">To getServerSideProps page</Link>
-      <br />
-    </div>
-  )
+export async function getStaticProps({locale}: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`../locales/${locale}.json`)).default
+    }
+  };
 }
