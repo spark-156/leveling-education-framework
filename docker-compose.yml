@@ -1,26 +1,42 @@
-version: "3.8"
+version: "3.9"
 
 services: 
-  traefik:
-    image: traefik:v2.4
-    command:
-      - --api.insecure=true
-      - --providers.docker
-      - --providers.docker.exposedbydefault=false 
-      - --entrypoints.web.address=:80
-    ports:
-      - "80:80"
-      - "8080:8080"
+  watchtower:
+    image: v2tec/watchtower
+    container_name: leveling-education-framework-watchtower
+    restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
-    image: spark156/hboi-domeinbeschrijving:latest
+    image: spark156/leveling-education-framework-frontend:latest
+    container_name: leveling-education-framework-frontend
     build:
       context: frontend
       target: production
-      labels:
-        traefik.enable: true
-        traefik.http.routers.frontend.rule: Host(`localhost`)
-        traefik.http.routers.frontend.entrypoints: web
-        traefik.http.services.frontend.loadbalancer.server.port: 80
+    networks:
+      - caddy
+    labels:
+      caddy: ${HOSTS}
+      caddy.reverse_proxy: "{{upstreams}}"
+  
+  backend:
+    image: spark156/leveling-education-framework-backend:latest
+    container_name: leveling-education-framework-backend
+    build: 
+      context: backend
+      target: production
+    environment:
+      - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE}
+    networks:
+      - caddy
+    labels:
+      caddy: ${HOSTS}
+      caddy.handle_path: /api/v1/*
+      caddy.handle_path.0_rewrite: "* {uri}"
+      caddy.handle_path.1_reverse_proxy: "{{upstreams}}"
+    
+networks:
+  caddy:
+    external: true
+
