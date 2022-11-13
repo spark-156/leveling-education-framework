@@ -7,7 +7,8 @@
       "switchLocale": "Wissel naar {locale, select, nl {Nederlands} en {Engels} other {Onbekend}} "
     },
     "PageLayout": {
-      "pageTitle": "Leveling Education Framework - NL"
+      "pageTitle": "Leveling Education Framework - EN",
+      "footerTitle": "Gemaakt door Luca Bergman"
     }
   }
   
