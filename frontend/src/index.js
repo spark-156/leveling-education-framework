@@ -18,11 +18,13 @@ const themes = {
   dark: "dark.css",
 };
 
+const preferedTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <ThemeSwitcherProvider defaultTheme="light" themeMap={themes}         insertionPoint="styles-insertion-point"
+        <ThemeSwitcherProvider defaultTheme={preferedTheme} themeMap={themes}         insertionPoint="styles-insertion-point"
         >
           <App />
         </ThemeSwitcherProvider>
