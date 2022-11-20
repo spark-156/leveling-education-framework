@@ -43,7 +43,7 @@ app.add_middleware(
 @app.middleware("http")
 async def add_cache_middleware(request: Request, call_next):
     response = await call_next(request)
-    response.headers["Cache-Control"] = f"public, max-age = {CACHE_CONTROL_MAX_AGE}"
+    response.headers["Cache-Control"] = f"public, max-age={CACHE_CONTROL_MAX_AGE}"
     return response
 
 
