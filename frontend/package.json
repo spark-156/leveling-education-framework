@@ -5,7 +5,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "antd": "^4.16.6",
-    "copy-to-clipboard": "^3.3.1",
+    "copy-to-clipboard": "^3.3.3",
     "iconoir-react": "^5.4.0",
     "query-string": "^7.1.1",
     "react": "^17.0.2",
