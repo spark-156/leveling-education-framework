@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.1",
+    "@reduxjs/toolkit": "^1.9.1",
     "antd": "^4.16.6",
     "copy-to-clipboard": "^3.3.3",
     "iconoir-react": "^5.4.0",
