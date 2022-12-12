@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
-    "antd": "^4.16.6",
+    "antd": "^5.0.5",
     "copy-to-clipboard": "^3.3.3",
     "iconoir-react": "^5.4.0",
     "query-string": "^7.1.1",
