@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import { FormattedMessage } from "react-intl";
 import React from "react";
+import Link from "next/link";
 
 export default function ToolbarTitle() {
   return (
@@ -11,7 +12,9 @@ export default function ToolbarTitle() {
         noWrap
         sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
       >
-        <FormattedMessage id={"TITLE_LONG"} />
+        <Link href="/">
+          <FormattedMessage id={"TITLE_LONG"} />
+        </Link>
       </Typography>
       <Typography
         variant="h6"
@@ -19,7 +22,9 @@ export default function ToolbarTitle() {
         noWrap
         sx={{ flexGrow: 1, display: { xs: "block", sm: "none" } }}
       >
-        <FormattedMessage id={"TITLE"} />
+        <Link href="/">
+          <FormattedMessage id={"TITLE"} />
+        </Link>
       </Typography>
     </>
   );
