@@ -2,35 +2,31 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import Box from "@mui/material/Box";
 import React from "react";
 import { Toolbar } from "@mui/material";
-
-const navItems = [
-  "Beroepstaken",
-  "Vaardigheden",
-  "GitHub",
-  "API Documentatie",
-  "Luca Bergman",
-];
+import { FormattedMessage } from "react-intl";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function DrawerContent({
   handleDrawerToggle,
 }: {
   handleDrawerToggle: () => void;
 }) {
+  const { pathname } = useRouter();
+
   return (
-    <Box onClick={handleDrawerToggle}>
+    <div onClick={handleDrawerToggle}>
       <Toolbar />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={item} />
+        <ListItem disablePadding>
+          <Link href={"/"} style={{ width: "100%" }}>
+            <ListItemButton selected={pathname === "/"}>
+              <ListItemText primary={<FormattedMessage id={"HOME"} />} />
             </ListItemButton>
-          </ListItem>
-        ))}
+          </Link>
+        </ListItem>
       </List>
-    </Box>
+    </div>
   );
 }
