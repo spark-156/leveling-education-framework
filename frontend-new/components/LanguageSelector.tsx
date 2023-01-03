@@ -7,11 +7,12 @@ export default function LanguageSelector() {
 
   return (
     <Box flexShrink={1}>
-      <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
-        <InputLabel id="select-language">
+      <FormControl sx={{ m: 1, minWidth: 80 }} size="small" color="secondary">
+        <InputLabel id="select-language" color="primary">
           <FormattedMessage id="LANGUAGE" />
         </InputLabel>
         <Select
+          color="primary"
           labelId="select-language"
           id="select-language"
           value={locale}
