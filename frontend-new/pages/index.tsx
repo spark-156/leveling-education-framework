@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Typography} from "@mui/material";
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>
+        <Typography variant="body1">
           Hello World!
-        </div>
+        </Typography>
       </main>
     </>
   )
