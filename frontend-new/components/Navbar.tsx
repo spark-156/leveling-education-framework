@@ -8,8 +8,19 @@ import Toolbar from "@mui/material/Toolbar";
 import ToolbarTitle from "./ToolbarTitle";
 import DrawerContent from "./DrawerContent";
 import LanguageSelector from "./LanguageSelector";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { LightModeOutlined } from "@mui/icons-material";
+import { Stack } from "@mui/material";
 
-export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
+export default function DrawerAppBar({
+  drawerWidth,
+  toggleTheme,
+  currentTheme,
+}: {
+  drawerWidth: number;
+  toggleTheme: () => void;
+  currentTheme: "light" | "dark";
+}) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -36,7 +47,21 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
             <MenuIcon />
           </IconButton>
           <ToolbarTitle />
-          <LanguageSelector />
+          <Stack direction="row" gap={1}>
+            <IconButton
+              color="inherit"
+              aria-label="change theme"
+              edge="end"
+              onClick={toggleTheme}
+            >
+              {currentTheme === "dark" ? (
+                <LightModeOutlined />
+              ) : (
+                <DarkModeIcon />
+              )}
+            </IconButton>
+            <LanguageSelector />
+          </Stack>
         </Toolbar>
       </AppBar>
 

@@ -4,11 +4,23 @@ import { Box, CssBaseline, Toolbar } from "@mui/material";
 
 const drawerWidth = 240;
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({
+  children,
+  toggleTheme,
+  currentTheme,
+}: {
+  children: ReactNode;
+  toggleTheme: () => void;
+  currentTheme: "light" | "dark";
+}) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <Navbar drawerWidth={drawerWidth} />
+      <Navbar
+        drawerWidth={drawerWidth}
+        currentTheme={currentTheme}
+        toggleTheme={toggleTheme}
+      />
       <Box
         component="main"
         sx={{
