@@ -29,6 +29,7 @@
     "@formatjs/cli": "^5.1.12",
     "babel-plugin-formatjs": "^10.3.35",
     "eslint": "8.22.0",
-    "eslint-plugin-formatjs": "^4.3.9"
+    "eslint-plugin-formatjs": "^4.3.9",
+    "prettier": "2.8.1"
   }
 }
