@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import {Typography} from "@mui/material";
+import {FormattedMessage} from "react-intl";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Typography variant="body1">
-          Hello World!
+          <FormattedMessage id="TITLE" />
         </Typography>
       </main>
     </>
