@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import {Typography} from "@mui/material";
-import {FormattedMessage} from "react-intl";
+import Head from "next/head";
+import { Typography } from "@mui/material";
+import { FormattedMessage } from "react-intl";
 
 export default function Home() {
   return (
@@ -17,5 +17,5 @@ export default function Home() {
         </Typography>
       </main>
     </>
-  )
+  );
 }
