@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import English from "../lang/en.json";
 import Dutch from "../lang/nl.json";
 import Link from "next/link";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { asPath, locale, defaultLocale } = useRouter();
@@ -41,10 +42,12 @@ export default function App({ Component, pageProps }: AppProps) {
       locale={locale ? locale : "nl"}
       defaultLocale={defaultLocale}
     >
-      <Link href={asPath} locale={language}>
-        {language}
-      </Link>
-      <Component {...pageProps} />
+      <Layout>
+        <Link href={asPath} locale={language}>
+          {language}
+        </Link>
+        <Component {...pageProps} />
+      </Layout>
     </IntlProvider>
   );
 }

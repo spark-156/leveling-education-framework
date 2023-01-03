@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Typography variant="body1">
-          <FormattedMessage id="TITLE" />
+          <FormattedMessage id="HELLO_WORLD" />
         </Typography>
       </main>
     </>
