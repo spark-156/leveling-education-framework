@@ -7,6 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import ToolbarTitle from "./ToolbarTitle";
 import DrawerContent from "./DrawerContent";
+import LanguageSelector from "./LanguageSelector";
 
 export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
             <MenuIcon />
           </IconButton>
           <ToolbarTitle />
+          <LanguageSelector />
         </Toolbar>
       </AppBar>
 
