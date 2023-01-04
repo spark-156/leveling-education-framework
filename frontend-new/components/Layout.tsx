@@ -11,7 +11,7 @@ export default function Layout({
 }: {
   children: ReactNode;
   toggleTheme: () => void;
-  currentTheme: "light" | "dark";
+  currentTheme: "light" | "dark" | null;
 }) {
   return (
     <Box sx={{ display: "flex" }}>

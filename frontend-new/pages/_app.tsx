@@ -14,13 +14,18 @@ import Layout from "../components/Layout";
 import { ThemeProvider } from "@mui/material";
 import { lightTheme } from "../themes/light-theme";
 import { darkTheme } from "../themes/dark-theme";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { LocalStorageEnum } from "../types/LocalStorageEnum";
+import { ThemesEnum } from "../types/ThemesEnum";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { locale, defaultLocale } = useRouter();
   const [activeTheme, setActiveTheme] = useState(lightTheme);
-  const [selectedTheme, setSelectedTheme] = useState<"light" | "dark">("light");
 
-  function getActiveTheme(themeMode: "light" | "dark") {
+  const { value: selectedTheme, setItem: setSelectedTheme } =
+    useLocalStorage<ThemesEnum>(LocalStorageEnum.Theme);
+
+  function getActiveTheme(themeMode: string | null) {
     return themeMode === "light" ? lightTheme : darkTheme;
   }
 
@@ -29,7 +34,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [selectedTheme]);
 
   const toggleTheme = () => {
-    const desiredTheme = selectedTheme === "light" ? "dark" : "light";
+    const desiredTheme =
+      selectedTheme === ThemesEnum.Light ? ThemesEnum.Dark : ThemesEnum.Light;
 
     setSelectedTheme(desiredTheme);
   };

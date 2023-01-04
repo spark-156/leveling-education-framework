@@ -19,7 +19,7 @@ export default function DrawerAppBar({
 }: {
   drawerWidth: number;
   toggleTheme: () => void;
-  currentTheme: "light" | "dark";
+  currentTheme: "light" | "dark" | null;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
