@@ -25,6 +25,11 @@ export default function DrawerContent({
           href={"/beroepstaken"}
           formattedMessageId={"PROFESSIONAL_DUTIES"}
         />
+        <DrawerContentLink
+          currentPathname={pathname}
+          href={"/vaardigheden"}
+          formattedMessageId={"SKILLS"}
+        />
       </List>
     </div>
   );
