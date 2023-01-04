@@ -35,6 +35,7 @@ export default function DrawerAppBar({
         sx={{
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
+        elevation={1}
       >
         <Toolbar>
           <IconButton
