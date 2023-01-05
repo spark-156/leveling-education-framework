@@ -1,17 +1,17 @@
 import Head from "next/head";
-import { FormattedMessage, useIntl } from "react-intl";
-import { Typography } from "@mui/material";
+import { useIntl } from "react-intl";
+import { VaardighedenNavigationCard } from "../components/VaardighedenNavigationCard";
 
 export default function Vaardigheden() {
   const intl = useIntl();
+
   return (
     <>
       <Head>
         <title>LEF - {intl.formatMessage({ id: "SKILLS" })}</title>
       </Head>
-      <Typography>
-        <FormattedMessage id="SKILLS" />
-      </Typography>
+
+      <VaardighedenNavigationCard />
     </>
   );
 }
