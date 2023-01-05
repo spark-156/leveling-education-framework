@@ -16,5 +16,21 @@
   "plannen": "Plannen",
   "flexibel_opstellen": "Flexibel opstellen",
   "pro-actief_handelen": "Pro-actief handelen",
-  "reflecteren": "Reflecteren"
+  "reflecteren": "Reflecteren",
+
+  "ARCHITECTURE_LAYERS": "Architectuurlagen",
+  "ARCHITECTURE_LAYERS_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
+  "gebruikersinteractie": "Gebruikersinteractie",
+  "organisatieprocessen": "Organisatieprocessen",
+  "infrastructuur": "Infrastructuur",
+  "software": "Software",
+  "hardwareinterfacing": "Hardwareinterfacing",
+
+  "ACTIVITIES": "Activiteiten",
+  "ACTIVITIES_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
+  "analyseren": "Analyseren",
+  "adviseren": "Adviseren",
+  "ontwerpen": "Ontwerpen",
+  "realiseren": "Realiseren",
+  "manage_en_control": "Manage & Control"
 }

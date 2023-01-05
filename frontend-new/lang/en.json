@@ -16,5 +16,21 @@
   "plannen": "Planning",
   "flexibel_opstellen": "Being flexible",
   "pro-actief_handelen": "Acting proactively",
-  "reflecteren": "Reflecting"
+  "reflecteren": "Reflecting",
+
+  "ARCHITECTURE_LAYERS": "Architecture layers",
+  "ARCHITECTURE_LAYERS_SUBHEADER": "What should I put here in heavens name?",
+  "gebruikersinteractie": "User interaction",
+  "organisatieprocessen": "Organisational processes",
+  "infrastructuur": "Infrastructure",
+  "software": "Software",
+  "hardwareinterfacing": "Hardware interfacing",
+
+  "ACTIVITIES": "Activities",
+  "ACTIVITIES_SUBHEADER": "What should I put here in heavens name?",
+  "analyseren": "Analyse",
+  "adviseren": "Advise",
+  "ontwerpen": "Design",
+  "realiseren": "Realise",
+  "manage_en_control": "Manage & Control"
 }

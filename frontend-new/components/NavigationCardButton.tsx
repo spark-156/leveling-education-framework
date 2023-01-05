@@ -15,22 +15,21 @@ export function NavigationCardButton({
   props?: GridProps;
 }) {
   const router = useRouter();
-  const { [query_param_key]: query_param_value_real } = router.query;
+  let href;
+  if (router.query[query_param_key] === query_param_value) {
+    const { [query_param_key]: _, ...query } = router.query;
+    href = { query };
+  } else {
+    href = { query: { ...router.query, [query_param_key]: query_param_value } };
+  }
 
   return (
     <Grid item {...props}>
-      <Link
-        href={
-          query_param_value === query_param_value_real
-            ? {}
-            : { query: { [query_param_key]: query_param_value } }
-        }
-        style={{ width: "100%" }}
-      >
+      <Link href={href} style={{ width: "100%" }}>
         <Button
           sx={{ textTransform: "none" }}
           variant={
-            query_param_value === query_param_value_real
+            query_param_value === router.query[query_param_key]
               ? "contained"
               : "outlined"
           }
