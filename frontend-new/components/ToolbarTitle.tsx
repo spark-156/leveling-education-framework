@@ -10,9 +10,10 @@ function Logo(props: { currentTheme: "light" | "dark" | null }) {
       component="img"
       sx={{
         height: 40,
+        width: 40,
       }}
       alt="LEF Logo"
-      src={props.currentTheme === "light" ? "/logo_light.png" : "logo_dark.png"}
+      src={props.currentTheme === "light" ? "/logo_light.svg" : "logo_dark.svg"}
     />
   );
 }
