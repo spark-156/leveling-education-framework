@@ -18,17 +18,17 @@ export default function DrawerContent({
         <DrawerContentLink
           currentPathname={pathname}
           href={"/"}
-          formattedMessageId={"HOME"}
-        />
-        <DrawerContentLink
-          currentPathname={pathname}
-          href={"/beroepstaken"}
           formattedMessageId={"PROFESSIONAL_DUTIES"}
         />
         <DrawerContentLink
           currentPathname={pathname}
           href={"/vaardigheden"}
           formattedMessageId={"SKILLS"}
+        />
+        <DrawerContentLink
+          currentPathname={pathname}
+          href={"/about"}
+          formattedMessageId={"ABOUT"}
         />
       </List>
     </div>
