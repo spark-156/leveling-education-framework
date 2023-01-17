@@ -47,7 +47,7 @@ export default function DrawerAppBar({
           >
             <MenuIcon />
           </IconButton>
-          <ToolbarTitle />
+          <ToolbarTitle currentTheme={currentTheme} />
           <Stack direction="row" gap={1}>
             <IconButton
               color="inherit"
