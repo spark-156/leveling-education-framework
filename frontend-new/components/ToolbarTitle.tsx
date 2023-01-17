@@ -3,20 +3,7 @@ import { FormattedMessage } from "react-intl";
 import React from "react";
 import Link from "next/link";
 import { Box, Stack } from "@mui/material";
-
-function Logo(props: { currentTheme: "light" | "dark" | null }) {
-  return (
-    <Box
-      component="img"
-      sx={{
-        height: 40,
-        width: 40,
-      }}
-      alt="LEF Logo"
-      src={props.currentTheme === "light" ? "/logo_light.svg" : "logo_dark.svg"}
-    />
-  );
-}
+import { Logo } from "./Logo";
 
 export default function ToolbarTitle(props: {
   currentTheme: "light" | "dark" | null;
