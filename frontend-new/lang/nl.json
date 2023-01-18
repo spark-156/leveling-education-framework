@@ -2,9 +2,12 @@
   "TITLE_LONG": "Leveling Education Framework",
   "TITLE": "LEF",
   "HELLO_WORLD": "Hallo dit is de about pagina!",
+  "NIVEAU": "Niveau",
   "ABOUT": "Over ons",
   "HOME": "Thuis",
   "LANGUAGE": "Taal",
+  "INFO_BUTTON_TOOLTIP": "Meer informatie over niveau {niveau}",
+
   "PROFESSIONAL_DUTIES": "Beroepstaken",
   "SKILLS": "Vaardigheden",
   "SKILLS_SUBHEADER": "Alle skills die je moet ontwikkelen binnen Open-ICT",
