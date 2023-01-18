@@ -1,15 +1,13 @@
 import { useRouter } from "next/router";
 import English from "../lang/en.json";
-import EnglishVaardigheden from "../lang/vaardigheden/en.json";
 import Dutch from "../lang/nl.json";
-import DutchVaardigheden from "../lang/vaardigheden/nl.json";
 import { useMemo } from "react";
 
 export function useTranslation() {
   const { locale, defaultLocale } = useRouter();
 
-  const EnglishMessages = { ...English, ...EnglishVaardigheden };
-  const DutchMessages = { ...Dutch, ...DutchVaardigheden };
+  const EnglishMessages = { ...English };
+  const DutchMessages = { ...Dutch };
 
   const messages = useMemo(() => {
     switch (locale) {
