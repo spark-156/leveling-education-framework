@@ -21,17 +21,17 @@
 
   "ARCHITECTURE_LAYERS": "Architectuurlagen",
   "ARCHITECTURE_LAYERS_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
-  "gebruikersinteractie": "Gebruikersinteractie",
-  "organisatieprocessen": "Organisatieprocessen",
-  "infrastructuur": "Infrastructuur",
-  "software": "Software",
-  "hardwareinterfacing": "Hardwareinterfacing",
+  "Gebruikersinteractie": "Gebruikersinteractie",
+  "Organisatieprocessen": "Organisatieprocessen",
+  "Infrastructuur": "Infrastructuur",
+  "Software": "Software",
+  "Hardwareinterfacing": "Hardwareinterfacing",
 
   "ACTIVITIES": "Activiteiten",
   "ACTIVITIES_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
-  "analyseren": "Analyseren",
-  "adviseren": "Adviseren",
-  "ontwerpen": "Ontwerpen",
-  "realiseren": "Realiseren",
-  "manage_en_control": "Manage & Control"
+  "Analyseren": "Analyseren",
+  "Adviseren": "Adviseren",
+  "Ontwerpen": "Ontwerpen",
+  "Realiseren": "Realiseren",
+  "Manage & Control": "Manage & Control"
 }

@@ -21,17 +21,17 @@
 
   "ARCHITECTURE_LAYERS": "Architecture layers",
   "ARCHITECTURE_LAYERS_SUBHEADER": "What should I put here in heavens name?",
-  "gebruikersinteractie": "User interaction",
-  "organisatieprocessen": "Organisational processes",
-  "infrastructuur": "Infrastructure",
-  "software": "Software",
-  "hardwareinterfacing": "Hardware interfacing",
+  "Hebruikersinteractie": "User interaction",
+  "Organisatieprocessen": "Organisational processes",
+  "Infrastructuur": "Infrastructure",
+  "Software": "Software",
+  "Hardwareinterfacing": "Hardware interfacing",
 
   "ACTIVITIES": "Activities",
   "ACTIVITIES_SUBHEADER": "What should I put here in heavens name?",
-  "analyseren": "Analyse",
-  "adviseren": "Advise",
-  "ontwerpen": "Design",
-  "realiseren": "Realise",
-  "manage_en_control": "Manage & Control"
+  "Analyseren": "Analyse",
+  "Adviseren": "Advise",
+  "Ontwerpen": "Design",
+  "Realiseren": "Realise",
+  "Manage & Control": "Manage & Control"
 }
