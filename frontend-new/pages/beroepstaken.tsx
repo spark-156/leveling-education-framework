@@ -1,14 +1,9 @@
 import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
 import {
-  Avatar,
-  Box,
-  Button,
-  ButtonGroup,
   Card,
   CardContent,
   CardHeader,
-  Divider,
   Grid,
   IconButton,
   Stack,
@@ -25,9 +20,8 @@ import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Beroepstaken as BeroepstakenType } from "../types/Beroepstaken";
 import { getBeroepstaken } from "../util/getBeroepstaken";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import InfoIcon from "@mui/icons-material/Info";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
   const beroepstaken = await getBeroepstaken(context.locale);
