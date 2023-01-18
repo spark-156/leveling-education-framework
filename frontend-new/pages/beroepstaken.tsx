@@ -12,8 +12,8 @@ import { Beroepstaken as BeroepstakenType } from "../types/Beroepstaken";
 import { getBeroepstaken } from "../util/getBeroepstaken";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const beroepstaken = await getBeroepstaken();
+export const getStaticProps: GetStaticProps = async (context) => {
+  const beroepstaken = await getBeroepstaken(context.locale);
 
   return {
     props: {
@@ -56,7 +56,9 @@ export default function Beroepstaken({
   return (
     <>
       <Head>
-        <title>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</title>
+        <title>
+          <span>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</span>
+        </title>
       </Head>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
