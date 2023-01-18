@@ -5,9 +5,7 @@ import {
   CardContent,
   CardHeader,
   Grid,
-  IconButton,
   Stack,
-  Tooltip,
   Typography,
 } from "@mui/material";
 import { NavigationCardButton } from "../components/NavigationCardButton";
@@ -20,7 +18,7 @@ import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { Beroepstaken as BeroepstakenType } from "../types/Beroepstaken";
 import { getBeroepstaken } from "../util/getBeroepstaken";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import { InfoDrawerButton } from "../components/InfoDrawerButton";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
@@ -36,7 +34,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export default function Beroepstaken({
   beroepstaken,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const intl = useIntl();
   const router = useRouter();
+
   const { activiteit, architectuurlaag } = router.query as {
     [key: string]: string;
   };
@@ -49,7 +49,6 @@ export default function Beroepstaken({
     }
   );
 
-  const intl = useIntl();
   const architecture_layers: Architectuurlaag[] = [
     "Gebruikersinteractie",
     "Organisatieprocessen",
@@ -124,19 +123,7 @@ export default function Beroepstaken({
 
                             {filteredBeroepstaken[beroepstaakKey][niveauKey]
                               .info ? (
-                              <Tooltip
-                                arrow
-                                title={intl.formatMessage(
-                                  {
-                                    id: "INFO_BUTTON_TOOLTIP",
-                                  },
-                                  { niveau: niveauKey }
-                                )}
-                              >
-                                <IconButton>
-                                  <InfoOutlinedIcon />
-                                </IconButton>
-                              </Tooltip>
+                              <InfoDrawerButton niveau={niveauKey} />
                             ) : null}
                           </Stack>
                           <Typography variant="body2" whiteSpace="pre-wrap">
