@@ -10,7 +10,9 @@ export function Logo(props: { currentTheme: "light" | "dark" | null }) {
         width: 40,
       }}
       alt="LEF Logo"
-      src={props.currentTheme === "light" ? "/logo_light.svg" : "logo_dark.svg"}
+      src={
+        props.currentTheme === "light" ? "/logo_light.svg" : "/logo_dark.svg"
+      }
     />
   );
 }
