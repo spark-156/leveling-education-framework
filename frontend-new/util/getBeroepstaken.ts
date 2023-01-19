@@ -1,8 +1,10 @@
 import path from "path";
 import fsPromises from "fs/promises";
-import { Beroepstaken } from "../types/Beroepstaken";
+import { BeroepstakenOrVaardigheden } from "../types/BeroepstakenOrVaardigheden";
 
-export async function getBeroepstaken(locale?: string): Promise<Beroepstaken> {
+export async function getBeroepstaken(
+  locale?: string
+): Promise<BeroepstakenOrVaardigheden> {
   let file = "hboi-nl.json";
   if (locale === "en") file = "hboi-en.json";
 

@@ -1,7 +1,7 @@
-import { Beroepstaken } from "../types/Beroepstaken";
+import { BeroepstakenOrVaardigheden } from "../types/BeroepstakenOrVaardigheden";
 
 export function filterBeroepstaken(
-  beroepstaken: Beroepstaken,
+  beroepstaken: BeroepstakenOrVaardigheden,
   {
     architectuurlaag,
     activiteit,

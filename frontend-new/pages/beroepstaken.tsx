@@ -1,13 +1,6 @@
 import Head from "next/head";
 import { FormattedMessage, useIntl } from "react-intl";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Grid } from "@mui/material";
 import { NavigationCardButton } from "../components/NavigationCardButton";
 import { NavigationCard } from "../components/NavigationCard";
 import { useRouter } from "next/router";
@@ -15,10 +8,10 @@ import { Architectuurlaag } from "../types/Architectuurlaag";
 import { Activiteit } from "../types/Activiteit";
 
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { Beroepstaken as BeroepstakenType } from "../types/Beroepstaken";
+import { BeroepstakenOrVaardigheden as BeroepstakenType } from "../types/BeroepstakenOrVaardigheden";
 import { getBeroepstaken } from "../util/getBeroepstaken";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
-import { InfoDrawerButton } from "../components/InfoDrawerButton";
+import { LevelsCard } from "../components/LevelsCard";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
@@ -102,44 +95,11 @@ export default function Beroepstaken({
           </NavigationCard>
         </Grid>
         {Object.keys(filteredBeroepstaken).map((beroepstaakKey) => (
-          <Grid item xs={12} key={beroepstaakKey}>
-            <Card>
-              {/* TODO translate beroepstaken */}
-              <CardHeader title={beroepstaakKey} />
-              <CardContent>
-                <Grid container spacing={3}>
-                  {Object.keys(filteredBeroepstaken[beroepstaakKey]).map(
-                    (niveauKey) => (
-                      <Grid key={niveauKey} item xs={12} sm={6} md={3}>
-                        <Stack gap={1}>
-                          <Stack
-                            direction="row"
-                            alignItems="center"
-                            justifyContent="space-between"
-                          >
-                            <Typography variant="h6" fontWeight="normal">
-                              <FormattedMessage id="NIVEAU" /> {niveauKey}
-                            </Typography>
-
-                            {filteredBeroepstaken[beroepstaakKey][niveauKey]
-                              .info ? (
-                              <InfoDrawerButton niveau={niveauKey} />
-                            ) : null}
-                          </Stack>
-                          <Typography variant="body2" whiteSpace="pre-wrap">
-                            {
-                              filteredBeroepstaken[beroepstaakKey][niveauKey]
-                                .title
-                            }
-                          </Typography>
-                        </Stack>
-                      </Grid>
-                    )
-                  )}
-                </Grid>
-              </CardContent>
-            </Card>
-          </Grid>
+          <LevelsCard
+            key={beroepstaakKey}
+            title={beroepstaakKey}
+            item={filteredBeroepstaken[beroepstaakKey]}
+          />
         ))}
       </Grid>
     </>

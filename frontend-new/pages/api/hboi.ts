@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { filterBeroepstaken } from "../../util/filterBeroepstaken";
-import { Beroepstaken } from "../../types/Beroepstaken";
+import { BeroepstakenOrVaardigheden } from "../../types/BeroepstakenOrVaardigheden";
 import { getBeroepstaken } from "../../util/getBeroepstaken";
 import { Architectuurlaag } from "../../types/Architectuurlaag";
 import { Niveau } from "../../types/Niveau";
@@ -9,7 +9,7 @@ import { Activiteit } from "../../types/Activiteit";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Beroepstaken | { error: string }>
+  res: NextApiResponse<BeroepstakenOrVaardigheden | { error: string }>
 ) {
   const { architectuurlaag, activiteit, niveau } = req.query as {
     architectuurlaag: Architectuurlaag;
