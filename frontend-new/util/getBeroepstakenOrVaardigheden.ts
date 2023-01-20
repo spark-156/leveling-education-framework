@@ -2,11 +2,12 @@ import path from "path";
 import fsPromises from "fs/promises";
 import { BeroepstakenOrVaardigheden } from "../types/BeroepstakenOrVaardigheden";
 
-export async function getBeroepstaken(
+export async function getBeroepstakenOrVaardigheden(
+  type: "vaardigheden" | "hboi",
   locale?: string
 ): Promise<BeroepstakenOrVaardigheden> {
-  let file = "hboi-nl.json";
-  if (locale === "en") file = "hboi-en.json";
+  let file = `${type}-nl.json`;
+  if (locale === "en") file = `${type}-en.json`;
 
   const filePath = path.join(process.cwd(), `data/${file}`);
   const jsonData = await fsPromises.readFile(filePath);

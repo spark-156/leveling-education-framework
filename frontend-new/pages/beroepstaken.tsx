@@ -4,18 +4,21 @@ import { Grid } from "@mui/material";
 import { NavigationCardButton } from "../components/NavigationCardButton";
 import { NavigationCard } from "../components/NavigationCard";
 import { useRouter } from "next/router";
-import { Architectuurlaag } from "../types/Architectuurlaag";
-import { Activiteit } from "../types/Activiteit";
 
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { BeroepstakenOrVaardigheden as BeroepstakenType } from "../types/BeroepstakenOrVaardigheden";
-import { getBeroepstaken } from "../util/getBeroepstaken";
+import { getBeroepstakenOrVaardigheden } from "../util/getBeroepstakenOrVaardigheden";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
 import { LevelsCard } from "../components/LevelsCard";
+import { architecture_layers } from "../types/Architectuurlaag";
+import { activities } from "../types/Activiteit";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
-  const beroepstaken = await getBeroepstaken(context.locale);
+  const beroepstaken = await getBeroepstakenOrVaardigheden(
+    "hboi",
+    context.locale
+  );
 
   return {
     props: {
@@ -42,20 +45,6 @@ export default function Beroepstaken({
     }
   );
 
-  const architecture_layers: Architectuurlaag[] = [
-    "Gebruikersinteractie",
-    "Organisatieprocessen",
-    "Infrastructuur",
-    "Software",
-    "Hardwareinterfacing",
-  ];
-  const activities: Activiteit[] = [
-    "Analyseren",
-    "Adviseren",
-    "Ontwerpen",
-    "Realiseren",
-    "Manage & Control",
-  ];
   return (
     <>
       <Head>

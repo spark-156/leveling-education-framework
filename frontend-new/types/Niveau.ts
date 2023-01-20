@@ -1,1 +1,3 @@
-export type Niveau = "1" | "2" | "3" | "4";
+export const niveaus = ["1", "2", "3", "4"] as const;
+
+export type Niveau = typeof niveaus[number];
