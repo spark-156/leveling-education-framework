@@ -10,8 +10,12 @@ import { BeroepstakenOrVaardigheden as BeroepstakenType } from "../types/Beroeps
 import { getBeroepstakenOrVaardigheden } from "../util/getBeroepstakenOrVaardigheden";
 import { filterBeroepstaken } from "../util/filterBeroepstaken";
 import { LevelsCard } from "../components/LevelsCard";
-import { architecture_layers } from "../types/Architectuurlaag";
-import { activities } from "../types/Activiteit";
+import {
+  architecture_layers,
+  Architectuurlaag,
+} from "../types/Architectuurlaag";
+import { Activiteit, activities } from "../types/Activiteit";
+import DefaultErrorPage from "next/error";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
@@ -36,6 +40,15 @@ export default function Beroepstaken({
   const { activiteit, architectuurlaag } = router.query as {
     [key: string]: string;
   };
+
+  if (activiteit && !activities.includes(activiteit as Activiteit))
+    return <DefaultErrorPage statusCode={404} />;
+
+  if (
+    architectuurlaag &&
+    !architecture_layers.includes(architectuurlaag as Architectuurlaag)
+  )
+    return <DefaultErrorPage statusCode={404} />;
 
   const filteredBeroepstaken: BeroepstakenType = filterBeroepstaken(
     beroepstaken,
