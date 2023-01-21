@@ -11,9 +11,13 @@
   "GO_BACK": "Klik hier om terug te gaan",
   "DEVELOPERS": "Ontwikkelt door",
   "MADE_POSSIBLE_BY": "Mede mogelijk gemaakt door",
-  "LOGO_BY": "Logo gemaakt door",
-
-
+  "CONTRIBUTORS": "Bijdragers",
+  "ABOUT_LUCA_BERGMAN_DESCRIPTION": "Ik heb deze website ontwikkelt uit grote ergernis de kubus van de HBO-I domeinbeschrijving. Veel studenten waaronder ik vonden het moeilijk te gebruiken omdat het langzaam en onoverzichtelijk was. Docenten hadden er ook moeite mee omdat het niet mogelijk was om extra informatie aan de student te communiceren. Hierdoor was het vaak onduidelijk dat je bijvoorbeeld maar een van de alinea's aan hoefde te tikken om een niveau van een bepaalde HBO-I te behalen. Het was daarnaast ook erg moeilijk om snel de juiste HBO-I te vinden tussen alle 100 niveau's of om de definitie van een HBO-I met een mede student te delen. Door LEF is het nu mogelijk om met een simpel filter systeem door de HBO-I's en vaardigheden van Open-ICT heen te zoeken inclusief een mooi deelbaar linkje!" ,
+  "ABOUT_PROFILE_WEBSITE_TEXT": "Profiel Website",
+  "ABOUT_EDUCATION_LINK_TEXT": "Opleiding",
+  "ABOUT_EDUCATION_SITE_TEXT": "HU Site",
+  "THANK_YOU_KEVIN_DE_MEIJER_DESC": "Dankjewel Kevin voor het maken van het prachtige LEF logo!",
+  "THANK_YOU_GIDEON_SWAAK_DESC": "Dankjewel Gideon voor het integreren van de LEF A.P.I. in Scorion!",
 
   "PROFESSIONAL_DUTIES": "Beroepstaken",
   "SKILLS": "Vaardigheden",
