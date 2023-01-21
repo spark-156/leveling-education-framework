@@ -7,13 +7,11 @@ import "@fontsource/roboto/700.css";
 import { IntlProvider } from "react-intl";
 
 import Layout from "../components/Layout";
-import { ThemeProvider } from "@mui/material";
-import { useTheme } from "../hooks/useTheme";
 import { useTranslation } from "../hooks/useTranslation";
+import SelectedThemeProvider from "../providers/SelectedThemeProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { locale, defaultLocale, messages } = useTranslation();
-  const { activeTheme, selectedTheme, toggleTheme } = useTheme();
 
   return (
     <IntlProvider
@@ -21,11 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
       locale={locale ? locale : "nl"}
       defaultLocale={defaultLocale}
     >
-      <ThemeProvider theme={activeTheme}>
-        <Layout toggleTheme={toggleTheme} currentTheme={selectedTheme}>
+      <SelectedThemeProvider>
+        <Layout>
           <Component {...pageProps} />
         </Layout>
-      </ThemeProvider>
+      </SelectedThemeProvider>
     </IntlProvider>
   );
 }

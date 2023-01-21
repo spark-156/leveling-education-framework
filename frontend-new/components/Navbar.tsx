@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -11,17 +11,12 @@ import LanguageSelector from "./LanguageSelector";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { LightModeOutlined } from "@mui/icons-material";
 import { Stack } from "@mui/material";
+import { SelectedThemeContext } from "../context/SelectedThemeContext";
 
-export default function DrawerAppBar({
-  drawerWidth,
-  toggleTheme,
-  currentTheme,
-}: {
-  drawerWidth: number;
-  toggleTheme: () => void;
-  currentTheme: "light" | "dark" | null;
-}) {
+export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { selectedTheme, toggleSelectedTheme } =
+    useContext(SelectedThemeContext);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -47,15 +42,15 @@ export default function DrawerAppBar({
           >
             <MenuIcon />
           </IconButton>
-          <ToolbarTitle currentTheme={currentTheme} />
+          <ToolbarTitle />
           <Stack direction="row" gap={1}>
             <IconButton
               color="inherit"
               aria-label="change theme"
               edge="end"
-              onClick={toggleTheme}
+              onClick={toggleSelectedTheme}
             >
-              {currentTheme === "dark" ? (
+              {selectedTheme === "dark" ? (
                 <LightModeOutlined />
               ) : (
                 <DarkModeIcon />

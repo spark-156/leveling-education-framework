@@ -1,13 +1,9 @@
+import { lightTheme } from "../themes/light-theme";
 import { createContext } from "react";
 import { ThemesEnum } from "../types/ThemesEnum";
 
-interface SelectedThemeContextInterface {
-  selectedTheme: null | ThemesEnum;
-  toggleSelectedTheme: () => void;
-}
-
-export const SelectedThemeContext =
-  createContext<SelectedThemeContextInterface>({
-    selectedTheme: null,
-    toggleSelectedTheme: () => {},
-  });
+export const SelectedThemeContext = createContext({
+  selectedTheme: ThemesEnum.Light,
+  activeTheme: lightTheme,
+  toggleSelectedTheme: () => {},
+});

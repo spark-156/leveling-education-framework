@@ -5,9 +5,7 @@ import Link from "next/link";
 import { Box, Stack } from "@mui/material";
 import { Logo } from "./Logo";
 
-export default function ToolbarTitle(props: {
-  currentTheme: "light" | "dark" | null;
-}) {
+export default function ToolbarTitle() {
   return (
     <>
       <Typography
@@ -18,7 +16,7 @@ export default function ToolbarTitle(props: {
       >
         <Link href="/" style={{ width: "100%" }}>
           <Stack width={"100%"} alignItems="center" direction="row" gap={2}>
-            <Logo currentTheme={props.currentTheme} />
+            <Logo />
             <FormattedMessage id={"TITLE_LONG"} />
           </Stack>
         </Link>
@@ -31,7 +29,7 @@ export default function ToolbarTitle(props: {
       >
         <Link href="/" style={{ width: "100%" }}>
           <Stack width={"100%"} alignItems="center" direction="row" gap={2}>
-            <Logo currentTheme={props.currentTheme} />
+            <Logo />
           </Stack>
         </Link>
       </Typography>

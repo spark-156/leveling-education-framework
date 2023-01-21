@@ -5,15 +5,7 @@ import Head from "next/head";
 
 const drawerWidth = 240;
 
-export default function Layout({
-  children,
-  toggleTheme,
-  currentTheme,
-}: {
-  children: ReactNode;
-  toggleTheme: () => void;
-  currentTheme: "light" | "dark" | null;
-}) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Head>
@@ -24,11 +16,7 @@ export default function Layout({
       </Head>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <Navbar
-          drawerWidth={drawerWidth}
-          currentTheme={currentTheme}
-          toggleTheme={toggleTheme}
-        />
+        <Navbar drawerWidth={drawerWidth} />
         <Box
           component="main"
           sx={{

@@ -1,7 +1,9 @@
 import { Box } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
+import { SelectedThemeContext } from "../context/SelectedThemeContext";
 
-export function Logo(props: { currentTheme: "light" | "dark" | null }) {
+export function Logo() {
+  const { selectedTheme } = useContext(SelectedThemeContext);
   return (
     <Box
       component="img"
@@ -10,9 +12,7 @@ export function Logo(props: { currentTheme: "light" | "dark" | null }) {
         width: 40,
       }}
       alt="LEF Logo"
-      src={
-        props.currentTheme === "light" ? "/logo_light.svg" : "/logo_dark.svg"
-      }
+      src={selectedTheme === "light" ? "/logo_light.svg" : "/logo_dark.svg"}
     />
   );
 }
