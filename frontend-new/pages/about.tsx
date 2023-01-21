@@ -30,7 +30,7 @@ export default function About() {
     <Grid container spacing={2}>
       <Grid item xs={12} sm={6}>
         <Card>
-          <CardHeader title={intl.formatMessage({ id: "DEVELOPERS" })} />
+          <CardHeader title={intl.formatMessage({ id: "MADE_BY" })} />
           <CardMedia
             component="img"
             height={cardMediaHeight}
