@@ -12,7 +12,7 @@ export function LevelsCard(props: {
         {/* TODO translate titles */}
         <CardHeader title={props.title} />
         <CardContent>
-          <Grid container spacing={3}>
+          <Grid container spacing={5}>
             {Object.keys(props.item).map((niveauKey) => (
               <Level
                 key={niveauKey}
