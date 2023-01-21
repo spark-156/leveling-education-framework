@@ -13,6 +13,11 @@
   "MADE_POSSIBLE_BY": "Made possible by",
   "CONTRIBUTORS": "Contributors",
   "ABOUT_LUCA_BERGMAN_DESCRIPTION": "I developed this website out of sheer annoyance of the HBO-I domain description cube. Many students including me found it difficult to use because it was slow and cluttered. Teachers also had difficulty with it because it was not possible to communicate additional information to the student. As a result, it was often unclear that, for example, you only had to fulfill one of the paragraphs to achieve a level of a certain HBO-I. It was also very difficult to quickly find the right HBO-I between all 100 levels or to share the definition of an HBO-I with a fellow student. Thanks to LEF it is now possible to search through the HBO-I's and skills of Open-ICT with a simple filter system, including a nice shareable link!",
+  "ABOUT_PROFILE_WEBSITE_TEXT": "Profile Website",
+  "ABOUT_EDUCATION_LINK_TEXT": "Education",
+  "ABOUT_EDUCATION_SITE_TEXT": "HU Site",
+  "THANK_YOU_KEVIN_DE_MEIJER_DESC": "Thank you Kevin for designing the beautiful LEF logo!",
+  "THANK_YOU_GIDEON_SWAAK_DESC": "Thank you Gideon for implementing the LEF A.P.I. in Scorion!",
 
   "PROFESSIONAL_DUTIES": "Professional duties",
   "SKILLS": "Skills",
