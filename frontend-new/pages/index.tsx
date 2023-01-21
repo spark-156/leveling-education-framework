@@ -4,7 +4,6 @@ import { Grid } from "@mui/material";
 import { NavigationCardButton } from "../components/NavigationCardButton";
 import { NavigationCard } from "../components/NavigationCard";
 import { useRouter } from "next/router";
-
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { BeroepstakenOrVaardigheden as BeroepstakenType } from "../types/BeroepstakenOrVaardigheden";
 import { getBeroepstakenOrVaardigheden } from "../util/getBeroepstakenOrVaardigheden";

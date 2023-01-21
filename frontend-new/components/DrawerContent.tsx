@@ -17,7 +17,7 @@ export default function DrawerContent({
       <List>
         <DrawerContentLink
           currentPathname={pathname}
-          href={"/beroepstaken"}
+          href={"/"}
           formattedMessageId={"PROFESSIONAL_DUTIES"}
         />
         <DrawerContentLink
