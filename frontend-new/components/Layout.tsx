@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import React, { ReactNode } from "react";
-import { Box, CssBaseline, Toolbar } from "@mui/material";
+import { Box, Container, CssBaseline, Toolbar } from "@mui/material";
 import Head from "next/head";
 
 const drawerWidth = 240;
@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box sx={{ display: "flex" }}>
+      <Container maxWidth="xl" sx={{ display: "flex", paddingX: 0 }}>
         <CssBaseline />
         <Navbar drawerWidth={drawerWidth} />
         <Box
@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           {children}
         </Box>
         {/*<Footer />*/}
-      </Box>
+      </Container>
     </>
   );
 }
