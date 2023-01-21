@@ -13,10 +13,8 @@ import ListItemText from "@mui/material/ListItemText";
 import { FormattedMessage } from "react-intl";
 import ListItemButton from "@mui/material/ListItemButton";
 
-export default function DrawerContent({
-  handleDrawerToggle,
-}: {
-  handleDrawerToggle: () => void;
+export default function DrawerContent(props: {
+  handleDrawerClose: () => void;
 }) {
   const { pathname } = useRouter();
 
@@ -25,19 +23,19 @@ export default function DrawerContent({
       <Toolbar />
       <List>
         <DrawerContentLink
-          onClick={handleDrawerToggle}
+          onClick={props.handleDrawerClose}
           currentPathname={pathname}
           href={"/"}
           formattedMessageId={"PROFESSIONAL_DUTIES"}
         />
         <DrawerContentLink
-          onClick={handleDrawerToggle}
+          onClick={props.handleDrawerClose}
           currentPathname={pathname}
           href={"/vaardigheden"}
           formattedMessageId={"SKILLS"}
         />
         <DrawerContentLink
-          onClick={handleDrawerToggle}
+          onClick={props.handleDrawerClose}
           currentPathname={pathname}
           href={"/about"}
           formattedMessageId={"ABOUT"}

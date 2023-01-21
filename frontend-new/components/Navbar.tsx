@@ -22,6 +22,10 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const handleDrawerClose = () => {
+    setMobileOpen(false);
+  };
+
   return (
     <>
       <AppBar
@@ -69,7 +73,7 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
         <Drawer
           variant="temporary"
           open={mobileOpen}
-          onClose={handleDrawerToggle}
+          onClose={handleDrawerClose}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
@@ -81,7 +85,7 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
             },
           }}
         >
-          <DrawerContent handleDrawerToggle={handleDrawerToggle} />
+          <DrawerContent handleDrawerClose={handleDrawerClose} />
         </Drawer>
         <Drawer
           variant="permanent"
@@ -94,7 +98,7 @@ export default function DrawerAppBar({ drawerWidth }: { drawerWidth: number }) {
           }}
           open
         >
-          <DrawerContent handleDrawerToggle={handleDrawerToggle} />
+          <DrawerContent handleDrawerClose={handleDrawerClose} />
         </Drawer>
       </Box>
     </>
