@@ -3,8 +3,6 @@ name: CI to Docker Hub
 on:
   push:
     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
 
 jobs:
 
@@ -27,26 +25,13 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       -
-        name: Build and push Frontend
+        name: Build and push app
         uses: docker/build-push-action@v3
         env:
-          DOCKER_HUB_REPOSITORY: leveling-education-framework-frontend
+          DOCKER_HUB_REPOSITORY: leveling-education-framework
         with:
-          context: ./frontend
-          file: ./frontend/Dockerfile
-          platforms: linux/amd64
-          push: true
-          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
-          cache-to: type=inline
-      -
-        name: Build and push Backend
-        uses: docker/build-push-action@v3
-        env:
-          DOCKER_HUB_REPOSITORY: leveling-education-framework-backend
-        with:
-          context: ./backend
-          file: ./backend/Dockerfile
+          context: ./app
+          file: ./app/Dockerfile
           platforms: linux/amd64
           push: true
           tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
