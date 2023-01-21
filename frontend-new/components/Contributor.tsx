@@ -1,7 +1,7 @@
 import { Avatar, Stack, Typography } from "@mui/material";
 
 export default function Contributor(props: {
-  src?: string;
+  avatarImageSrc?: string;
   outsideSrc?: string;
   name: string;
   description: string;
@@ -14,8 +14,8 @@ export default function Contributor(props: {
       href={props.outsideSrc ? props.outsideSrc : undefined}
     >
       <Stack alignItems="center" direction="row" gap={2}>
-        <Avatar src={props.src ? props.src : undefined}>
-          {props.src ? null : props.name.slice(0, 2)}
+        <Avatar src={props.avatarImageSrc ? props.avatarImageSrc : undefined}>
+          {props.avatarImageSrc ? null : props.name.slice(0, 2)}
         </Avatar>
         <Stack justifyContent="center" direction="column" gap={0}>
           <Typography

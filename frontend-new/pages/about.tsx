@@ -160,7 +160,7 @@ export default function About() {
           <CardContent>
             <Stack gap={2}>
               <Contributor
-                src="/kevindemeijer.jpeg"
+                avatarImageSrc="/kevindemeijer.jpeg"
                 name="Kevin de Meijer"
                 outsideSrc="https://nl.linkedin.com/in/kevindemeijer"
                 description={intl.formatMessage({
