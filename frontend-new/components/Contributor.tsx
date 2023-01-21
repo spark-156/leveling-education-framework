@@ -1,4 +1,12 @@
-import { Avatar, Stack, Typography } from "@mui/material";
+import {
+  Avatar,
+  IconButton,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+} from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import React from "react";
 
 export default function Contributor(props: {
   avatarImageSrc?: string;
@@ -7,26 +15,25 @@ export default function Contributor(props: {
   description: string;
 }) {
   return (
-    <a
-      style={{ width: "100%" }}
-      target="_blank"
-      rel="noopener noreferrer"
-      href={props.outsideSrc ? props.outsideSrc : undefined}
+    <ListItem
+      alignItems="flex-start"
+      disablePadding
+      secondaryAction={
+        props.outsideSrc ? (
+          <a target="_blank" rel="noopener noreferrer" href={props.outsideSrc}>
+            <IconButton>
+              <OpenInNewIcon />
+            </IconButton>
+          </a>
+        ) : null
+      }
     >
-      <Stack alignItems="center" direction="row" gap={2}>
+      <ListItemAvatar>
         <Avatar src={props.avatarImageSrc ? props.avatarImageSrc : undefined}>
           {props.avatarImageSrc ? null : props.name.slice(0, 2)}
         </Avatar>
-        <Stack justifyContent="center" direction="column" gap={0}>
-          <Typography
-            variant="h5"
-            sx={{ textDecoration: props.outsideSrc ? "underline" : "" }}
-          >
-            {props.name}
-          </Typography>
-          <Typography variant="body2">{props.description}</Typography>
-        </Stack>
-      </Stack>
-    </a>
+      </ListItemAvatar>
+      <ListItemText primary={props.name} secondary={props.description} />
+    </ListItem>
   );
 }

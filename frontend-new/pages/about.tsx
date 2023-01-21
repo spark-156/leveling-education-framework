@@ -9,11 +9,10 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Stack,
   Typography,
 } from "@mui/material";
 import { FormattedMessage, useIntl } from "react-intl";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { SelectedThemeContext } from "../context/SelectedThemeContext";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -21,6 +20,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import WebIcon from "@mui/icons-material/Web";
 import SchoolIcon from "@mui/icons-material/School";
 import Contributor from "../components/Contributor";
+
 export default function About() {
   const { selectedTheme } = useContext(SelectedThemeContext);
   const cardMediaHeight = "400";
@@ -158,7 +158,7 @@ export default function About() {
             alt="Thank you gif"
           />
           <CardContent>
-            <Stack gap={2}>
+            <List sx={{ width: "100%" }}>
               <Contributor
                 avatarImageSrc="/kevindemeijer.jpeg"
                 name="Kevin de Meijer"
@@ -173,7 +173,7 @@ export default function About() {
                   id: "THANK_YOU_GIDEON_SWAAK_DESC",
                 })}
               />
-            </Stack>
+            </List>
           </CardContent>
         </Card>
       </Grid>
