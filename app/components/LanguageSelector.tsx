@@ -22,7 +22,8 @@ export default function LanguageSelector() {
           }
         >
           <MenuItem value="nl">Nl</MenuItem>
-          <MenuItem value="en">En</MenuItem>
+          {/*disable english translations whilst there are none*/}
+          {/*<MenuItem value="en">En</MenuItem>*/}
         </Select>
       </FormControl>
     </Box>
