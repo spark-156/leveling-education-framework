@@ -15,8 +15,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // static site generation
   const vaardigheden = await getBeroepstakenOrVaardigheden(
     "vaardigheden",
-    context.locale
+    context.locale === "en" ? "en" : "nl"
   );
+
+  if (context.locale === "en")
+    // disable english translation whilst there is none
+    return {
+      notFound: true,
+    };
 
   return {
     props: {
