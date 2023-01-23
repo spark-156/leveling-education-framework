@@ -51,6 +51,10 @@ By contributing, you agree that your contributions will be not be licensed and y
 
 The api is available under /api/v1
 
+## Accept-Language header
+This application has an `en` and `nl` translation. The by default returns the `nl` translation for all requests. If you wish to get the `en` version then you must set the `Accept-Language` header with `en` as its value. It will currently respond with a `501` error because there are no translations yet. But this is something to keep in mind later.
+
+This Accept-Language header applies for all api routes.
 ## HBO-I
 ### Description 
 Getting an up to date version of the hbo-i.json file under /app/data
@@ -65,7 +69,8 @@ Getting an up to date version of the hbo-i.json file under /app/data
 | niveau | 1 \| 2 \| 3 \| 4 |
 
 ### Errors
-#### 400 Bad request
+#### 501 Not Implemented
+#### 400 Bad Request
 ```
 {
     error: message
@@ -92,7 +97,8 @@ Getting an up to date version of the vaardigheden.json file under /app/data
 /api/v1/vaardigheden
 
 ### Errors
-#### 400 Bad request
+#### 501 Not Implemented
+#### 400 Bad Request
 ```
 {
     error: message
@@ -120,7 +126,8 @@ Getting an up to date version of the vaardigheden.json file under /app/data
 Possible `vaardigheid` values: 'Juiste kennis ontwikkelen', 'Kwalitatief product maken', 'Overzicht creëren', 'Kritisch oordelen', 'Samenwerken', 'Boodschap delen', 'Plannen', 'Flexibel opstellen', 'Pro-actief handelen', 'Reflecteren'
 
 ### Errors
-#### 404 Not Found
+#### 501 Not Implemented
+#### 400 Bad Request
 ```
 {
     error: message
