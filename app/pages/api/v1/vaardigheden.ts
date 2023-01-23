@@ -7,5 +7,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<BeroepstakenOrVaardigheden | { error: string }>
 ) {
-  res.status(200).json(await getBeroepstakenOrVaardigheden("vaardigheden"));
+  const locale = req.headers["accept-language"] === "en" ? "en" : "nl";
+
+  return res
+    .status(200)
+    .json(await getBeroepstakenOrVaardigheden("vaardigheden", locale));
 }

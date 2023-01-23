@@ -8,7 +8,12 @@ export default async function handler(
   res: NextApiResponse<BeroepstaakOrVaardigheid | { error: string }>
 ) {
   const { vaardigheid } = req.query as { [key: string]: string };
-  const vaardigheden = await getBeroepstakenOrVaardigheden("vaardigheden");
+  const locale = req.headers["accept-language"] === "en" ? "en" : "nl";
+
+  const vaardigheden = await getBeroepstakenOrVaardigheden(
+    "vaardigheden",
+    locale
+  );
 
   if (!(vaardigheid in vaardigheden)) {
     res.status(404).json({ error: `Vaardigheid: ${vaardigheid} not found` });
