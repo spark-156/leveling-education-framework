@@ -20,6 +20,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import WebIcon from "@mui/icons-material/Web";
 import SchoolIcon from "@mui/icons-material/School";
 import Contributor from "../components/Contributor";
+import { ListItemLink } from "../components/ListItemLink";
 
 export default function About() {
   const { selectedTheme } = useContext(SelectedThemeContext);
@@ -113,40 +114,16 @@ export default function About() {
           <CardContent>
             <Typography variant="h5">Open-ICT</Typography>
             <List>
-              <ListItem disablePadding>
-                <a
-                  style={{ width: "100%" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.hu.nl/voltijd-opleidingen/open-ict"
-                >
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <SchoolIcon />
-                    </ListItemIcon>
-                    <ListItemText>
-                      <FormattedMessage id="ABOUT_EDUCATION_LINK_TEXT" />
-                    </ListItemText>
-                  </ListItemButton>
-                </a>
-              </ListItem>
-              <ListItem disablePadding>
-                <a
-                  style={{ width: "100%" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://husite.nl/open-ict/"
-                >
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <WebIcon />
-                    </ListItemIcon>
-                    <ListItemText>
-                      <FormattedMessage id="ABOUT_EDUCATION_SITE_TEXT" />
-                    </ListItemText>
-                  </ListItemButton>
-                </a>
-              </ListItem>
+              <ListItemLink
+                href="https://www.hu.nl/voltijd-opleidingen/open-ict"
+                text={intl.formatMessage({ id: "ABOUT_EDUCATION_LINK_TEXT" })}
+                icon={<SchoolIcon />}
+              />
+              <ListItemLink
+                href="https://husite.nl/open-ict/"
+                text={intl.formatMessage({ id: "ABOUT_EDUCATION_SITE_TEXT" })}
+                icon={<WebIcon />}
+              />
             </List>
           </CardContent>
         </Card>
@@ -176,6 +153,21 @@ export default function About() {
                 description={intl.formatMessage({
                   id: "THANK_YOU_GIDEON_SWAAK_DESC",
                 })}
+              />
+            </List>
+          </CardContent>
+        </Card>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <Card>
+          <CardHeader title={intl.formatMessage({ id: "HELPFUL_LINKS" })} />
+
+          <CardContent>
+            <List sx={{ width: "100%" }}>
+              <ListItemLink
+                href="https://github.com/spark-156/leveling-education-framework"
+                text="GitHub source code"
+                icon={<GitHubIcon />}
               />
             </List>
           </CardContent>
