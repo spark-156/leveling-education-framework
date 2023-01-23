@@ -8,7 +8,7 @@ export default async function handler(
   res: NextApiResponse<BeroepstaakOrVaardigheid | { error: string }>
 ) {
   const { vaardigheid } = req.query as { [key: string]: string };
-  const locale = req.headers["accept-language"] === "en" ? "en" : "nl";
+  const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
 
   const vaardigheden = await getBeroepstakenOrVaardigheden(
     "vaardigheden",
