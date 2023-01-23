@@ -10,6 +10,10 @@ export default async function handler(
   const { vaardigheid } = req.query as { [key: string]: string };
   const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
 
+  if (locale === "en")
+    // disable english translations whilst there are none
+    return res.status(501).json({ error: "Locale not implemented yet" });
+
   const vaardigheden = await getBeroepstakenOrVaardigheden(
     "vaardigheden",
     locale
