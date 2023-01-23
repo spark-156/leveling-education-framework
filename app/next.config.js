@@ -9,7 +9,9 @@ const nextConfig = {
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'nl',
     localeDetection: false
-  }
+  },
+  // Docker support
+  output: 'standalone'
 }
 
 module.exports = nextConfig
