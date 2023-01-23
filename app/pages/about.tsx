@@ -39,7 +39,11 @@ export default function About() {
           />
           <CardContent>
             <Typography variant="h5">Luca Bergman</Typography>
-            <Typography variant="body1">
+            <Typography
+              variant="body1"
+              whiteSpace="pre-wrap"
+              sx={{ wordBreak: "break-word" }}
+            >
               <FormattedMessage id="ABOUT_LUCA_BERGMAN_DESCRIPTION" />
             </Typography>
             <List>
