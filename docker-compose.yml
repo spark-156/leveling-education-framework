@@ -8,7 +8,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   
-  frontend:
+  app:
     image: spark156/leveling-education-framework:latest
     container_name: leveling-education-framework
     build:
