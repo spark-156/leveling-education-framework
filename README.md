@@ -1,20 +1,16 @@
 # Leveling Education Framework
 Better navigation for [HBO-I Domeinbeschrijving](https://www.hbo-i.nl/publicaties-domeinbeschrijving/) and Open-ICT Vaardigheden.
 
-Frontend built in [React](https://reactjs.org) with [Ant Design](https://ant.design/) framework
+Full app built in [NextJS](https://nextjs.org) version 13 with [Material UI](https://mui.com) framework
 
-Backend built in [FastAPI](https://fastapi.tiangolo.com/)
 
 # Updating Vaardigheden and/ or HBO-I
-Make sure to update the json's in both `frontend/src/json` & `backend/app/json`
-
+Make sure to update all supported languages json's in`/app/data`
 
 # Environment variables
 | Name | Example value | Type | Description |
 | ----------- | ----------- | ----------- | ----------- |
 | HOSTS | localhost, lef.open-ict.hu.nl | String | comma seperated list of all hosts that caddy should auto-generate https certificates and route for | 
-| RATE_LIMIT_PER_MINUTE | 8 | Integer | Amount of requests that can be made to the api per minute |
-| CACHE_CONTROL_MAX_AGE | 86400 | Integer | Amount of time in seconds that the browser should cache the response, 86400 is 1 day = 60s * 60m * 24h |
 
 # Running in production
 To run the application in a production environment run the following commands:
@@ -50,3 +46,101 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 ## License
 By contributing, you agree that your contributions will be not be licensed and you lose all rights to your code.
+
+# API documentation
+
+The api is available under /api/v1
+
+## Accept-Language header
+This application has an `en` and `nl` translation. The by default returns the `nl` translation for all requests. If you wish to get the `en` version then you must set the `Accept-Language` header with `en` as its value. It will currently respond with a `501` error because there are no translations yet. But this is something to keep in mind later.
+
+This Accept-Language header applies for all api routes.
+## HBO-I
+### Description 
+Getting an up to date version of the hbo-i.json file under /app/data
+### URL 
+/api/v1/hboi
+
+### Query Paramaters
+| Paramater | Possible values |
+| --- | --- |
+| architectuurlaag | Gebruikersinteractie \| Organisatieprocessen \|Infrastructuur \| Software \| Hardwareinterfacing |
+| activiteit | Analyseren \| Adviseren \| Ontwerpen \| Realiseren \| Manage & Control |
+| niveau | 1 \| 2 \| 3 \| 4 |
+
+### Errors
+#### 501 Not Implemented
+#### 400 Bad Request
+```
+{
+    error: message
+}
+```
+
+### Response
+```
+{
+    [key: string]: {
+        [key: string] {
+            title: string,
+            info: string
+        }
+    }
+}
+```
+
+
+## Vaardigheden
+### Description 
+Getting an up to date version of the vaardigheden.json file under /app/data
+### URL 
+/api/v1/vaardigheden
+
+### Errors
+#### 501 Not Implemented
+#### 400 Bad Request
+```
+{
+    error: message
+}
+```
+
+### Response
+```
+{
+    [key: string]: {
+        [key: string] {
+            title: string,
+            info: string
+        }
+    }
+}
+```
+
+## Vaardigheid
+### Description 
+Getting an up to date version of the vaardigheden.json file under /app/data
+### URL 
+/api/v1/vaardigheden/{vaardigheid}
+
+Possible `vaardigheid` values: 'Juiste kennis ontwikkelen', 'Kwalitatief product maken', 'Overzicht creëren', 'Kritisch oordelen', 'Samenwerken', 'Boodschap delen', 'Plannen', 'Flexibel opstellen', 'Pro-actief handelen', 'Reflecteren'
+
+### Errors
+#### 501 Not Implemented
+#### 400 Bad Request
+```
+{
+    error: message
+}
+```
+
+### Response
+```
+{
+    [key: string] {
+        title: string,
+        info: string
+    }
+}
+```
+

@@ -1,0 +1,15 @@
+name: Test with Jest
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install modules
+      working-directory: ./app
+      run: npm install
+    - name: Run tests
+      working-directory: ./app  
+      run: npm run test

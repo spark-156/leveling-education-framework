@@ -8,33 +8,17 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   
-  frontend:
-    image: spark156/leveling-education-framework-frontend:latest
-    container_name: leveling-education-framework-frontend
+  app:
+    image: spark156/leveling-education-framework:latest
+    container_name: leveling-education-framework
     build:
-      context: frontend
-      target: production
+      context: app
+      target: runner
     networks:
       - caddy
     labels:
       caddy: ${HOSTS}
-      caddy.reverse_proxy: "{{upstreams}}"
-  
-  backend:
-    image: spark156/leveling-education-framework-backend:latest
-    container_name: leveling-education-framework-backend
-    build: 
-      context: backend
-      target: production
-    environment:
-      - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE}
-    networks:
-      - caddy
-    labels:
-      caddy: ${HOSTS}
-      caddy.handle_path: /api/v1/*
-      caddy.handle_path.0_rewrite: "* {uri}"
-      caddy.handle_path.1_reverse_proxy: "{{upstreams}}"
+      caddy.reverse_proxy: "{{upstreams 3000}}"
     
 networks:
   caddy:
