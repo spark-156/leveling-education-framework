@@ -16,9 +16,10 @@ Make sure to update all supported languages json's in`/app/data`
 To run the application in a production environment run the following commands:
 
 1. Rename `.env-prod` to `.env` and edit any values you need to edit.
-2. Run the command `docker network create caddy`
-3. Launch Caddy with `docker compose -f docker-compose.caddy.yml --env-file .env up -d`
-4. Launch the application with `docker compose --env-file .env up -d`
+2. Pull all the images with `docker compose pull`, this prevents docker compose from seeing the `build: ...` section in the docker-compose.yml and deciding to build the image from source. Skip this step if you do wish to build from source. 
+3. Run the command `docker network create caddy`
+4. Launch Caddy with `docker compose -f docker-compose.caddy.yml --env-file .env up -d`, you can optionally add the `--no-build` after the `-d` flag if you wish to tell docker compose to pull the images or use the local image cache instead of building the container from source.
+5. Launch the application with `docker compose --env-file .env up -d`
 
 # Contributing to Leveling Education Framework
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
