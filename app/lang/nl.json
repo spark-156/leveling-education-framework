@@ -1,7 +1,6 @@
 {
   "TITLE_LONG": "Leveling Education Framework",
   "TITLE": "LEF",
-  "HELLO_WORLD": "Hallo dit is de about pagina!",
   "NIVEAU": "Niveau",
   "ABOUT": "Over ons",
   "HOME": "Thuis",
@@ -36,7 +35,7 @@
   "Reflecteren": "Reflecteren",
 
   "ARCHITECTURE_LAYERS": "Architectuurlagen",
-  "ARCHITECTURE_LAYERS_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
+  "ARCHITECTURE_LAYERS_SUBHEADER": " ",
   "Gebruikersinteractie": "Gebruikersinteractie",
   "Organisatieprocessen": "Organisatieprocessen",
   "Infrastructuur": "Infrastructuur",
@@ -44,7 +43,7 @@
   "Hardwareinterfacing": "Hardwareinterfacing",
 
   "ACTIVITIES": "Activiteiten",
-  "ACTIVITIES_SUBHEADER": "Wat moet ik hier nou weer neer zetten?",
+  "ACTIVITIES_SUBHEADER": " ",
   "Analyseren": "Analyseren",
   "Adviseren": "Adviseren",
   "Ontwerpen": "Ontwerpen",
