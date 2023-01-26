@@ -16,12 +16,12 @@ export default async function handler(
 
   const vaardigheden = await getBeroepstakenOrVaardigheden(
     "vaardigheden",
-    locale
+    "nl"
   );
 
-  if (!(vaardigheid in vaardigheden)) {
-    res.status(404).json({ error: `Vaardigheid: ${vaardigheid} not found` });
-  }
+  // if (!(vaardigheid in vaardigheden)) {
+  //   res.status(404).json({ error: `Vaardigheid: ${vaardigheid} not found` });
+  // }
 
   res.status(200).json(vaardigheden[vaardigheid]);
 }
