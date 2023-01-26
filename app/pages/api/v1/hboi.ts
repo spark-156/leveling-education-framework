@@ -27,7 +27,7 @@ export default async function handler(
       });
   }
 
-  const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
+  // const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
 
   // if (locale === "en")
   //   // disable english translations whilst there are none
