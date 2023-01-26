@@ -8,20 +8,20 @@ export default async function handler(
   res: NextApiResponse<BeroepstaakOrVaardigheid | { error: string }>
 ) {
   const { vaardigheid } = req.query as { [key: string]: string };
-  const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
-
-  if (locale === "en")
-    // disable english translations whilst there are none
-    return res.status(501).json({ error: "Locale not implemented yet" });
+  // const locale = req.headers["accept-language"]?.startsWith("en") ? "en" : "nl";
+  //
+  // if (locale === "en")
+  //   // disable english translations whilst there are none
+  //   return res.status(501).json({ error: "Locale not implemented yet" });
 
   const vaardigheden = await getBeroepstakenOrVaardigheden(
     "vaardigheden",
-    locale
+    "nl"
   );
 
-  if (!(vaardigheid in vaardigheden)) {
-    res.status(404).json({ error: `Vaardigheid: ${vaardigheid} not found` });
-  }
+  // if (!(vaardigheid in vaardigheden)) {
+  //   res.status(404).json({ error: `Vaardigheid: ${vaardigheid} not found` });
+  // }
 
   res.status(200).json(vaardigheden[vaardigheid]);
 }
