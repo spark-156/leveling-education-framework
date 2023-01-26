@@ -14,6 +14,7 @@ export function middleware(request: NextRequest) {
     "Cache-Control",
     `public, max-age=${CACHE_CONTROL_MAX_AGE}`
   );
+  response.headers.set("Access-Control-Allow-Origin", "*");
 
   return response;
 }
