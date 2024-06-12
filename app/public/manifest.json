@@ -1,0 +1,36 @@
+{
+  "name": "Leveling Education Framework",
+  "short_name": "LEF",
+  "description": "Better navigation for HBO-I Domeinbeschrijving and Open-ICT Vaardigheden.",
+  "icons": [
+    {
+      "src": "/icons/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo_dark.svg",
+      "sizes": "150x150",
+      "type": "image/svg"
+    },
+    {
+      "src": "/logo_dark.svg",
+      "sizes": "150x150",
+      "type": "image/svg",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#1f1f1f",
+  "background_color": "#121212",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "screenshots": [
+    {
+      "src": "/screenshot.png",
+      "sizes": "2880x1556",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
