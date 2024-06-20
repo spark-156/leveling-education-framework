@@ -65,6 +65,7 @@ export default function Vaardigheden({
                 title={<FormattedMessage id={skill} />}
                 query_param_key="vaardigheid"
                 query_param_value={skill}
+                props={{ xs: 12, lg: 2.4 }}
               />
             ))}
           </NavigationCard>
