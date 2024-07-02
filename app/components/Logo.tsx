@@ -11,7 +11,7 @@ export function Logo() {
         height: 40,
         width: 40,
       }}
-      alt="LEF Logo"
+      alt=""
       src={selectedTheme === "light" ? "/logo_light.svg" : "/logo_dark.svg"}
     />
   );

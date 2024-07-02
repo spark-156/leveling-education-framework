@@ -8,9 +8,9 @@ export function LevelsCard(props: {
 }) {
   return (
     <Grid item xs={12}>
-      <Card>
+      <Card component={"section"}>
         {/* TODO translate titles */}
-        <CardHeader title={props.title} />
+        <CardHeader title={props.title} component={"h1"}/>
         <CardContent>
           <Grid container spacing={5}>
             {Object.keys(props.item).map((niveauKey) => (

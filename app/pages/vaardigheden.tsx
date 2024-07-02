@@ -54,7 +54,7 @@ export default function Vaardigheden({
         <title>LEF - {intl.formatMessage({ id: "SKILLS" })}</title>
       </Head>
       <Grid container spacing={2}>
-        <Grid item xs={12}>
+        <Grid item xs={12} component={"header"}>
           <NavigationCard
             title={<FormattedMessage id="SKILLS" />}
             subheader={<FormattedMessage id="SKILLS_SUBHEADER" />}
