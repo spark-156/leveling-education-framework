@@ -8,14 +8,14 @@ export function Level(props: {
   info: string;
 }) {
   return (
-    <Grid item xs={12} sm={6} md={3}>
+    <Grid item xs={12} sm={6} md={3} component={"section"}>
       <Stack gap={1}>
         <Stack
           direction="row"
           alignItems="center"
           justifyContent="space-between"
         >
-          <Typography variant="h6" fontWeight="normal">
+          <Typography variant="h6" fontWeight="normal" component={"h1"}>
             <FormattedMessage id="NIVEAU" /> {props.niveauKey}
           </Typography>
 

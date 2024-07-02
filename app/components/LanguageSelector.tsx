@@ -21,7 +21,7 @@ export default function LanguageSelector() {
             push(asPath, asPath, { locale: event.target.value })
           }
         >
-          <MenuItem value="nl">Nl</MenuItem>
+          <MenuItem value="nl">NL</MenuItem>
           {/*disable english translations whilst there are none*/}
           {/*<MenuItem value="en">En</MenuItem>*/}
         </Select>

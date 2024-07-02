@@ -12,7 +12,6 @@ export default function Layout({ children }: { children: ReactNode }) {
         <title>LEF - Leveling Education Framework</title>
         <meta name="description" content="Leveling Education Framework" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container maxWidth="xl" sx={{ display: "flex", paddingX: 0 }}>
         <CssBaseline />

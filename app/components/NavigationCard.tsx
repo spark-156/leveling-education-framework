@@ -12,7 +12,7 @@ export function NavigationCard({
 }) {
   return (
     <Card sx={{ minWidth: 300 }}>
-      <CardHeader title={title} subheader={subheader} />
+      <CardHeader title={title} subheader={subheader} component={"h1"} />
       <CardContent>
         <Grid container spacing={1}>
           {children}

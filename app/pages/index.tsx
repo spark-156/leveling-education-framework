@@ -68,8 +68,8 @@ export default function Beroepstaken({
       <Head>
         <title>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</title>
       </Head>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={6}>
+      <Grid container spacing={2} component={"header"}>
+        <Grid item xs={12} sm={6} component={"section"}>
           <NavigationCard
             title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
             subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
