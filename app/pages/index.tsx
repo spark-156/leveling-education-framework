@@ -70,7 +70,7 @@ export default function Beroepstaken({
       </Head>
       <Grid container spacing={2}>
         <Grid container item spacing={2} component={"header"}>
-          <Grid item xs={12} sm={6} component={"section"}>
+          <Grid item xs={12} component={"section"}>
             <NavigationCard
                 title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
                 subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
@@ -81,12 +81,12 @@ export default function Beroepstaken({
                       title={<FormattedMessage id={architecture_layer} />}
                       query_param_key="architectuurlaag"
                       query_param_value={architecture_layer}
-                      props={{ xs: 12 }}
+                      props={{ xs: 12, lg: 2.4 }}
                   />
               ))}
             </NavigationCard>
           </Grid>
-          <Grid item xs={12} sm={6} component={"section"}>
+          <Grid item xs={12} component={"section"}>
             <NavigationCard
                 title={<FormattedMessage id="ACTIVITIES" />}
                 subheader={<FormattedMessage id="ACTIVITIES_SUBHEADER" />}
@@ -97,7 +97,7 @@ export default function Beroepstaken({
                       title={<FormattedMessage id={activity} />}
                       query_param_key="activiteit"
                       query_param_value={activity}
-                      props={{ xs: 12 }}
+                      props={{ xs: 12, lg: 2.4 }}
                   />
               ))}
             </NavigationCard>
@@ -113,7 +113,6 @@ export default function Beroepstaken({
           ))}
         </Grid>
       </Grid>
-
     </>
   );
 }

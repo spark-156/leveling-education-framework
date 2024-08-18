@@ -4,7 +4,7 @@ import {Button, Grid, GridProps, useMediaQuery, useTheme} from "@mui/material";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import {fontSize} from "@mui/system";
-import {Biotech, CalendarMonth, CoPresent, Handshake, MenuBook} from "@mui/icons-material";
+import {getIcon} from "../util/vaardighedenToIcon";
 
 export function NavigationCardButton({
   title,
@@ -28,42 +28,7 @@ export function NavigationCardButton({
     href = { query: { ...router.query, [query_param_key]: query_param_value } };
   }
 
-  let icon;
-  switch(query_param_value) {
-    case "Juiste kennis ontwikkelen":
-      icon = (<MenuBook sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    case "Samenwerken":
-      icon = (<Handshake sx={{fontSize: 48}} />)
-      break;
-    case "Boodschap delen":
-      icon = (<CoPresent sx={{fontSize: 48}} />)
-      break;
-    case "Plannen":
-      icon = (<CalendarMonth sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    case "Kwalitatief product maken":
-      icon = (<Biotech sx={{fontSize: 48}} />)
-      break;
-    default:
-      icon = (<MenuIcon sx={{fontSize: 48}} />)
-      break;
-  }
+  let icon = getIcon(query_param_value);
 
   return (
     <Grid item {...props}>
