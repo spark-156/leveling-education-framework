@@ -68,47 +68,52 @@ export default function Beroepstaken({
       <Head>
         <title>LEF - {intl.formatMessage({ id: "PROFESSIONAL_DUTIES" })}</title>
       </Head>
-      <Grid container spacing={2} component={"header"}>
-        <Grid item xs={12} sm={6} component={"section"}>
-          <NavigationCard
-            title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
-            subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
-          >
-            {architecture_layers.map((architecture_layer) => (
-              <NavigationCardButton
-                key={architecture_layer}
-                title={<FormattedMessage id={architecture_layer} />}
-                query_param_key="architectuurlaag"
-                query_param_value={architecture_layer}
-                props={{ xs: 12 }}
-              />
-            ))}
-          </NavigationCard>
+      <Grid container spacing={2}>
+        <Grid container item spacing={2} component={"header"}>
+          <Grid item xs={12} sm={6} component={"section"}>
+            <NavigationCard
+                title={<FormattedMessage id="ARCHITECTURE_LAYERS" />}
+                subheader={<FormattedMessage id="ARCHITECTURE_LAYERS_SUBHEADER" />}
+            >
+              {architecture_layers.map((architecture_layer) => (
+                  <NavigationCardButton
+                      key={architecture_layer}
+                      title={<FormattedMessage id={architecture_layer} />}
+                      query_param_key="architectuurlaag"
+                      query_param_value={architecture_layer}
+                      props={{ xs: 12 }}
+                  />
+              ))}
+            </NavigationCard>
+          </Grid>
+          <Grid item xs={12} sm={6} component={"section"}>
+            <NavigationCard
+                title={<FormattedMessage id="ACTIVITIES" />}
+                subheader={<FormattedMessage id="ACTIVITIES_SUBHEADER" />}
+            >
+              {activities.map((activity) => (
+                  <NavigationCardButton
+                      key={activity}
+                      title={<FormattedMessage id={activity} />}
+                      query_param_key="activiteit"
+                      query_param_value={activity}
+                      props={{ xs: 12 }}
+                  />
+              ))}
+            </NavigationCard>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <NavigationCard
-            title={<FormattedMessage id="ACTIVITIES" />}
-            subheader={<FormattedMessage id="ACTIVITIES_SUBHEADER" />}
-          >
-            {activities.map((activity) => (
-              <NavigationCardButton
-                key={activity}
-                title={<FormattedMessage id={activity} />}
-                query_param_key="activiteit"
-                query_param_value={activity}
-                props={{ xs: 12 }}
+        <Grid container item spacing={2}>
+          {Object.keys(filteredBeroepstaken).map((beroepstaakKey) => (
+              <LevelsCard
+                  key={beroepstaakKey}
+                  title={beroepstaakKey}
+                  item={filteredBeroepstaken[beroepstaakKey]}
               />
-            ))}
-          </NavigationCard>
+          ))}
         </Grid>
-        {Object.keys(filteredBeroepstaken).map((beroepstaakKey) => (
-          <LevelsCard
-            key={beroepstaakKey}
-            title={beroepstaakKey}
-            item={filteredBeroepstaken[beroepstaakKey]}
-          />
-        ))}
       </Grid>
+
     </>
   );
 }
