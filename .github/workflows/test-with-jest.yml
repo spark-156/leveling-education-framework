@@ -6,10 +6,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 20
-        cache-dependency-path: app/package-lock.json
-    - run: npm ci
-    - run: npm test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: app/package-lock.json
+
+      - name: Clean install node_modules.
+        working-directory: ./app
+        run: npm ci
+      - name: Run tests.
+        working-directory: ./app
+        run: npm test
