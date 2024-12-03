@@ -28,7 +28,7 @@ jobs:
         name: Build and push app
         uses: docker/build-push-action@v3
         env:
-          DOCKER_HUB_REPOSITORY: lef-open-ict
+          DOCKER_HUB_REPOSITORY: leveling-education-framework
         with:
           context: ./app
           file: ./app/Dockerfile
