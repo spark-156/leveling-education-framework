@@ -15,7 +15,7 @@ export function Level(props: {
           alignItems="center"
           justifyContent="space-between"
         >
-          <Typography variant="h6" fontWeight="normal">
+          <Typography variant="h6" fontWeight="normal" component={"h2"}>
             <FormattedMessage id="NIVEAU" /> {props.niveauKey}
           </Typography>
 
