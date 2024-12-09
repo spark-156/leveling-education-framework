@@ -34,7 +34,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "babel-plugin-formatjs": "^10.3.35",
-    "eslint": "8.22.0",
+    "eslint": "9.16.0",
     "eslint-plugin-formatjs": "^4.3.9",
     "jest": "^29.4.0",
     "jest-environment-jsdom": "^29.4.0",
