@@ -1,451 +1,451 @@
 {
     "Gebruikersinteractie Analyseren": {
         "1": {
-            "title": "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, gebruikers en deskundigen.\n\nof\n\nInventariseren van klant- en gebruikersbehoeften en deze vertalen naar IT-oplossingen. \n\nof\n\nOriënteren op bestaande interactieve concepten, diensten en producten.",
+            "title": "Identificeren van de kernelementen van een externe opdracht waarbij verduidelijking wordt gezocht bij opdrachtgever, eindgebruikers en experts \n\nof\n\nInventariseren van opdrachtgevers- en eindgebruikersbehoeften en deze vertalen naar ict-middelen \n\nof\n\nOriënteren op bestaande interactieve concepten, diensten en producten",
             "info": ""
         },
         "2": {
-            "title": "Benchmarken van functionaliteit, user interaction en UX design ten behoeve van een opdracht die uitgevoerd wordt binnen een bedrijf.\n\nof\n\nAnalyseren van kernwaarden opdrachtgever, product of dienst, user needs en hoe die tot uiting komen in product of dienst.\n\nof\n\nEvalueren van de projectvoortgang vanuit het perspectief van de gebruiker.",
+            "title": "Benchmarken van functionaliteit, gebruikerservaring, toegankelijkheid, en andere ontwerpaspecten voor een opdrachtgever \n\nof\n\nAnalyseren van bestaande producten of diensten in relatie tot gebruikersbehoeften en kernwaarden van de opdrachtgever \n\nof\n\nInventariseren van relevante data-visualisaties voor een dataset",
             "info": ""
         },
         "3": {
-            "title": "Analyseren van de gebruiker, gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal / cultureel / ethisch / technologisch).\n\nof\n\nAnalyseren van actuele en state of the art interactieve technologieën.\n\nof\n\nAnalyseren per iteratie van het effect van de eigen interventie op/in de UX.\n\nof \n\nAnalyseren van de requirements van de gebruikers voor ETL-processen.",
+            "title": "Analyseren van de eindgebruiker en gebruikersinteractie en -ervaring, zowel individueel (fysiek, psychologisch, persoonlijke karakteristieken) als in grotere maatschappelijke context (sociaal, cultureel, ethisch, technologisch) \n\nof\n\nAnalyseren van actuele en opkomende interactieve technologieën \n\nof\n\nDoorlopend evalueren van het effect van de interventie op de gebruikerservaring",
             "info": ""
         },
         "4": {
-            "title": "Analyseren van maatschappelijke, domein- en/of branche specifieke trends & kansen en hierover op strategisch niveau communiceren aan de key stakeholders.",
+            "title": "Analyseren van maatschappelijke en/of domeinspecifieke trends & kansen en hierover op strategisch niveau communiceren met de key stakeholders \n\n",
             "info": ""
         }
     },
     "Gebruikersinteractie Adviseren": {
         "1": {
-            "title": "Adviseren over interactieontwerp passend bij opdracht, klant en gebruikersbehoeften en voorafgaande oriëntatie.\n\nof\n\nAanbevelingen doen op basis van een gegeven usability-analyse voor het ontwerp van een interactief product, systeem of dienst.",
+            "title": "Adviseren over interactieontwerp passend bij opdracht, opdrachtgever, gebruikersbehoeften en voorafgaande inventarisaties \n\nof\n\nAdviseren over interactieontwerp op basis van een eenvoudige, eigen of gegeven bruikbaarheidsanalyse \n\n",
             "info": ""
         },
         "2": {
-            "title": "Geven van een goed gemotiveerd concreet advies over de te gebruiken interactieve technieken en/of interactieconcepten.\n\nof\n\nVoorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met gebruikers- en bedrijfscontext.\n\nof\n\nAdviseren over de doelstellingen van de huidige en volgende iteraties.",
+            "title": "Geven van een gemotiveerd, concreet advies over de te gebruiken interactieconcepten en/of -technieken \n\nof\n\nVoorstellen doen over de realisatiekeuzes, zoals de te gebruiken technologieën, daarbij rekening houdend met de professionele context en eindgebruikers \n\nof\n\nAdviseren over de doelstellingen van de huidige en volgende iteraties",
             "info": ""
         },
         "3": {
-            "title": "Vertalen van analyse naar strategische aanbevelingen (op korte, middellange en langere termijn) voor het ontwerpen of verbeteren of onderzoeken van een UX met inzet van interactieve middelen. Hierbij wordt ook een onderbouwd advies gedaan voor het meest geschikte ontwerpproces (bijvoorbeeld UCD).\n\nof\n\nAdviseren over de UX-interventie(s) in de huidige en volgende iteraties.\n\nof\n\nAdviseren van gebruikers over potentiële data oplossingen voor ETL-processen.",
+            "title": "Vertalen van een analyse naar strategische aanbevelingen voor realisatie van gebruikersinteractie, inclusief advies voor een geschikt ontwerpproces \n\nof\n\nAdviseren welke vormen van datavisualisatie voor de opdrachtgever het gewenste effect zullen hebben, rekening houdend met kwaliteitseisen en ethische randvoorwaarden \n\nof\n\nAdviseren over interventies op de gebruikerservaring in de huidige en volgende iteraties",
             "info": ""
         },
         "4": {
-            "title": "Extrapoleren van technologische en maatschappelijke trends en deze vertalen naar een advies voor het ontwerp en de strategische inzet van zinvolle en innovatieve interactieve diensten en producten. Dit advies beschrijft een visie op de gebruikerservaring en de relatie tussen gebruiker en product/dienst.",
+            "title": "Extrapoleren van technologische en maatschappelijke trends en deze vertalen naar een advies voor het ontwerp op strategisch niveau dat een visie omvat op de gebruikerservaring en de relatie tussen gebruiker en product/dienst \n\n",
             "info": ""
         }
     },
     "Gebruikersinteractie Ontwerpen": {
         "1": {
-            "title": "Vertalen van adviezen in een eenvoudige gebruikersinteractie met een standaard prototyping-techniek.\n\nof\n\nOntwerpen van een (usability)test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden.\n\nof\n\nToepassen en uitvoeren van een gebruikelijk interactieontwerpproces, zoals user centered design.",
+            "title": "Vertalen van adviezen in een eenvoudige gebruikersinteractie via een gegeven interactieproces, bijv. met een gangbare prototypingtechniek \n\nof\n\nOntwerpen van een test waarmee essentiële interactieproblemen geïdentificeerd kunnen worden \n\nof\n\nOntwerpen van een visualisatie van een eenvoudige dataset",
             "info": ""
         },
         "2": {
-            "title": "Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototyping-technieken.\n\nof\n\nOntwerpen van een usabilitytest of testdesign waarmee de doelstellingen van de iteratie geëvalueerd worden.",
+            "title": "Vertalen van adviezen in een ontwerp van gedetailleerde gebruikersinteractie met verschillende prototypingtechnieken \n\nof\n\nOntwerpen van testen waarmee de doelstellingen van de iteratie geëvalueerd worden \n\nof\n\nOnder eigen regie toepassen van een interactieontwerpproces in samenwerking met stakeholders",
             "info": ""
         },
         "3": {
-            "title": "Vertalen van het advies naar een concreet en gedetailleerd UX-ontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat gemotiveerd ontwerpproces.\n\nof\n\nOntwerpen van een test waarmee de doelstellingen vanuit gebruikersperspectief geëvalueerd wordt.",
+            "title": "Vertalen van adviezen naar een concreet en gedetailleerd gebruikersinteractieontwerp, passend bij de projectfasering, hierbij gebruik makend van een adequaat en gemotiveerd ontwerpproces \n\nof\n\nOntwerpen van een voor de fase passende teststrategie waarmee de doelstellingen vanuit het perspectief van de beoogde gebruikers geëvalueerd worden \n\nof\n\n",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen van user experience rekening houdend met langetermijnstrategie en organisatiedoelstellingen van de opdrachtgever. Hierbij wordt geanticipeerd op relevante maatschappelijke trends en technologische ontwikkelingen.",
+            "title": "Ontwerpen van een gebruikersinteractie, rekening houdend met langetermijnstrategie en organisatiedoelstellingen van de opdrachtgever en anticiperend op relevante maatschappelijke trends en technologische ontwikkelingen \n\n",
             "info": ""
         }
     },
     "Gebruikersinteractie Realiseren": {
         "1": {
-            "title": "Realiseren en kwalitatief testen van eenvoudige interactieve producten of diensten op basis van een interactieontwerp waarbij gebruik wordt gemaakt van gangbare tools, design guidelines en/of huisstijl.",
+            "title": "Realiseren en testen van eenvoudige interactieve producten of diensten op basis van een interactieontwerp, waarbij gebruik wordt gemaakt van gangbare tools, toegankelijkheidsrichtlijnen en/of huisstijl \n\n",
             "info": ""
         },
         "2": {
-            "title": "Realiseren van het interactieontwerp met verschillende tools en technieken.\n\nof\n\nUitvoeren van de usabilitytest in het veld of in een lab.\n\nof\n\nBewaken van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst.",
+            "title": "Met verschillende tools en technieken realiseren en testen van het eigen interactieontwerp voor interactieve producten of diensten voor meerdere type eindgebruikers \n\nof\n\nRealiseren van een visualisatie van een dataset voor verschillende typen eindgebruikers \n\n",
             "info": ""
         },
         "3": {
-            "title": "Realiseren en testen van de UX van een interactief product, prototype, systeem of dienst op basis van het ontwerp met gebruikmaking van bij de projectfasering passende tools en technieken.\n\nof\n\nBewaken van aansluiting UX-ontwerp en gerealiseerde product in een onvoorspelbare context.",
+            "title": "Realiseren, testen en overdragen van de gebruikerservaring van een interactief product, prototype, systeem of dienst op basis van het ontwerp met voor de projectfasering passende tools en technieken \n\n",
             "info": ""
         },
         "4": {
-            "title": "Realiseren van toekomst-bestendige producten, diensten of prototypes op de volgende aspecten:\n- Innovatief UX design\n- Innovatieve technieken en opkomende standaarden.\n\nof\n\nValidatie met key stakeholders van visie en strategie.",
+            "title": "Realiseren van toekomstbestendige producten, diensten of prototypes die innovatief en duurzaam zijn op basis van gebruikersinteractieontwerp en tools en technieken \n\nof\n\nValidatie met key stakeholders van visie en strategie \n\n",
             "info": ""
         }
     },
     "Gebruikersinteractie Manage & Control": {
         "1": {
-            "title": "Vastleggen van de belangrijkste beslissingen, resultaten en inzichten m.b.t. interactieontwerp in een iteratief proces.",
+            "title": "Vastleggen van de belangrijkste beslissingen, resultaten en inzichten met betrekking tot het interactieontwerp in een iteratief proces \n",
             "info": ""
         },
         "2": {
-            "title": "Vastleggen van de vertrekpunten en opbrengsten m.b.t. gebruikersperspectief tussen de iteraties in een ontwerp- en ontwikkelproces, en hiermee en de verbinding tussen de iteraties inzichtelijk maken.\n\nof\n\nGebruiken en correct toepassen van standaarden (design guidelines m.b.t. interactie ontwerp, protocollen en methoden) passend binnen bedrijfscontext.",
+            "title": "Toepassen van standaarden (interactieontwerprichtlijnen, technieken en methoden), passend binnen de professionele context \n\nof\n\nBewaken en overdragen van het interactie-ontwerp bij het gerealiseerde interactieve product of dienst \n",
             "info": ""
         },
         "3": {
-            "title": "Bewaken van de kernwaarden en UX van product/organisatie of dienst in iedere fase van het ontwikkel- en productieproces.\n\nof\n\nCommuniceren met stakeholders en vastleggen van beslissingen gerelateerd aan kernwaarden en user experience design gedurende alle fases van het ontwikkelproces\n\nof\n\nVerhogen van gebruikers-acceptatie middels documentatie, training en/of marketing en gemotiveerde keuze voor de juiste vorm hiervan.",
+            "title": "Bewaken van de kernwaarden en gebruikerservaring van product, organisatie of dienst in iedere fase van het ontwikkel- en productieproces \n\nof\n\nPlanmatig en methodisch vastleggen van designkeuzes voor alle stakeholders binnen een bedrijf \n\n",
             "info": ""
         },
         "4": {
-            "title": "Aansturen van een complex project vanuit UX-perspectief op strategisch niveau met inachtneming van korte en lange termijn, betrekken en overtuigen van stakeholders zowel formeel als informeel.",
+            "title": "Vanuit gebruikersinteractie-perspectief aansturen van een complex project op strategisch niveau met inachtneming van korte- en langetermijndoelen en met afstemming met alle betrokken stakeholders \n\n",
             "info": ""
         }
     },
     "Organisatieprocessen Analyseren": {
         "1": {
-            "title": "Analyseren van een enkel organisatieproces, organisatie, gegevensstromen, databehoeften en procesbesturing op operationeel niveau.\n\nof\n\nAnalyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening.",
+            "title": "Analyseren van een enkel(e) organisatie, organisatieproces of procesbesturing op operationeel niveau met bijbehorende gegevensstromen en (gestructureerde) databehoeften \n\nof\n\nAnalyseren van knelpunten en oorzaak-gevolgrelaties vanuit de invalshoek van de informatievoorziening \n\nof\n\nAnalyseren van beschikbare ict- mogelijkheden in het veld",
             "info": ""
         },
         "2": {
-            "title": "Analyseren van meerdere operationele en tactische organisatieprocessen en de kwaliteit van de huidige ICT-voorziening.\n\nof\n\nAnalyseren van samenhang van knelpunten en oorzaak-gevolgrelaties.\n\nof\n\nVaststellen van de ICT-requirements vanuit de behoefte van relevante stakeholders.\n\nof\n\nAnalyseren van beschikbare ICT-mogelijkheden in het veld.",
+            "title": "Analyseren van meerdere operationele en tactische organisatieprocessen, inclusief kwaliteit van de bijbehorende data en van de huidige en toekomstige ict-voorziening \n\nof\n\nAnalyseren van de samenhang van knelpunten en oorzaak-gevolgrelaties \n\nof\n\nVaststellen van de ict-requirements vanuit de behoefte van relevante stakeholders",
             "info": ""
         },
         "3": {
-            "title": "Analyseren van de consequenties van een (strategische) koerswijziging voor organisatie processen en hun informatievoorziening.\n\nof\n\nAnalyseren (kwantitatief en/of kwalitatief) van de huidige en toekomstige situatie op het gebied van bijvoorbeeld beleid, strategie, alignment en architectuur, met gebruikmaking van gangbare methoden.\n\nof\n\nAnalyseren van de huidige acceptatie van nieuwe technologie en eventuele weerstanden.\n\nof\n\nAnalyseren van gestructureerde en ongestructureerde interne , externe data en workflowdata m.b.v. de data karakteristieken: Volume, Velocity, Variety, Variability, Varicity, Validity, Volatility en Visualisation (8 V's). ",
+            "title": "Analyseren van de consequenties van een (strategische) koerswijziging voor organisatieprocessen en bijbehorende informatievoorziening \n\nof\n\nAnalyseren (kwantitatief en/of kwalitatief) van de huidige en toekomstige situatie op het gebied van bijvoorbeeld beleid, strategie, alignment en architectuur \n\nof\n\nAnalyseren van de acceptatie van en eventuele weerstanden tegen de huidige en vernieuwde technologie en organisatieprocessen",
             "info": ""
         },
         "4": {
-            "title": "Uitvoeren van grondig theoretisch onderbouwd onderzoek naar technologische (interorganisationele) procesinnovaties (AI, machine & deep learning, digital twins, blockchain, etc.).",
+            "title": "Uitvoeren van grondig theoretisch onderbouwd toegepast onderzoek naar technologische (interorganisationele) procesinnovaties \n\n",
             "info": ""
         }
     },
     "Organisatieprocessen Adviseren": {
         "1": {
-            "title": "Adviseren van verbeteringen voor een enkel organisatieproces op het terrein van organisatie(structuur), processen en informatievoorziening, met inachtneming van de mogelijkheden van ICT.",
+            "title": "Adviseren over verbeteringen voor een enkel organisatieproces op het terrein van organisatie(structuur), processen en gestructureerde data, met inachtneming van de mogelijkheden van ict \n\n",
             "info": ""
         },
         "2": {
-            "title": "Adviseren over oplossingen voor knelpunten op het terrein van organisatiestructuur (en rollen), (organisatie)processtructuur, samenhang en informatievoorziening.\n\nof\n\nAdviseren over nieuwe ICT-mogelijkheden, waaronder pakketselectie en advies.\n\nof\n\nAdviseren over een veranderkundige aanpak bij de invoering\nvan nieuwe ICT-mogelijkheden o.b.v. informatie direct uit\nde data.",
+            "title": "Samenhangende oplossingen adviseren voor knelpunten op het terrein van organisatiestructuur, processtructuur en informatievoorziening \n\nof\n\nAdviseren over nieuwe ict-mogelijkheden, waaronder pakketselectie en advies \n\n",
             "info": ""
         },
         "3": {
-            "title": "Adviseren over de interne en externe afstemming tussen business en ICT (alignment en governance) rekening houdend met de doelstellingen van de organisatie (o.a. missie, visies, strategie en KPI’s).\n\nof\n\nAdviseren over een veranderkundige aanpak bij de invoering van nieuwe ICT-mogelijkheden.\n\nof\n\nAdviseren in oplossingen voor gestructureerde en\nongestructureerde data rekening houdend met ethische en\njuridische aspecten.\n\nof\n\nAdviseren in oplossingen voor gestructureerde en ongestructureerde data en voor aanpassingen aan processen ten behoeve van het verkrijgen en/of verbeteren van workflowdata.",
+            "title": "Adviseren over de inrichting van en afstemming tussen business en ict (alignment en governance), rekening houdend met de doelstellingen van de organisatie \n\nof\n\nAdviseren over een veranderkundige aanpak bij de invoering van nieuwe, duurzame ict-mogelijkheden en organisatieprocessen \n\nof\n\nAdviseren over oplossingen voor gestructureerde en ongestructureerde data, rekening houdend met ethische en juridische aspecten",
             "info": ""
         },
         "4": {
-            "title": "Adviseren van technologische (interorganisationele) proces innovaties, waarbij ook rekening wordt gehouden wordt met de sociale context (mens en organisatie).\n\nof\n\nCreëren van breed draagvlak onder alle relevante stakeholders.",
+            "title": "Adviseren van organisatorische en technologische (interorganisationele) procesinnovaties, waarbij rekening wordt gehouden met alle relevante interne en externe stakeholders, de sociale context (mens, maatschappij en organisatie) en ethische en juridische aspecten \n\n",
             "info": ""
         }
     },
     "Organisatieprocessen Ontwerpen": {
         "1": {
-            "title": "Ontwerpen van een enkel organisatieproces, enkele gegevensstromen, een organisatieonderdeel en/of een deel van de informatievoorziening.",
+            "title": "Ontwerpen van enkele organisatieprocessen, enkele gegevensstromen van gestructureerde data, de inrichting van een organisatieonderdeel en/of een deel van de informatievoorziening \n\nof\n\nOpstellen van een eenvoudig datamanagementplan \n\nof\n\nOpstellen van een eenvoudig implementatieplan",
             "info": ""
         },
         "2": {
-            "title": "Ontwerpen van samenhangende organisatieprocessen: een gegevensstructuur (model), het procesmanagement van organisatieprocessen, de functionele organisatiestructuur en/of de informatievoorziening, rekening houdend met security en privacy wetgeving.\n\nof\n\nOntwerpen van de inrichting van een standaardapplicatie.\n\nof\n\nOntwerpen van de interfaces voor een applicatie in het applicatielandschap (mappings).\n\n",
+            "title": "Ontwerpen van samenhangende organisatieprocessen: functionele organisatiestructuur, procesmanagement en informatievoorziening, rekening houdend met security en privacywetgeving \n\nof\n\nOntwerpen van de interfaces voor een applicatie in het applicatielandschap (mappings) \n",
             "info": ""
         },
         "3": {
-            "title": "Ontwerpen van de architectuur van organisatieprocessen en besturingsmodellen, inclusief bijbehorende beheersing, informatievoorziening en veranderproces.\n\nof\n\nOntwerpen van de architectuur van organisatieprocessen,\nbesturingsmodellen en veranderproces, inclusief\nbijbehorende beheersing met behulp van data\noplossing(en)\n\nof\n\nOntwerpen van een veranderkundige aanpak met bijbehorende interventies\n\nof\n\nOntwerpen van oplossingen voor gestructureerde, ongestructureerde data en voor procesveranderingen ten behoeve van het verkrijgen en/of verbeteren van workflowdata.",
+            "title": "Ontwerpen van de architectuur van organisatieprocessen en/of besturingsmodellen, inclusief bijbehorende beheersing met behulp van data-oplossingen, informatievoorziening en veranderproces \n\nof\n\nOntwerpen van een veranderkundige aanpak met bijbehorende interventies \n\n",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen van technologische (interorganisationele) procesinnovaties.\n\nof\n\nEvalueren en valideren van mogelijke procesinnovaties.",
+            "title": "Evalueren en valideren van mogelijke procesinnovaties, onder andere aan de hand van data \n\n",
             "info": ""
         }
     },
     "Organisatieprocessen Realiseren": {
         "1": {
-            "title": "Beschrijven en opstellen van werkinstructies, functie- en rolbeschrijvingen, en procedures voor een (aangepast) proces.\n\nof\n\nTesten van de aansluiting van de organisatieprocessen met de opgeleverde informatievoorziening.\n\nof\n\nOpstellen van een eenvoudig implementatieplan.",
+            "title": "Beschrijven en opstellen van werkinstructies, functie- en rolbeschrijvingen en procedures voor een (aangepast) proces \n\nof\n\nTesten van de aansluiting van de organisatieprocessen met de opgeleverde informatievoorziening \n\n",
             "info": ""
         },
         "2": {
-            "title": "Realiseren van de invoering en acceptatie van procedures in samenhang met nieuwe of gewijzigde informatievoorziening en besturing\n\nof\n\nOpleiden en trainen van eindgebruikers in de vernieuwde processen en gebruik van een nieuwe ICT.\n\nof\n\nBouwen en valideren van een proof of concept.\n\nof\n\nInrichten van een standaardapplicatie (bv. CRM, ERP, BI).",
+            "title": "Realiseren van de invoering en acceptatie van procedures in samenhang met nieuwe of gewijzigde informatievoorziening en besturing \n\nof\n\nGenereren en valideren van een proof of concept van een applicatie \n\nof\n\nInrichten van een standaardapplicatie",
             "info": ""
         },
         "3": {
-            "title": "Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan.\n\nof\n\nInrichten van oplossingen voor gestructureerde en ongestructureerde data.",
+            "title": "Realiseren van invoering en acceptatie van gewijzigde organisatieprocessen op basis van een implementatieplan \n\nof\n\nCreëren van draagvlak voor veranderingen onder alle relevante (interne) stakeholders \n\n",
             "info": ""
         },
         "4": {
-            "title": "Bouwen en valideren van prototypen van nieuwe technologische oplossingen voor (interorganisationele) procesinnovaties.",
+            "title": "Bouwen en valideren van (prototypen van) nieuwe organisatieprocessen en technologische oplossingen voor (interorganisationele) procesinnovaties \n\nof\n\nCreëren van breed draagvlak voor veranderingen onder alle relevante interne en externe stakeholders \n\n",
             "info": ""
         }
     },
     "Organisatieprocessen Manage & Control": {
         "1": {
-            "title": "Verrichten van onderhoudswerkzaamheden aan procesdocumentatie (bv. business rules, principes en procesmodellen).\n\nof\n\nBeschrijven van de veranderbehoefte voor een enkel deelproces.",
+            "title": "Verrichten van onderhoudswerkzaamheden aan de procesdocumentatie (bijv. business rules, principes en procesmodellen) \n\nof\n\nMeten en bewaken van ict-processen aan de hand van data \n\nof\n\nBeschrijven van de veranderbehoefte voor een enkel deelproces",
             "info": ""
         },
         "2": {
-            "title": "Inrichten, onderhouden en actualiseren van functionele beheerprocessen.\n\nof\n\nSignaleren en inventariseren van de veranderbehoefte van meerdere operationele en tactische organisatieprocessen.",
+            "title": "Inrichten, onderhouden en actualiseren van (functionele) beheerprocessen \n\nof\n\nMeten en bewaken van organisatieprocessen aan de hand van data \n\nof\n\nSignaleren van de veranderbehoefte van meerdere operationele en tactische organisatieprocessen",
             "info": ""
         },
         "3": {
-            "title": "Richten en actualiseren van principes, business rules en modellen van procesarchitectuur.\n\nof\n\nProactief signaleren van behoefte aan verandering in alle organisatie processen en bijbehorende veranderprocessen in gang zetten.",
+            "title": "Formuleren en actualiseren van principes, business rules en modellen van procesarchitectuur \n\nof\n\nMeten en bewaken van de strategische doelen van de organisatie aan de hand van data \n\nof\n\nProactief signaleren van behoefte aan verandering in alle organisatieprocessen en bijbehorende veranderprocessen in gang zetten",
             "info": ""
         },
         "4": {
-            "title": "Bedenken van nieuwe technologische oplossingen voor het beheren van (interorganisationele) procesinnovaties.",
+            "title": "Bedenken van nieuwe organisatorische en technologische oplossingen voor het beheren van (interorganisationele) procesinnovaties \n\n",
             "info": ""
         }
     },
     "Infrastructuur Analyseren": {
         "1": {
-            "title": "Analyseren van een lokale/kleine infrastructuur volgens een standaardmethode en op basis van gegeven (niet-) functionele eisen.",
+            "title": "Analyseren van een eenvoudige infrastructuur volgens een standaardmethode en op basis van gegeven kwaliteitseisen, bijvoorbeeld security \n\n",
             "info": ""
         },
         "2": {
-            "title": "Analyseren van de kwaliteit van een middelgrote infrastructuur en de daarop aanwezige services aan de hand van gangbare methoden en standaarden.\n\nof\n\nAnalyseren van aan infrastructuur gerelateerde incidenten, problemen en security-bedreigingen.",
+            "title": "Analyseren van de kwaliteit van een bestaande infrastructuur en de daarop aanwezige services aan de hand van gangbare methoden en standaarden \n\nof\n\nAnalyseren van aan infrastructuur gerelateerde incidenten, problemen en security-bedreigingen \n\n",
             "info": ""
         },
         "3": {
-            "title": "Analyseren van de trends op het gebied van infrastructuren en deze vertalen naar gewenste of benodigde ontwikkelingen in bedrijfsinfrastructuur.\n\nof\n\nUitvoeren van een requirements- impact- of gap- analyse voor een enterprise infrastructuur om (niet-) functionele eisen, behoeftes en/of tekortkomingen, in kaart te brengen.\n\nof\n\nAnalyseren van potentiële incidenten, problemen en bedreigingen, waaronder security en dataintegriteit volgens data governance. ",
+            "title": "Analyseren van trends en best practices en deze vertalen naar gewenste of benodigde ontwikkelingen in de enterprise infrastructuur \n\nof\n\nUitvoeren van een requirementsimpact- of gap-analyse voor een enterprise infrastructuur om kwaliteitseisen op te stellen \n\nof\n\nAnalyseren van technische mogelijkheden en privacy concerns van systemen voor beheer en verwerking van data",
             "info": ""
         },
         "4": {
-            "title": "Uitvoeren van een requirements-, impact- of gap- analyse voor een enterprise infrastructuur-architectuur om eisen, behoeftes en/of tekortkomingen, in kaart te brengen.",
+            "title": "Uitvoeren van een grondig, theoretisch onderbouwd en toegepast onderzoek naar referentiearchitecturen, best practices en standaarden voor cloud-agnostische enterprise infrastructuren of high performance computing om het volwassenheidsniveau bij verschillende organisaties te kunnen bepalen \n\n",
             "info": ""
         }
     },
     "Infrastructuur Adviseren": {
         "1": {
-            "title": "Aanbevelingen doen over een opzet van, of aanpassingen aan, een lokale/kleine infrastructuur.",
+            "title": "Aanbevelingen doen over een opzet van, of aanpassingen aan, een eenvoudige infrastructuur \n",
             "info": ""
         },
         "2": {
-            "title": "Adviseren over inrichting en beheer van een infrastructuur met onderbouwde keuzes vanuit (niet-) functionele eisen, en vanuit beschikbare technologie, beheermodellen en beheermethodes.\n\nof\n\nMaatregelen voorstellen die de informatiebeveiliging van een infrastructuur van een MKB verbeterd.",
+            "title": "Adviseren over inrichting en beheer van een (cloudgebaseerde) infrastructuur met onderbouwde keuzes vanuit kwaliteitseisen, beschikbare technologie en beheermethodes \n\nof\n\nMaatregelen voorstellen die de informatiebeveiliging van een infrastructuur verbeteren \n\nof\n\nAdviseren over de mogelijke migratie naar of keuze voor bijvoorbeeld een private, hybride of publieke cloud",
             "info": ""
         },
         "3": {
-            "title": "Adviseren over componenten van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.\n\nof\n\nAdviseren over de migratie naar, of keuze voor een public, private of hybride cloud.\n\nof\n\nAdviseren omtrent het gebruik van de infrastructuur voor data,\nbijvoorbeeld dataopslag- en verwerkingsomgeving.",
+            "title": "Adviseren over zakelijke rechtvaardiging en business-IT alignment van enterprise infrastructuren, inclusief beheer-, beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen \n\nof\n\nAdviseren over de inrichting van de infrastructuur voor de verwerking van grote hoeveelheden data \n\nof\n\nAdviseren over een cloudmanagementplatform voor DevOps",
             "info": ""
         },
         "4": {
-            "title": "Adviseren over de architectuur van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.",
+            "title": "Adviseren over de architectuur van een enterprise infrastructuur of high performance computing, inclusief beheer-, beveiliging- en privacyaspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen \n\n",
             "info": ""
         }
     },
     "Infrastructuur Ontwerpen": {
         "1": {
-            "title": "Opstellen van specificaties voor een lokale/kleine infrastructuur volgens een standaardmethode.",
+            "title": "Opstellen van specificaties voor een eenvoudige, bijvoorbeeld cloudgebaseerde, infrastructuur volgens een standaardmethode \n\n",
             "info": ""
         },
         "2": {
-            "title": "Adviseren over de architectuur van een enterprise infrastructuur, inclusief beheer- , beveiliging- en privacy aspecten, in relatie tot informatie- en referentiearchitecturen, innovatie, maatschappelijke en internationale ontwikkelingen.Beschrijven van beheerprocessen en maken van afspraken omtrent te leveren diensten.\n\nof\n\nAutomatiseren van het beheer en de uitrol van een infrastructuur in een middelgrote omgeving.\n\nof\n\nOpstellen van een technisch ontwerp voor een middelgrote infrastructuur met bijbehorende beveiliging op basis van (niet-) functionele eisen.",
+            "title": "Ontwerpen van een infrastructuur door specificatie van technieken op basis van gegeven requirements met betrekking tot kwaliteitseisen zoals beschikbaarheid, performance, schaalbaarheid, security. privacy en duurzaamheid \n\n",
             "info": ""
         },
         "3": {
-            "title": "Ontwerpen van componenten van een enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving.\n\nof\n\nOntwerpen van een incident response organisatie (CSIRT) en systemen om adequaat te kunnen reageren op incidenten van iedere aard en omvang.\n\nof\n\nOntwerpen van data opslag- en verwerkingsomgeving, waarmee big data opgeslagen, bewerkt en geanalyseerd kan worden.",
+            "title": "Ontwerpen van een cloud-agnostische enterprise infrastructuur door specificatie van cloudtechnieken op basis van zelf opgestelde requirements binnen de kaders van enterprise architectuur, referentiearchitecturen en/of standaarden \n\nof\n\nOntwerpen van een security operations center (SOC) voor het voorkomen en oplossen van security-incidenten en -problemen \n\n",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen van de enterprise infrastructuur met inachtneming van alle requirements, in een private, public of hybride cloudomgeving.",
+            "title": "Ontwerpen van cloud-agnostische enterprise infrastructuren, inclusief de processen, om een hoger volwassenheidsniveau te bereiken \n",
             "info": ""
         }
     },
     "Infrastructuur Realiseren": {
         "1": {
-            "title": "Inrichten, testen en beschikbaar stellen van een lokale/kleine infrastructuur.",
+            "title": "Inrichten, testen en beschikbaar stellen van (een proof of concept van) een eenvoudige infrastructuur \n",
             "info": ""
         },
         "2": {
-            "title": "Inrichten van een middelgrote infrastructuur die voldoet aan gestelde eisen op gebied van performance, scalability, security en compliance.\n\nof\n\nOpzetten van basismonitoring van de infrastructuur.\n\nof\n\nOpstellen en uitvoeren van een testplan voor een middelgrote infrastructuur om de kwaliteit te toetsen op basis van het opgestelde (niet-) functionele ontwerp.",
+            "title": "Inrichten en testen van (een proof of concept van) een cloudgebaseerde infrastructuur met gebruik van (cloud)technieken waarmee voldaan wordt aan ontwerp en daarin gestelde eisen \n\nof\n\nOpstellen en uitvoeren van een testplan voor een infrastructuur om de kwaliteit te toetsen op basis van de risico's \n\n",
             "info": ""
         },
         "3": {
-            "title": "Realiseren van componenten van een enterprise infrastructuur met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving.\n\nof\n\nOpzetten van componenten van een omgeving waarin de kwaliteit van een veilige dienstverlening centraal kan worden bewaakt.\n\nof\n\nOpzetten en uitvoeren van een pilot-/migratietraject inclusief overdracht naar beheer.\n\nof\n\nImplementeren van een oplossing aan de hand van een opgezet ontwerp van een data opslag- en verwerkingsomgeving. Deze kan zich on-site en/of in de cloud bevinden.",
+            "title": "Realiseren van (een proof of concept van) een cloud-agnostische infrastructuur door specificatie van cloudtechnieken binnen de kaders van enterprise architectuur, referentiearchitecturen en/of standaarden \n\nof\n\nRealiseren van een cloudmanagementplatform voor DevOps \n\n",
             "info": ""
         },
         "4": {
-            "title": "Realiseren van een enterprise infrastructuur, of complexe aspecten of onderdelen hiervan, met inachtneming van alle requirements en gebruikmakend van een public, private en/of een hybride cloud omgeving.\n\nof\n\nOpzetten van een omgeving waarin de kwaliteit van een veilige ICT-dienstverlening centraal kan worden bewaakt.",
+            "title": "Toepassen van volwassenheidsmodellen bij het realiseren van cloud-agnostische enterprise infrastructuren \n",
             "info": ""
         }
     },
     "Infrastructuur Manage & Control": {
         "1": {
-            "title": "Opzetten en documenteren van standaardbeheerprocessen en werkprocedures inclusief systeem- en netwerkconfiguratie, ten behoeve van het beheer van een lokale/kleine infrastructuur.",
+            "title": "Opzetten en documenteren van standaardbeheerprocessen en werkprocedures voor beheer van een eenvoudige, bijvoorbeeld cloudgebaseerde, infrastructuur \n\n",
             "info": ""
         },
         "2": {
-            "title": "Onderbrengen van beheer van nieuwe technologische ontwikkelingen m.b.t. de infrastructuur.\n\nof\n\nImplementeren van delen van beheerprocessen.\n\nof\n\nVastleggen van de specificaties van een beheeromgeving waarmee kwaliteit van de ICT-dienstverlening kan worden gemeten, waaronder het ontvangen en afhandelen van klantverzoeken, en te kunnen rapporteren over dienstenniveau.",
+            "title": "Implementeren van het beheer van technologische ontwikkelingen m.b.t. de (cloudgebaseerde) infrastructuur \n\nof\n\nImplementeren van delen van beheerprocessen \n\n",
             "info": ""
         },
         "3": {
-            "title": "Opzetten van beheerprocessen en uitvoeren van een public, hybride of private cloudgebaseerde infrastructuur.\n\nof\n\nVastleggen van de specificaties van een proactieve beheeromgeving van een public, hybride of private cloud infrastructuur.\n\nof\n\nOnderhouden, documenteren, beheersen en updaten van de\ninfrastructuur voor data opslag- en verwerkingsomgeving. Deze kan zich on-site en/of in de cloud bevinden.",
+            "title": "Implementeren van beheerprocessen voor een cloud-agnostische enterprise infrastructuur \n\nof\n\nInbedden van een vernieuwde infrastructuur in de organisatie \n\n",
             "info": ""
         },
         "4": {
-            "title": "Vormgeven van Business - IT alignment en IT governance in relatie tot een enterprise infrastructuur.",
+            "title": "Vormgeven van Business - IT alignment en IT governance in relatie tot een cloud-agnostische enterprise infrastructuur \n\n",
             "info": ""
         }
     },
     "Software Analyseren": {
         "1": {
-            "title": "Verzamelen en valideren van functionele eisen voor een softwaresysteem met één belanghebbende volgens een standaardmethode.\n\nof\n\nDefiniëren van acceptatiecriteria voor bovengenoemde functionele eisen.",
+            "title": "Verzamelen en valideren van functionele eisen voor een softwaresysteem met één stakeholder volgens een standaardmethode en het opstellen van acceptatiecriteria \n\nof\n\nUitvoeren van een analyse van de functionaliteit van een bestaand softwaresysteem of bestaande component om de (on)mogelijkheden voor aanpassing vast te stellen \n\nof\n\nAnalyseren of een gegeven dataset informatie oplevert voor een gegeven toepassing",
             "info": ""
         },
         "2": {
-            "title": "Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden, rekening houdend met de kwaliteitseigenschappen waaronder security.\n\nof\n\nUitvoeren van een analyse om functionaliteit, veiligheid, ontwerp, interfaces e.d. van een bestaand systeem of bestaande component te formuleren en te valideren.\n\nof\n\nOpstellen van een acceptatietest aan de hand van kwaliteits-eigenschappen",
+            "title": "Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende stakeholders, rekening houdend met duurzaamheidsaspecten en andere kwaliteitseigenschappen waaronder security \n\nof\n\nUitvoeren van een analyse om de functionaliteit, veiligheid, ontwerp, interfaces e.d. van een bestaand softwaresysteem of bestaande component te formuleren en te valideren \n\nof\n\nBeoordelen van de kwaliteit van een dataset met onder andere beschrijvende statistiek en visualisaties",
             "info": ""
         },
         "3": {
-            "title": "Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende belanghebbenden in een context van bestaande systemen.\n\nof\n\nUitvoeren van een requirementsanalyse voor een dataoplossing met verschillende belanghebbenden in een\ncontext van bestaande systemen.\n\nof\n\nDefiniëren van acceptatiecriteria aan de hand van kwaliteitseigenschappen en een uitgevoerde risicoanalyse met onder andere aandacht voor security aspecten.\n\nof\n\nAnalyseren over welke software geschikt is voor ETL-processen\naan de hand van de beschikbare data en de beschikbare\nsoftware.\n\nof\n\nPipelines en query's samenstellen ten behoeve van toekomstige\ndata-analyses, aan de hand van de beschikbare data.\n\nof \n\nAnalyseren van de data benodigd om het ML-systeem te trainen.",
+            "title": "Uitvoeren van een requirementsanalyse voor een softwaresysteem met verschillende stakeholders in een context van bestaande systemen \n\nof\n\nDefiniëren van acceptatiecriteria aan de hand van kwaliteitseigenschappen en een uitgevoerde risicoanalyse met onder andere aandacht voor duurzaamheids-, security- en privacyaspecten en toegankelijkheid \n",
             "info": ""
         },
         "4": {
-            "title": "Analyse uitvoeren voor complexe software-in-software systemen (system in systems), inclusief alle niet-functionele requirements, waaronder safety, security en privacy.",
+            "title": "Analyse uitvoeren op complexe software-in-software systemen om alle niet-functionele requirements, waaronder safety, security en privacy en de compliance daarvan met wet- en regelgeving te inventariseren om te komen tot best practices en vernieuwde ict-standaarden \n\n",
             "info": ""
         }
     },
     "Software Adviseren": {
         "1": {
-            "title": "Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen.",
+            "title": "Aanbevelingen doen over specifieke requirements van een softwaresysteem op grond van onderzoek naar bestaande, vergelijkbare systemen \n",
             "info": ""
         },
         "2": {
-            "title": "Adviseren over aanschaf en selectie van software-componenten bij het ontwikkelen van een softwaresysteem waarbij het kostenaspect een rol kan spelen.\n\nof\n\nAdviseren over een onderdeel van een architectuur of een beperkt softwaresysteem.\n\nof\n\nAdviseren over het gebruik van prototypes bij het valideren van de eisen.",
+            "title": "Adviseren over aanschaf en selectie van softwarecomponenten bij het ontwikkelen van een softwaresysteem op basis van functionaliteit en kosten \n\nof\n\nAdviseren over een onderdeel van een architectuur of een beperkt softwaresysteem \n\n",
             "info": ""
         },
         "3": {
-            "title": "Adviseren met betrekking tot de keuze voor softwarearchitectuur of bestaande software frameworks, waarbij kostenaspecten en kwaliteitskenmerken zoals beschikbaarheid, performance, security en schaalbaarheid een rol spelen.\n\nof\n\nAdviseren over de aanpak bij het verwerken en raadplegen van grote hoeveelheden data met aandacht voor privacy.\n\nof\n\nAdviseren over de inrichting van een softwareontwikkelproces, waaronder het testproces.\n\nof\n\nAdviseren over het gebruik van prototypes bij het valideren of exploreren van eisen.\n\nof\n\nAdviseren over de te gebruiken software en/of de op te stellen\npipeline(s) voor ETL-processen, aan de hand van de beschikbare data\n\nof\n\nAdviseren over de data-architectuur en de model-architectuur\nen bijbehorende frameworks. \n\nof\n\nAdviseren van de opdrachtgever omtrent de consequenties van\nhet inzetten van een ML-systeem. ",
+            "title": "Adviseren in de keuze van een data-architectuur voor een dataoplossing, opgebouwd uit bestaande en nieuwe databronnen, waarbij kostenaspecten en kwaliteitseisen zoals beschikbaarheid, performance, security en schaalbaarheid een rol spelen \n\nof\n\nAdviseren over de toepassing van nieuwe technologieën (als machine learning en artificial intelligence) alsmede de impact daarvan op aspecten als duurzaamheid, security en privacy \n\nof\n\nAdviseren over de inrichting van een softwareontwikkelproces, waaronder het test- en releaseproces",
             "info": ""
         },
         "4": {
-            "title": "Definiëren van een visie ten aanzien van toekomstige technologie en software-architectuur in afstemming met stakeholders.",
+            "title": "Definiëren van een visie ten aanzien van toekomstige technologie in afstemming met stakeholders en compliance met wet- en regelgeving op aspecten van security en privacy \n",
             "info": ""
         }
     },
     "Software Ontwerpen": {
         "1": {
-            "title": "Maken van een ontwerp voor een softwaresysteem, inclusief database, met modelleertechnieken volgens een standaardmethode.",
+            "title": "Maken van een ontwerp voor een softwaresysteem, inclusief database, met modelleertechnieken volgens een standaardmethode \n\nof\n\nOpstellen van testscripts voor eindgebruikers/acceptatietests \n\n",
             "info": ""
         },
         "2": {
-            "title": "Opstellen van een ontwerp voor een softwaresysteem, rekening houdend met het gebruik van bestaande componenten en libraries.\n\nof\n\nToepassen van ontwerp-kwaliteitscriteria, rekening houdend met securityaspecten en verschillende typen devices.\n\nof\n\nMaken van een ontwerp voor een systeem dat grote hoeveelheden data kan verwerken en raadplegen.\n\nof\n\nVaststellen van de kwaliteit van het ontwerp, bijvoorbeeld door toetsing of prototyping, rekening houdend met de geformuleerde kwaliteitseigenschappen.\n\nof\n\nOpstellen van testontwerpen volgens een gegeven teststrategie.",
+            "title": "Opstellen van een ontwerp voor een softwaresysteem, rekening houdend met het gebruik van bestaande componenten en libraries \n\nof\n\nToepassen van ontwerpkwaliteitscriteria rekening houdend met (duurzaamheids)aspecten zoals privacy, grote hoeveelheden data en gebruik op diverse devices \n\nof\n\nVaststellen van de kwaliteit van het ontwerp, bijvoorbeeld door toetsing of prototyping, rekening houdend met de geformuleerde kwaliteitseigenschappen\n\nof\n\nOpstellen van testontwerpen volgens een gegeven teststrategie",
             "info": ""
         },
         "3": {
-            "title": "Opstellen van een softwarearchitectuur voor een softwaresysteem, opgebouwd uit bestaande en nieuwe systemen, rekening houdend met meerdere belanghebbenden en kwaliteitskenmerken, waaronder security en schaalbaarheid.\n\nof\n\nOpstellen van een data-architectuur voor een dataoplossing, opgebouwd uit bestaande en nieuwe databronnen, rekening houdend met meerdere belanghebbenden en kwaliteitskenmerken, waaronder security en schaalbaarheid.\n\nof\n\nOpstellen van teststrategie voor data.\n\nof\n\nOpstellen van teststrategie voor systeemtesten.\n\nof\n\nOntwerpen van software en/of scripts aan de hand van de\nbeschikbare data en pipelines voor ETL-processen.\n\nof\n\nOntwerpen van de data-architectuur en de modelarchitectuur (i.e. trainen ML-algoritme), inclusief een teststrategie voor de data en de ML modellen.",
+            "title": "Opstellen van een softwarearchitectuur voor een softwaresysteem, opgebouwd uit bestaande en nieuwe systemen, rekening houdend met meerdere stakeholders en kwaliteitseisen \n\nof\n\nOpstellen van teststrategie voor systeem- en compliancytesten \n\nof\n\nOntwerpen van de data-architectuur en de modelarchitectuur inclusief een teststrategie voor de data en de machine learning-modellen",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen van een systeem voor het oplossen van een generieke klasse van problemen.\n\nof\n\nOntwerpen van een framework.",
+            "title": "Opstellen van een herbruikbare softwarearchitectuur voor (cross-platform) softwaresystemen opgebouwd uit bestaande en nieuwe (cloud-based) systemen, rekening houdend met meerdere stakeholders, kwaliteitskenmerken en compliance met wet- en regelgeving \n\nof\n\nOntwerpen van een softwaresysteem of framework voor het oplossen van een generieke klasse van problemen \n\n",
             "info": ""
         }
     },
     "Software Realiseren": {
         "1": {
-            "title": "Bouwen, testen en beschikbaar stellen van een eenvoudig softwaresysteem. Het opzetten, vullen en bevragen van een database maakt onderdeel uit van het softwaresysteem.",
+            "title": "Op gestructureerde wijze bouwen, testen en beschikbaar stellen van een eenvoudig softwaresysteem dat werkt met gestructureerde data en voldoet aan de basis kwaliteitseisen \n\nof\n\nOpstellen en uitvoeren van (geautomatiseerde) unittesten \n\n",
             "info": "# Opmerkingen\n\nDenk bij het bevragen van een database ook aan het bevragen van een (REST API) backend vanuit de frontend.\n\n# Beroepsproducten\n\nBij het uitvoeren van deze beroepstaak kunnen onder andere de volgende beroepstaken worden gemaakt:\n- Werkende code;\n- Werkende database;\n- Webpagina's/website.\n\n# Links en bronnen\n\n- [Backend development](https://www.youtube.com/playlist?list=PLKssF68zVDQ7Byksmqyi69MyTtxunGBEN)"
         },
         "2": {
-            "title": "Bouwen en beschikbaar stellen van een softwaresysteem dat bestaat uit meerdere subsystemen, hierbij gebruikmakend van bestaande componenten.\n\nof\n\nIntegreren van softwarecomponenten in een bestaand systeem, waarbij o.a. de integriteit, veiligheid en systeemprestaties bewaakt worden.\n\nof\n\nUitvoeren van, monitoren van en rapporteren over unit-, integratie-, regressie-, en systeemtesten, met aandacht voor security-aspecten.",
+            "title": "Bouwen van een softwaresysteem dat bestaat uit meerdere subsystemen, gebruikmakend van bestaande of gegenereerde componenten en de gemaakte keuze kunnen beredeneren \n\nof\n\nIntegreren van softwarecomponenten in een bestaand softwaresysteem, waarbij onder andere de integriteit, veiligheid en systeemprestaties bewaakt worden \n\nof\n\nOpstellen en uitvoeren van (geautomatiseerde) unit- en UI-testen",
             "info": ""
         },
         "3": {
-            "title": "Bouwen en beschikbaar stellen van een schaalbaar softwaresysteem dat aansluit bij bestaande systemen, eventueel in de cloud, volgens de ontworpen architectuur met gebruik van bestaande frameworks.\n\nof\n\nBouwen, testen en beschikbaar stellen van een dataoplossing, opgebouwd uit bestaande en nieuwe databronnen.\n\nof\n\nToepassen van testautomatisering bij het uitvoeren van testen.\n\nof\n\nBouwen van een pipeline of applicatie met beschikbare data, workflows en pipelines voor ETL-processen.\n\nof\n\nBouwen en beschikbaar stellen van een schaalbaar softwaresysteem met ML-componenten (i.e. deployen getraind\nML-model) dat aansluit bij bestaande systemen, eventueel in de\ncloud, volgens de ontworpen architectuur met gebruik van\nbestaande frameworks.",
+            "title": "Bouwen, testen en beschikbaar stellen van een schaalbaar softwaresysteem dat aansluit bij bestaande systemen, eventueel in de cloud, volgens een ontworpen of gegenereerde architectuur met onderbouwd gebruik van frameworks \n\nof\n\nOpstellen en uitvoeren van regressie-, integratie- en systeemtesten en de uitkomsten ervan evalueren, verwerken en opvolgen \n\nof\n\nRefactoren van een bestaande applicatie m.b.v. design patterns",
             "info": ""
         },
         "4": {
-            "title": "Coderen van algoritmisch complexe problemen.\n\nof\n\nBouwen van AI-gerelateerde software.\n\nof\n\nUitvoeren van een data quality check en het valideren van ML-modellen.",
+            "title": "Bouwen en beschikbaar stellen van (zelflerende) softwaresysteem gebaseerd op een model, algoritme of data met wetenschappelijk aantoonbare correcte werking en antwoorden gevend op ethische vragen \n\nof\n\nOpstellen en uitvoeren van (herbruikbare) compliancytesten \n\n",
             "info": ""
         }
     },
     "Software Manage & Control": {
         "1": {
-            "title": "Inrichten en gebruik maken van beheersysteem ter ondersteuning van softwareontwikkeling in teamverband.",
+            "title": "Inrichten en gebruik maken van beheersysteem ter ondersteuning van softwareontwikkeling in teamverband \n\n",
             "info": "# Links en bronnen\n\n- [GIT gebruik playlist](https://www.youtube.com/playlist?list=PLKssF68zVDQ4jNCrTlUE2UMhOucbvzyeg)"
         },
         "2": {
-            "title": "Beheren en gebruiken van een ontwikkelstraat ter ondersteuning van softwareontwikkeling in teams, waardoor onder andere continuous integration tot de mogelijkheden behoort.\n\nof\n\nToepassen van methoden en technieken om een software-ontwikkelproces te managen en de kwaliteit ervan te borgen.\n\nN.B. voor data/AI: Neemt ook data mee in de beheerprocessen en de ontwikkelomgeving.",
+            "title": "Beheren en gebruiken van een ontwikkelstraat ter ondersteuning van softwareontwikkeling in teams, waardoor onder andere continuous integration (CI) tot de mogelijkheden behoort \n\nof\n\nToepassen van methoden en technieken om een softwareontwikkelproces te managen en de kwaliteit ervan te borgen \n\n",
             "info": ""
         },
         "3": {
-            "title": "Uitvoeren van configuratie-, change- en releasemanagement in afstemming met infrastructuur-management.\n\nof\n\nInrichten van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.\n\nof\n\nOnderhouden, documenteren, beheren en updaten van de\nsoftware en pipelines voor de ETL-processen. Deze kan zich onsite en/of in de cloud bevinden.\n\nNB. voor data/AI: Neemt naast software ook modellen en data mee in de beheerprocessen en de ontwikkelstraat",
+            "title": "Uitvoeren van configuratie-, change- en releasemanagement in afstemming met infrastructuurmanagement waardoor CI/CD tot de mogelijkheden behoort \n\nof\n\nInrichten en evalueren van een ontwikkelstraat met CI/CD ondersteuning \n\n",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen en realiseren van een ontwikkelstraat met geautomatiseerde build en test infrastructuur.",
+            "title": "(Door)Ontwikkelen van methoden en technieken voor het softwareontwikkelproces met als doel de effectiviteit en kwaliteit van het softwaresysteem te verbeteren alsmede de kosten en doorlooptijd van het softwareontwikkelproces te verkleinen \n\n",
             "info": ""
         }
     },
     "Hardwareinterfacing Analyseren": {
         "1": {
-            "title": "Beschrijven van de architectuur van een computersysteem.\n\nof\n\nBeschrijven van de werking van actuatoren en sensoren en metingen hieraan verrichten.\n\nof\n\nOpstellen van (niet-)functionele eisen en acceptatiecriteria voor een computersysteem, bijv. een embedded of IA-systeem.",
+            "title": "Verzamelen van kwaliteitseisen en acceptatiecriteria voor een systeem, bijv. een embedded of ander technisch (deel)systeem op basis van een domeinanalyse \n\nof\n\nBeschrijven van de (fysieke) architectuur van een systeem, bijv. een embedded of ander technisch (deel)systeem \n\nof\n\nBeschrijven van de toepasbaarheid van actuatoren en sensoren",
             "info": ""
         },
         "2": {
-            "title": "In kaart brengen van signalerings- en regelingsaspecten van de omgeving van een computersysteem bijvoorbeeld in een sensornetwerk.\n\nof\n\nMethodisch specificeren van een computersysteem.\n\nof\n\nUitvoeren van een protocolanalyse.\n\nof\n\nOpstellen van een acceptatietest voor een computersysteem.",
+            "title": "Uitvoeren van een requirementsanalyse voor een (deel)systeem, inclusief hardware- en software, rekening houdend met domeinaspecten en relevante kwaliteitseigenschappen waaronder security, safety en duurzaamheid \n\nof\n\nUitvoeren van een protocolanalyse \n\nof\n\nOpstellen van een acceptatietest voor een systeem aan de hand van de kwaliteitseisen",
             "info": ""
         },
         "3": {
-            "title": "Specificeren van een gedistribueerd computersysteem inclusief timing, resourcegebruik en performance.\n\nof\n\nSpecificeren van een gedistribueerd computersysteem met ML componenten inclusief timing, resourcegebruik en performance.\n\nof\n\nBeschrijven van security-aspecten van computersystemen die aan of via (openbare) netwerken gekoppeld zijn.\n\nof\n\nOpstellen van een acceptatietestplan en een integratietestplan.",
+            "title": "Uitvoeren van een requirementsanalyse in afstemming met stakeholders voor een gedistribueerd systeem rekening houdend met de kwaliteitseisen inclusief timing, resourcegebruik, performance, security (netwerken), safety en andere relevante niet functionele eisen. (bijv. met machine learning-componenten) \n\nof\n\nOpstellen van een acceptatietestplan en een integratietestplan aan de hand van de kwaliteitseisen \n\n\n",
             "info": ""
         },
         "4": {
-            "title": "Onderzoek doen naar emerging technologies voor toepassing in gedistribueerde systemen.\n\nof\n\nOnderzoek doen naar security aspecten binnen emerging technologies.",
+            "title": "Onderzoek doen naar emerging technologies, bijv. machine learning, voor toepassing in gedistribueerde systemen \n\nof\n\nOnderzoek doen naar security, safety, privacy en duurzaamheidsaspecten binnen emerging technologies \n\n",
             "info": ""
         }
     },
     "Hardwareinterfacing Adviseren": {
         "1": {
-            "title": "Verifiëren en onderbouwen van een gegeven technisch advies. Verifiëren en beschrijven van de initiële architectuur en de functionaliteit van een gegeven systeemconfiguratie (microprocessor, geheugen of andere bouwstenen).",
+            "title": "Een onderbouwd technisch advies geven voor een eenvoudig (deel van een) systeem \n\nof\n\nAanbevelingen doen voor de initiële structuur en functionaliteit van een gegeven (deel)systeem, zowel op hardware- als softwaregebied \n\n",
             "info": ""
         },
         "2": {
-            "title": "Uitbrengen van een technisch advies voor de architectuur van een computersysteem en de hardware- en software-componenten.\n\nof\n\nAdviseren over het koppelen van systemen.",
+            "title": "Uitbrengen van een technisch advies voor de architectuur van een (deel van een) systeem inclusief de hardware- en software-componenten, op basis van de requirementsanalyse \n\nof\n\nAdviseren over het koppelen van hardwaresystemen en softwarecomponenten \n\n",
             "info": ""
         },
         "3": {
-            "title": "Uitbrengen van een technisch advies over een te realiseren (gedistribueerd) computersysteem, inclusief hardware- en software-componenten en koppelingen.\n\n",
+            "title": "Uitbrengen van een technisch advies over een te realiseren gedistribueerd systeem, inclusief hardware- en softwarecomponenten en koppelingen op basis van de requirementsanalyse en in relatie tot referentiearchitecturen, innovatie en internationale ontwikkelingen en standaarden \n\nof\n\nAdviseren over de inrichting van een ontwikkel- en testproces \n\n",
             "info": ""
         },
         "4": {
-            "title": "Uitbrengen van een technisch advies over de toepassing van emerging technologies om een gedistribueerde computersysteem te realiseren.\n\nof\n\nAdviseren over toekomstgerichte inrichting van gedistribueerde computersystemen.\n\nof\n\nDefiniëren van visie op technologieroadmap en deze afstemmen met key stakeholders\n\nof\n\nUitbrengen van een technisch advies over de toepassing van ML-componenten in een (gedistribueerd) computersysteem.",
+            "title": "Uitbrengen van een technisch advies over de toepassing van emerging technologies om een gedistribueerd systeem te realiseren \n\nof\n\nAdviseren over toekomstgerichte inrichting van gedistribueerde systemen \n\nof\n\nDefiniëren van visie op technologieroadmap en deze afstemmen met key stakeholders",
             "info": ""
         }
     },
     "Hardwareinterfacing Ontwerpen": {
         "1": {
-            "title": "Ontwerpen van een eenvoudig computersysteem, bijv. een embedded of industriële automatiseringssysteem, op basis van gegeven hardware.",
+            "title": "Ontwerpen van een (deel van een) systeem, bijv. een embedded of ander technisch systeem, op basis van gegeven hardware \n\nof\n\nOntwerpen van een eenvoudig protocol \n",
             "info": ""
         },
         "2": {
-            "title": "Ontwerpen van een computersysteem methodisch o.b.v. requirements met zelfgekozen hardware- en softwarecomponenten.\n- opstellen van een applicatie-driverontwerp opstellen.\n- ontwerpen van een protocol.",
+            "title": "Methodisch ontwerpen van een (deel van een) systeem op basis van requirements met zelfgekozen hardware- en softwarecomponenten \n\nof\n\nIntegreren van een hardware interface In een applicatie (bijv. een applicatie-driver) \n",
             "info": ""
         },
         "3": {
-            "title": "Ontwerpen van een gedistribueerd computersysteem inclusief bepaling van actuatoren, sensoren, timing, resourcegebruik en performance",
+            "title": "Ontwerpen van een gedistribueerd systeem inclusief bepaling van relevante hardware- en softwarecomponenten op basis van de kwaliteitseisen inclusief niet-functionele eisen zoals timing, resourcegebruik, onderhoudbaarheid, safety en security \n\nof\n\nOntwerpen van een protocol voor betrouwbare productie en transmissie van grote hoeveelheden data \n\n",
             "info": ""
         },
         "4": {
-            "title": "Ontwerpen van gedistribueerde computersystemen met gebruik van hardware synthese en/of artificial intelligence.\n\nof\n\nOntwerpen van een gedistribueerd computersysteem met\ngebruik van ML-componenten inclusief bepaling van actuatoren,\nsensoren, timing, resourcegebruik en performance.",
+            "title": "Ontwerpen van gedistribueerde systemen met gebruik van hardware synthese en/of artificial intelligence \n\nof\n\nOntwerpen van een gedistribueerd systeem met gebruik van machine learning-componenten inclusief bepaling van actuatoren, sensoren, circulariteit, CO2-footprint, timing, resourcegebruik en performance \n\n",
             "info": ""
         }
     },
     "Hardwareinterfacing Realiseren": {
         "1": {
-            "title": "Software schrijven voor een eenvoudig, gegeven computersysteem, voorzien van actuatoren en sensoren.",
+            "title": "Software schrijven voor een ontworpen (deel van een) systeem, voorzien van actuatoren en sensoren \n\nof\n\nTesten van een gerealiseerd (deel van een) systeem \n",
             "info": ""
         },
         "2": {
-            "title": "Inrichten van een eenvoudig computersysteem en via software de koppelingen met hardwarecomponenten realiseren.\n\nof\n\nSchrijven en testen van applicatiedriver-software.\n\nof\n\nImplementeren en testen van een protocol.",
+            "title": "Realiseren van een ontworpen (deel van een) systeem en met behulp van software de koppelingen met hardwarecomponenten realiseren \n\nof\n\nSchrijven en testen van ontworpen (delen van) systemen en hardware interfaces (bijv. applicatiedriver-software) \n\n",
             "info": ""
         },
         "3": {
-            "title": "Realiseren van een compleet computersysteem inclusief netwerk, hardware en systeemsoftware.\n\nof\n\nOpstellen en uitvoeren van een acceptatieprocedure bijv. in een virtuele omgeving, inclusief aspecten als timing, resourcegebruik en performance.",
+            "title": "Realiseren van een gedistribueerd systeem of deel ervan op basis van een gegeven ontwerp, inclusief de relevante kwaliteitseisen \n\nof\n\nOpstellen en uitvoeren van een acceptatieprocedure van een gerealiseerd systeem \n",
             "info": ""
         },
         "4": {
-            "title": "Realiseren van een compleet computersysteem waarbij gebruik gemaakt wordt van hardware synthese (vhdl) of artificial intelligence.\n\nof\n\nRealiseren van een compleet computersysteem met ML-elementen inclusief netwerk, hardware en systeemsoftware.\nOpstellen en uitvoeren van een acceptatieprocedure bijv. in een\nvirtuele omgeving, inclusief aspecten als timing, resourcegebruik\nen performance",
+            "title": "Realiseren van een compleet systeem waarbij gebruik gemaakt wordt van hardware synthese (VHDL) of artificial intelligence \n\nof\n\nRealiseren van een compleet systeem met machine learning-elementen inclusief netwerk, hardware en systeemsoftware \n\n",
             "info": ""
         }
     },
     "Hardwareinterfacing Manage & Control": {
         "1": {
-            "title": "Inrichten van een ontwikkel- en testplatform middels co-design ten behoeve van hardware/software, inclusief tools",
+            "title": "Installeren en gebruiken van een ontwikkel- en testplatform ten behoeve van hardware/software, inclusief tools \n",
             "info": ""
         },
         "2": {
-            "title": "Beoordelen van een gegeven ontwikkelomgeving op kwaliteit en prestaties.\n\nof\n\nInrichten van een beheer- en testomgeving voor een computersysteem.",
+            "title": "Beoordelen van een gegeven ontwikkelomgeving op basis van kwaliteitseisen \n\nof\n\nMonitoren, rapporteren en beoordelen van een gegeven testontwikkelomgeving \n\n",
             "info": ""
         },
         "3": {
-            "title": "Opzetten en gebruikmaken van:\n- versiebeheer,\n- releasemanagement,\n- teamworkondersteuning,\n- automated testing voor hard- en softwaresystemen.\n\nNB voor data/AI: Neemt ook modellen en data mee in de beheerprocessen en de ontwikkelomgeving",
+            "title": "Opzetten en gebruikmaken van versiebeheer, releasemanagement, teamworkondersteuning en automated testing voor hard- en softwaresystemen \n\n",
             "info": ""
         },
         "4": {
-            "title": "Aansturen van co-design teams voor het beheren van het realisatieproces van de hardware, software en synthese, inclusief de ontwikkelomgeving.",
+            "title": "Aansturen van co-designteams voor het beheren van het realisatieproces van de hardware, software en synthese, inclusief de ontwikkelomgeving \n\n",
             "info": ""
         }
     }
