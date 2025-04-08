@@ -15,7 +15,17 @@ const nextConfig = {
     localeDetection: false
   },
   // Docker support
-  output: 'standalone'
-}
+  output: 'standalone',
+  // Redirect configuration
+  async redirects() {
+    return [
+      {
+        source: "/vaardigheden",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
+};
 
 module.exports = withPWA(nextConfig)
